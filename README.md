@@ -5,13 +5,13 @@ Dans cette phase de veille, le premier axe d’"augmentation" choisi est l’uti
 *** 
 
 ## Projets
-* [« Derrière les fumées »](https://github.com/VCityTeam/TIGA-Webdocumentaire/blob/main/README.md)
+* [« Derrière les fumées »](https://github.com/VCityTeam/TIGA-Webdocumentaire/blob/main/README.md) : Web-documentaire interactif cherchant à acculturer l'habitant sur [la vallée de la chimie](https://fr.wikipedia.org/wiki/Vall%C3%A9e_de_la_chimie) et l'informer sur une thématique de ce territoire grâce à des interviews des acteurs de celui-ci. 
 ***
 
 ## Documentations
-* [Veille](https://docs.google.com/spreadsheets/d/1WMBi1XcP12ggSY--qWQrSYCXhRfvsycCfQJ3W6OuaC4/edit?usp=sharing)
-* [Mind map](https://docs.google.com/spreadsheets/d/1WMBi1XcP12ggSY--qWQrSYCXhRfvsycCfQJ3W6OuaC4/edit?usp=sharing)
-* [Livrable 2020](./Livrables/Action14_UDL_LIRIS_2020.pdf) 
+* [Veille](https://docs.google.com/spreadsheets/d/1WMBi1XcP12ggSY--qWQrSYCXhRfvsycCfQJ3W6OuaC4/edit?usp=sharing) : Veille sur les outils de médiations lié au thème de l'industrie.
+* [Mind map](https://docs.google.com/spreadsheets/d/1WMBi1XcP12ggSY--qWQrSYCXhRfvsycCfQJ3W6OuaC4/edit?usp=sharing) : "Min map" donnant une autre approche de visualisation de la veille.
+* [Livrable 2020](./Livrables/Action14_UDL_LIRIS_2020.pdf) : 
 ***
 
 ## Données
