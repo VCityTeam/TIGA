@@ -17,3 +17,7 @@ Dans cette phase de veille, le premier axe d’"augmentation" choisi est l’uti
 ## Données
 * [Photos de la catastrophe Feyzin](https://numelyo.bm-lyon.fr/BML:BML_01ICO001015c33b77d0036c?&collection_pid=BML:BML_01ICO00101&luckyStrike=1&query[]=isubjectgeographic:%22Feyzin%20(Rh%C3%B4ne)%22&hitPageSize=1&hitTotal=62&hitStart=24)
 * [Modèle 3D de la métropole de Lyon](https://partage.liris.cnrs.fr/index.php/apps/files/?dir=/VCity/Data/Obj/Metropole%20de%20Lyon&fileid=251305282) : Données générées lors de projet étudiant de master en informatique.
+
+### TO-DO
+* Py3dtilers decouper avec la liste des socles de développement.
+* Trouver un nom pour les développments techniques.
