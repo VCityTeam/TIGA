@@ -1,10 +1,17 @@
 # TIGA
-***FIX ME : Parler du projet TIGA dans son ensemble***
-La sous-action médiation augmentée a pour objectif d’étudier les mécanismes de médiation, et leur possible application dans le cadre du projet TIGA. Il s’agit de détecter, étudier, puis proposer de nouvelles modalités de médiation sur le territoire qui permettent un rapprochement des acteurs qu’ils soient citoyens, issus de l’industrie, des collectivités, d’organismes de formation ou de recherche. Ce rapprochement peut se faire traditionnellement par la rencontre, l’objectif étant ici devoir comment favoriser celle-ci et de l’outiller afin de rendre le contexte plus favorable. Il s’agit aussi d’apporter des contenus qui devront pouvoir s’inscrire dans la   durée   et   ainsi   favoriser   un   échange   à   plus   long   terme   permettant   une méthodologie de suivi des acteurs, du territoire et de son évolution. Ce dernier point est important car il permettra la mise en place de modalités d’observation de ce qui est fait afin de pouvoir mesurer les éventuels impacts, apporter des améliorations,voire proposer un transfert pour dissémination (vers d’autres territoires ou d’autres cibles par exemple).
-Dans cette phase de veille, le premier axe d’"augmentation" choisi est l’utilisation de la ludification dans les processus d’interactions entre publics et d’acculturation. L’étude est basée sur une trentaine de jeux.
+**THINK & DO TANK Sciences, Sociétés et Industrie**
+
+**Fiche-action RECHERCHE du projet TIGA de la Métropole de Lyon Saint-Etienne.** 
+
+Cette action a pour objectif de déceler, prototyper, expérimenter et valoriser sous un horizon de 3 ans des méthodes et des outils innovants pour la médiation industrielle. Elle vise à identifier des verrous scientifiques et proposer des solutions innovantes (supports matériels, numériques et méthodologiques) pour une interaction fluide et continue entre les acteurs du territoire. 
+L’action 14 engage une dynamique qui vise à s’inscrire dans la pérennité, au-delà du projet TIGA Lyon Saint-Etienne, pour devenir un laboratoire permanant de cocréation, de recherche-action et d’interactions entre les acteurs du territoire.
+L’action 14 repose sur 4 démarches qui s’enrichissent mutuellement et se combinent autour d’un processus commun de production.
 *** 
 
-## Projets
+## Développement
+* Py3DTilers 
+* "Couche de données WFS"
+* "EpisodeVizualiser"
 * [« Derrière les fumées »](https://github.com/VCityTeam/TIGA-Webdocumentaire/blob/main/README.md) : Web-documentaire interactif cherchant à acculturer l'habitant sur [la vallée de la chimie](https://fr.wikipedia.org/wiki/Vall%C3%A9e_de_la_chimie) et l'informer sur une thématique de ce territoire grâce à des interviews des acteurs de celui-ci. 
 ***
 
