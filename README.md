@@ -12,7 +12,9 @@ L’action 14 repose sur 4 démarches qui s’enrichissent mutuellement et se co
 
 ### Py3DTiles
 
-TODO
+[Py3DTiles](https://github.com/VCityTeam/py3dtiles/tree/Tiler) est une librairie Python permettant de manipuler les [3D Tiles](https://github.com/CesiumGS/3d-tiles). Originellement développé par [Oslandia](https://gitlab.com/Oslandia/py3dtiles), cette bibliothèque a été enrichie et robustifiée au cours du projet TIGA.
+
+WIP
 
 ### Py3DTilers
 
