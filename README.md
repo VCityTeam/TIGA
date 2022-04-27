@@ -14,7 +14,13 @@ L’action 14 repose sur 4 démarches qui s’enrichissent mutuellement et se co
 
 [Py3DTiles](https://github.com/VCityTeam/py3dtiles/tree/Tiler) est une librairie Python permettant de manipuler les [3D Tiles](https://github.com/CesiumGS/3d-tiles). Originellement développé par [Oslandia](https://gitlab.com/Oslandia/py3dtiles), cette bibliothèque a été enrichie et robustifiée au cours du projet TIGA.
 
-WIP
+Ajouts:
+
+* WIP
+
+Modifications:
+
+* WIP
 
 ### Py3DTilers
 
@@ -44,6 +50,8 @@ Les Tilers partagent des [options communes](https://github.com/VCityTeam/py3dtil
 * [Docker](https://github.com/VCityTeam/UD-Demo-vcity-py3dtilers-lyon-docker)
 * [Démo en ligne](https://py3dtilers-demo.vcityliris.data.alpha.grandlyon.com/)
 
+Cette démo propose un ensemble de tilesets 3D Tiles créés avec les outils de Py3DTilers. On y retrouve des 3D Tiles de bâtiments, ponts, relief et cours d'eau, certains texturés et d'autres colorés.
+
 ### Démo UI-driven
 
 * [Code](https://github.com/VCityTeam/UD-Demo-VCity-UI-driven-data-computation-Lyon)
@@ -68,7 +76,7 @@ Cette démo permet de calculer la hauteur de routes en les plaçant sur le relie
 ## Données
 * [Photos de la catastrophe Feyzin](https://numelyo.bm-lyon.fr/BML:BML_01ICO001015c33b77d0036c?&collection_pid=BML:BML_01ICO00101&luckyStrike=1&query[]=isubjectgeographic:%22Feyzin%20(Rh%C3%B4ne)%22&hitPageSize=1&hitTotal=62&hitStart=24)
 * [Modèle 3D de la métropole de Lyon](https://partage.liris.cnrs.fr/index.php/apps/files/?dir=/VCity/Data/Obj/Metropole%20de%20Lyon&fileid=251305282) : Données générées lors de projet étudiant de master en informatique.
-* [Exemples de tilesets 3D Tiles de Lyon](https://dataset-dl.liris.cnrs.fr/three-d-tiles-lyon-metropolis/Demo/UD-Demo-vcity-py3dtilers-lyon/) : 3D Tiles générés avec Py3DTilers (bâtiments, relief, routes, ponts, fleuves)
+* [Tilesets 3D Tiles de Lyon](https://dataset-dl.liris.cnrs.fr/three-d-tiles-lyon-metropolis/Demo/UD-Demo-vcity-py3dtilers-lyon/) : 3D Tiles générés avec Py3DTilers (bâtiments, relief, routes, ponts, fleuves)
 
 ### TO-DO
 * Py3dtilers decouper avec la liste des socles de développement.
