@@ -50,6 +50,8 @@ Les Tilers partagent des [options communes](https://github.com/VCityTeam/py3dtil
 * [Docker](https://github.com/VCityTeam/UD-Demo-VCity-UI-driven-data-computation-Lyon-docker)
 * [Démo en ligne](https://ui-driven-data-lyon.vcityliris.data.alpha.grandlyon.com/)
 
+Cette démo permet de calculer la hauteur de routes en les plaçant sur le relief. Pour cela, les routes doivent être contenues dans des fichiers GeoJSON. Ces fichiers peuvent ensuite être glissés/déposés. Les routes seront affichées au fur et à mesure du calcul. Une fois toutes les routes placées sur le relief, de nouveaux fichiers GeoJSON contenant les routes aux bonnes altitudes sont téléchargés.
+
 ### Autre
 
 * "Couche de données WFS"
