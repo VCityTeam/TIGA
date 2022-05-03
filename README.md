@@ -54,6 +54,14 @@ Les Tilers partagent des [options communes](https://github.com/VCityTeam/py3dtil
 - L'export en modèle OBJ
 - La création de 3D Tiles texturés ou colorés
 
+### Docker Py3DTilers
+
+Permet d'utiliser [Py3DTilers](#py3dtilers) via un [docker](https://github.com/VCityTeam/py3dtilers-docker).
+
+Ce programme permet d'utiliser toutes les fonctionnalités de Py3DTilers sans effectuer toutes les installations préalables.
+
+Le docker contient aussi une documentation pour utiliser [3DCityDB avec docker](https://github.com/VCityTeam/py3dtilers-docker#1-start-a-3dcity-database).
+
 ### Démo Py3DTilers
 
 - [Code](https://github.com/VCityTeam/UD-Demo-vcity-py3dtilers-lyon)
@@ -93,6 +101,9 @@ Cette démo permet de calculer la hauteur de routes en les plaçant sur le relie
 - [Créer des 3D Tiles depuis de l'open data](https://github.com/VCityTeam/UD-Reproducibility/blob/master/Computations/3DTiles/Lyon_Relief_Roads_Buildings_Water/Compute_Lyon_3DTiles.md) : créer des 3D Tiles de bâtiments, relief, cours d'eau, routes et ponts depuis l'open data du Grand Lyon et de l'IGN.
 
 ### Documentation PostGIS/3DCityDB
+
+- [Créer et remplir des bases 3DCityDB](https://github.com/VCityTeam/UD-SV/blob/master/ImplementationKnowHow/PostgreSQL_for_cityGML.md) : comment créer et remplir des bases de données 3DCityDB avec des fichiers CityGML.
+- [Exporter une base PostGIS](https://github.com/VCityTeam/UD-SV/blob/master/ImplementationKnowHow/Dump_psql_postgis_database.md) : comment exporter une base de données PostGIS en un fichier SQL.
 
 ### Documentation calcul de données
 
