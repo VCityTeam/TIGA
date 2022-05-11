@@ -1,6 +1,6 @@
 # TIGA
 
-**THINK & DO TANK Sciences, Sociétés et Industrie**
+## THINK & DO TANK Sciences, Sociétés et Industrie
 
 **Fiche-action RECHERCHE du projet TIGA de la Métropole de Lyon Saint-Etienne.**
 
@@ -12,9 +12,21 @@ L’action 14 repose sur 4 démarches qui s’enrichissent mutuellement et se co
 
 ## Développement
 
+### UD-Viz
+
+[UD-Viz](https://github.com/VCityTeam/UD-Viz) est une librairie JavaScript basé sur [iTowns](https://github.com/itowns/itowns). UD-Viz permet de visualiser de la donnée urbaine et d'intéragir avec cette donnée.
+
+Dans le cadre du projet TIGA, UD-Viz a été enrichi afin de permettre de nouvelles intéractions avec la donnée urbaine et d'offrir de nouvelles possibilités à l'utilisateur. Ces ajouts concernent en autre une meilleur gestion des couleurs et textures des modèles 3D, ... (**à compléter**).
+
+#### **Couleurs et textures**
+
+WIP
+
 ### Py3DTiles
 
 [Py3DTiles](https://github.com/VCityTeam/py3dtiles/tree/Tiler) est une librairie Python permettant de manipuler les [3D Tiles](https://github.com/CesiumGS/3d-tiles). Originellement développé par [Oslandia](https://gitlab.com/Oslandia/py3dtiles), cette bibliothèque a été enrichie et robustifiée au cours du projet TIGA.
+
+L'objectif des modifications et ajouts est de permettre de produire des 3D Tiles de sorte à ce qu'ils puissent être facilement personnalisés selon les modalités de l'utilisateur puis facilement visualisés avec différents outils. Dans ce but, des développements ont notamment été effectués afin de s'assurer que les 3D Tiles produits soient fidèles à la spécification de l'OGC. Cela permet d'être sûr que les 3D Tiles créés avec Py3DIiles puissent être manipulés par tous les outils suivant la spécification. De plus, l'ajout de la possibilité de créer des extensions avec Py3DTiles permet d'enrichir les 3D Tiles selon les choix de l'utilisateur.
 
 Ajouts:
 
@@ -34,7 +46,7 @@ Modifications:
 
 ### Py3DTilers
 
-[Py3DTilers](https://github.com/VCityTeam/py3dtilers) est un outil Python opn source permettant de créer des [3D Tiles](https://github.com/CesiumGS/3d-tiles) depuis différents formats: [OBJ](https://en.wikipedia.org/wiki/Wavefront_.obj_file), [GeoJSON](https://en.wikipedia.org/wiki/GeoJSON), [IFC](https://en.wikipedia.org/wiki/Industry_Foundation_Classes) et [CityGML](https://en.wikipedia.org/wiki/CityGML) (via une base de donnée [3dCityDB](https://3dcitydb-docs.readthedocs.io/en/release-v4.2.3/).
+[Py3DTilers](https://github.com/VCityTeam/py3dtilers) est un outil Python open source permettant de créer des [3D Tiles](https://github.com/CesiumGS/3d-tiles) depuis différents formats: [OBJ](https://en.wikipedia.org/wiki/Wavefront_.obj_file), [GeoJSON](https://en.wikipedia.org/wiki/GeoJSON), [IFC](https://en.wikipedia.org/wiki/Industry_Foundation_Classes) et [CityGML](https://en.wikipedia.org/wiki/CityGML) (via une base de donnée [3dCityDB](https://3dcitydb-docs.readthedocs.io/en/release-v4.2.3/).
 
 Py3DTilers utilise la librairie [Py3DTiles](#py3dtiles) pour sa représentation en mémoire des 3D Tiles.
 
@@ -69,6 +81,8 @@ Le docker contient aussi une documentation pour utiliser [3DCityDB avec docker](
 - [Démo en ligne](https://py3dtilers-demo.vcityliris.data.alpha.grandlyon.com/)
 
 Cette démo propose un ensemble de tilesets 3D Tiles créés avec les outils de Py3DTilers. On y retrouve des 3D Tiles de bâtiments, ponts, relief et cours d'eau, certains texturés et d'autres colorés.
+
+La démo introduit aussi de nouvelles modalités de visualisation des 3D Tiles. Elle implémente notamment un nouvau fonctionnement des niveaux de détails des modèles 3D. Par défaut, le niveau de détails se raffine en fonction du zoom de la camera: plus la camera est proche d'un modèle, plus ce dernier est détaillé. Ici, on offre la possibilité d'utiliser la souri comme une "loupe": les modèles proches de la souri de l'utilisateur sont raffinés afin d'obtenir des modèles plus détaillés sans avoir besoin de bouger la caméra.
 
 ### Démo UI-driven
 
