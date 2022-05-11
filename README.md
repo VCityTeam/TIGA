@@ -107,7 +107,7 @@ Cette démo permet de calculer la hauteur de routes en les plaçant sur le relie
 - [Veille](https://docs.google.com/spreadsheets/d/1WMBi1XcP12ggSY--qWQrSYCXhRfvsycCfQJ3W6OuaC4/edit?usp=sharing) : Veille sur les outils de médiations lié au thème de l'industrie.
 - [Mind map](https://docs.google.com/spreadsheets/d/1WMBi1XcP12ggSY--qWQrSYCXhRfvsycCfQJ3W6OuaC4/edit?usp=sharing) : "Min map" donnant une autre approche de visualisation de la veille.
 - [Livrable 2020](./Livrables/Action14_UDL_LIRIS_2020.pdf) :
-- Article Py3DTilers (en cours d'écriture) : Article de recherche sur Py3DTilers et ses fonctionnalités
+- [Article Py3DTilers](./Livrables/article_py3dtilers.pdf) : Article de recherche sur Py3DTilers et ses fonctionnalités
 
 ### Documentation 3D Tiles
 
