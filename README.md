@@ -12,15 +12,7 @@ L’action 14 repose sur 4 démarches qui s’enrichissent mutuellement et se co
 
 ## Développement
 
-### UD-Viz
-
-[UD-Viz](https://github.com/VCityTeam/UD-Viz) est une librairie JavaScript basé sur [iTowns](https://github.com/itowns/itowns). UD-Viz permet de visualiser de la donnée urbaine et d'intéragir avec cette donnée.
-
-Dans le cadre du projet TIGA, UD-Viz a été enrichi afin de permettre de nouvelles intéractions avec la donnée urbaine et d'offrir de nouvelles possibilités à l'utilisateur. Ces ajouts concernent en autre une meilleur gestion des couleurs et textures des modèles 3D, ... (**à compléter**).
-
-#### **Couleurs et textures**
-
-WIP
+### 3D Tiles
 
 ### Py3DTiles
 
@@ -74,7 +66,30 @@ Ce programme permet d'utiliser toutes les fonctionnalités de Py3DTilers sans ef
 
 Le docker contient aussi une documentation pour utiliser [3DCityDB avec docker](https://github.com/VCityTeam/py3dtilers-docker#1-start-a-3dcity-database).
 
-### Démo Py3DTilers
+### UD-Viz
+
+[UD-Viz](https://github.com/VCityTeam/UD-Viz) est une librairie JavaScript basé sur [iTowns](https://github.com/itowns/itowns). UD-Viz permet de visualiser de la donnée urbaine et d'intéragir avec cette donnée. UD-Viz utilise iTowns pour pouvoir charger et afficher des [3D Tiles](#3d-tiles), des modèles 3D hiérarchisés spatialement.
+
+Dans le cadre du projet TIGA, UD-Viz a été enrichi afin de permettre de nouvelles intéractions avec la donnée urbaine et d'offrir de nouvelles possibilités à l'utilisateur. Ces ajouts concernent en autre une meilleur gestion des couleurs et textures des modèles 3D, ... (**à compléter**).
+
+#### **Couleurs et textures**
+
+UD-Viz intègre une gestion des styles permettant d'appliquer des couleurs aux modèles des 3D Tiles. Ces styles peuvent être appliqués à un modèle unique ou à un ensemble de modèles. Un style arbitraire était appliqué par défaut à tous les 3D Tiles lors du chargement. Le problème avec ce style par défaut est qu'il détruit les matériaux déjà présents dans les modèles, pour en appliquer un avec le style arbitraire. En conséquence, il n'était pas possible de charger des 3D Tiles texturés ou avec des couleurs différentes.
+
+Des modifications ont été apportées à cette gestion des styles afin de laisser à l'utilisateur le choix entre:
+
+- appliquer un style par défaut aux 3D Tiles
+- conserver le style déjà présent dans les 3D Tiles
+
+La deuxième option permet un plus grande diversité des styles, puisque ces derniers ne sont plus limités à une couleur unique. De plus, les différentes options de [Py3DTilers](#py3dtilers), l'outil permettant de créer les 3D Tiles, offre beaucoup d'options pour ajouter des couleurs et des textures aux 3D Tiles. Ces couleurs et textures peuvent maintenant être chargés dans UD-Viz.
+
+En plus de ce travail sur le style par défaut des 3D Tiles, des modifications ont été apportées à la gestion du style dans UD-Viz afin de corriger un problème sur les niveaux de détail des modèles. Ces niveaux de détail étaient chargés sans style par défaut, et leur style ne pouvait pas être modifié.
+
+### Démos UD-Viz
+
+[UD-Viz-Template](https://github.com/VCityTeam/UD-Viz-Template) est un template d'application permettant des créer rapidement des démonstrations basées sur la librairie [UD-Viz](#ud-viz). Ces démonstrations permettent d'illustrer des fonctionnalités et/ou des données particulières.
+
+#### **Démo Py3DTilers**
 
 - [Code](https://github.com/VCityTeam/UD-Demo-vcity-py3dtilers-lyon)
 - [Docker](https://github.com/VCityTeam/UD-Demo-vcity-py3dtilers-lyon-docker)
@@ -84,7 +99,7 @@ Cette démo propose un ensemble de tilesets 3D Tiles créés avec les outils de 
 
 La démo introduit aussi de nouvelles modalités de visualisation des 3D Tiles. Elle implémente notamment un nouvau fonctionnement des niveaux de détails des modèles 3D. Par défaut, le niveau de détails se raffine en fonction du zoom de la camera: plus la camera est proche d'un modèle, plus ce dernier est détaillé. Ici, on offre la possibilité d'utiliser la souri comme une "loupe": les modèles proches de la souri de l'utilisateur sont raffinés afin d'obtenir des modèles plus détaillés sans avoir besoin de bouger la caméra.
 
-### Démo UI-driven
+#### **Démo UI-driven**
 
 - [Code](https://github.com/VCityTeam/UD-Demo-VCity-UI-driven-data-computation-Lyon)
 - [Docker](https://github.com/VCityTeam/UD-Demo-VCity-UI-driven-data-computation-Lyon-docker)
