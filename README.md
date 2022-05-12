@@ -18,10 +18,10 @@ L'action 14 repose sur 4 démarches qui s'enrichissent mutuellement et se combin
 
 Les tuiles peuvent avoir différents formats :
 
-* Batched 3D Model (B3DM) : Modèles 3D hétérogènes.
-* Instanced 3D Model (I3DM) : Instances de modèles 3D.
-* Point Cloud (PNTS) : Nombre massif de points colorés.
-* Composite : Mélange de différents formats.
+- Batched 3D Model (B3DM) : Modèles 3D hétérogènes.
+- Instanced 3D Model (I3DM) : Instances de modèles 3D.
+- Point Cloud (PNTS) : Nombre massif de points colorés.
+- Composite : Mélange de différents formats.
 
 Dans les outils développés dans le cadre de TIGA, nous utilisons principalement le format B3DM. Ce format décrit les géométries à l'aide du format glTF, libre et facilitant le streaming et rendu de modèles 3D sur le web. Chaque tuile contient un ensemble de _features_ : des modèles 3D représentants par exemple des batiments ou des arbres. Il est possible d'associer des informations specifiques aux features ou à la tuile dans les _Feature Table_ et _Batch Table_.
 
