@@ -128,6 +128,14 @@ Cette démo permet de calculer la hauteur de routes en les plaçant sur le relie
 
 ![ezgif-5-42ca35522d](https://user-images.githubusercontent.com/32875283/165520908-eeda0798-4ca1-4e76-ad3c-6779d593cff3.gif)
 
+#### **Démo Vallée de la chimie**
+
+- [Code](https://github.com/VCityTeam/UD-Demo-TIGA-Webdoc-ChemistryValley)
+<!-- - [Docker](https://github.com/VCityTeam/UD-Demo-vcity-py3dtilers-lyon-docker) -->
+- [Démo en ligne](https://www.derrierelesfumees.com/_Contenusdlf/Carte/index.html)
+
+La démo Vallée de la chimie a été développer dans le cadre d'un web-documentaire en collaboration avec [Interfora](), un pôle de formation au métiers de la chimie. L'objectif de cette démo est de représenter le territoire de la vallée de la chimie et de le contextualiser à l'aide de document, d'interviews d'acteurs de ce territoire et données urbaines. Ces différents éléments sont disposés à des points d'intêret en lien avec le thème de l'industrie dans cette représentation numérique 3D.
+
 ### Autre
 
 - "Couche de données WFS"
@@ -142,6 +150,7 @@ Cette démo permet de calculer la hauteur de routes en les plaçant sur le relie
 - [Mind map](https://docs.google.com/spreadsheets/d/1WMBi1XcP12ggSY--qWQrSYCXhRfvsycCfQJ3W6OuaC4/edit?usp=sharing) : "Min map" donnant une autre approche de visualisation de la veille.
 - [Livrable 2020](./Livrables/Action14_UDL_LIRIS_2020.pdf) :
 - [Article Py3DTilers](./Livrables/article_py3dtilers.pdf) : Article de recherche sur Py3DTilers et ses fonctionnalités
+- [Article intégration de multimedia dans une représentation 3D numérique](./Livrable/Integrating_multimedia_documents_for_augmented_models_to_a_better_understanding_of_its_territory.pdf) : Article de recherche sur l'intégration de multimédia dans une représentation 3D d'un territoire afin d'apporter plus d'information sur celui-ci et mieux le comprendre.
 
 ### Documentation 3D Tiles
 
@@ -156,6 +165,14 @@ Cette démo permet de calculer la hauteur de routes en les plaçant sur le relie
 ### Documentation calcul de données
 
 - [Calcul d'altitude des routes](https://github.com/VCityTeam/UD-Reproducibility/blob/master/Computations/3DTiles/Lyon_Relief_Roads_Buildings_Water/Roads_from_relief.md) : Calculer les altitudes de routes (au format GeoJSON) à l'aide d'une [démo UD-Viz](#démo-ui-driven).
+
+### Documentation intégration de contenu multi-media
+
+* TO-DO
+
+### Documentation couches de données WFS/WMS
+
+* TO-DO
 
 ## Données
 
