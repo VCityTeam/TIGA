@@ -140,10 +140,6 @@ La démo  [Vallée de la chimie](https://fr.wikipedia.org/wiki/Vall%C3%A9e_de_la
 
 ### Autre
 
-- "Couche de données WFS"
-- "EpisodeVizualiser"
-- [« Derrière les fumées »](https://github.com/VCityTeam/TIGA-Webdocumentaire/blob/main/README.md) : Web-documentaire interactif cherchant à acculturer l'habitant sur [la vallée de la chimie](https://fr.wikipedia.org/wiki/Vall%C3%A9e_de_la_chimie) et l'informer sur une thématique de ce territoire grâce à des interviews des acteurs de celui-ci.
-
 ---
 
 ## Documentations
@@ -170,11 +166,13 @@ La démo  [Vallée de la chimie](https://fr.wikipedia.org/wiki/Vall%C3%A9e_de_la
 
 ### Documentation intégration de contenu multi-media
 
-* TO-DO
+Méthode d'integration de multi-media tel que des fichiers texts, des images, des vidéos ou des vidéos 360. Cette méthode à pour but de contextualiser les modèles 3D de bâtiments dans la librairie UD-Viz.
+- [Configuration du fichier JSON]() :
+- [Episode visualizer object](https://github.com/VCityTeam/UD-Demo-TIGA-Webdoc-ChemistryValley/blob/main/doc/PinsDoc.md) :
 
 ### Documentation couches de données WFS/WMS
 
-* TO-DO
+* TO-DO : beosin d'une doc dans UD-Viz pour l'integration de couche de données 
 
 ## Données
 
