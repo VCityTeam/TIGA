@@ -2,24 +2,25 @@
 
 ## THINK & DO TANK Sciences, Sociétés et Industrie
 
-**Fiche-action RECHERCHE du projet TIGA de la Métropole de Lyon Saint-Etienne.**
+**Fiche-action RECHERCHE du projet TIGA de la Métropole de Lyon Saint-Etienne**
 
 Cette action a pour objectif de déceler, prototyper, expérimenter et valoriser sous un horizon de 3 ans des méthodes et des outils innovants pour la médiation industrielle. Elle vise à identifier des verrous scientifiques et proposer des solutions innovantes (supports matériels, numériques et méthodologiques) pour une interaction fluide et continue entre les acteurs du territoire.
 L'action 14 engage une dynamique qui vise à s'inscrire dans la pérennité, au-delà du projet TIGA Lyon Saint-Etienne, pour devenir un laboratoire permanant de cocréation, de recherche-action et d'interactions entre les acteurs du territoire.
 L'action 14 est un laboratoire de co-création et de recherche-action associant l'Université de Lyon, l'agence d'Urbanisme de Lyon, TUBA et la métropole de Lyon (ERASME, Direction de la Prospective et du Dialogue Public) qui s'enrichissent mutuellement et se combinent autour d'un processus commun de production.
 
-Dans ce contexte de reconnexion notre objectif est d'étudier les mécanismes de médiation, et leur possible application dans le cadre du projet TIGA. Nous cherchons à concevoir, prototyper, et trasnférer des nouvelles modalités de médiation industrielle mobilisant les cultures numériques du territoire.
+Dans ce contexte de reconnexion notre objectif est d'étudier les mécanismes de médiation, et leur possible application dans le cadre du projet TIGA. Nous cherchons à concevoir, prototyper, et transférer des nouvelles modalités de médiation industrielle mobilisant les cultures numériques du territoire. Ces modalités peuvent être sous différentes formes tel que des représentation 3D numérique d'un territoire, des outils de médiations ou bien des socles techniques pour aider à la construction d'outils de médiation. Ces socles techniques cherchent à être reproductibles et documentés afin qu'ils puissent être utilisable sous différentes thématiques, le tout dans un contexte open source.
 
+Afin de mieux répondre à ce besoins de reconnexion il nous fallait effectuer une vieille de l'existant pour s'inspirer et être le plus efficace dans la conception d'outil de médiation.
 
 ## Livrable 2020 : Médiations et jeux , vers une meilleure interaction usagers-territoire
 
 Un premier livrable fourni en décembre 2020 cherchait à regrouper les outils de médiation. Cette vieille nous a permit de nous inspirer dans le développement de différents outils et ainsi mettre en pratique nos approches dans la reconnexion du citoyen et des industriels. Ce livrable a pour but de référencer tout le développement technique poduit depuis janvier 2021 ainsi que les différents cas d'utilisation de ces outils. 
 
-- [Livrable 2020](./Livrables/Action14_UDL_LIRIS_2020.pdf) : "Médiations et jeux , vers une meilleure interaction usagers-territoire"
-  - [Veille](https://docs.google.com/spreadsheets/d/1WMBi1XcP12ggSY--qWQrSYCXhRfvsycCfQJ3W6OuaC4/edit?usp=sharing) : Veille sur les outils de médiations lié au thème de l'industrie.
-  - [Mind map](https://docs.google.com/spreadsheets/d/1WMBi1XcP12ggSY--qWQrSYCXhRfvsycCfQJ3W6OuaC4/edit?usp=sharing) : Carte mentale de la veille des outils de médiations lié à TIGA donnant une autre approche de visualisation de celle-ci afin de mieux les catégoriser.
+Lien en direction du [livrable 2020](./Livrables/Action14_UDL_LIRIS_2020.pdf) , Médiations et jeux , vers une meilleure interaction usagers-territoire.
+- [Veille](https://docs.google.com/spreadsheets/d/1WMBi1XcP12ggSY--qWQrSYCXhRfvsycCfQJ3W6OuaC4/edit?usp=sharing) : Veille sur les outils de médiations lié au thème de l'industrie.
+- [Mind map](https://docs.google.com/spreadsheets/d/1WMBi1XcP12ggSY--qWQrSYCXhRfvsycCfQJ3W6OuaC4/edit?usp=sharing) : Carte mentale de la veille des outils de médiations lié à TIGA donnant une autre approche de visualisation de celle-ci afin de mieux les catégoriser.
 
-## Livrable 2022 : Développment technique pour des outils de médiation industrielle
+## Livrable 2022 : Développement technique pour des outils de médiation industrielle
 
 ### Sommaire :
 
