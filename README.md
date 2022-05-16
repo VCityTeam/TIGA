@@ -8,6 +8,8 @@ Cette action a pour objectif de déceler, prototyper, expérimenter et valoriser
 L'action 14 engage une dynamique qui vise à s'inscrire dans la pérennité, au-delà du projet TIGA Lyon Saint-Etienne, pour devenir un laboratoire permanant de cocréation, de recherche-action et d'interactions entre les acteurs du territoire.
 L'action 14 est un laboratoire de co-création et de recherche-action associant l'Université de Lyon, l'agence d'Urbanisme de Lyon, TUBA et la métropole de Lyon (ERASME, Direction de la Prospective et du Dialogue Public) qui s'enrichissent mutuellement et se combinent autour d'un processus commun de production.
 
+* TO-DO : ce qu'on fait ici
+
 Un premier livrable fourni en décembre 2020 cherchait à regrouper les outils de médiation inspirant pour l'objectif de concevoir, prototyper et transférer de nouvelles modalités de médiation industrielle. Cette vieille nous a permit de nous inspirer dans le développement de différents outils et ainsi mettre en pratique nos approches dans la reconnexion du citoyen et des industriels. Ce livrable a pour but de référencer tout le développement technique poduit depuis janvier 2021 ainsi que les différents cas d'utilisation de ces outils. 
 
 - [Développement](#développement)
@@ -29,7 +31,10 @@ Un premier livrable fourni en décembre 2020 cherchait à regrouper les outils d
    -  [Documentation couches de données WFS/WMS](#documentation-couches-de-données-WFS/WMS)
 -  [Données](#données)
 
-
+**TO-DO :**
+- [ ] être moins technique et mettre toute la partie technique dans d'autre page
+- [ ] Ajouter des légendes aux figures/images
+- [ ] environ 2/3 pages pour ce livrable
 ---
 
 ## Développement
