@@ -8,9 +8,20 @@ Cette action a pour objectif de déceler, prototyper, expérimenter et valoriser
 L'action 14 engage une dynamique qui vise à s'inscrire dans la pérennité, au-delà du projet TIGA Lyon Saint-Etienne, pour devenir un laboratoire permanant de cocréation, de recherche-action et d'interactions entre les acteurs du territoire.
 L'action 14 est un laboratoire de co-création et de recherche-action associant l'Université de Lyon, l'agence d'Urbanisme de Lyon, TUBA et la métropole de Lyon (ERASME, Direction de la Prospective et du Dialogue Public) qui s'enrichissent mutuellement et se combinent autour d'un processus commun de production.
 
-* TO-DO : ce qu'on fait ici
+Dans ce contexte de reconnexion notre objectif est d'étudier les mécanismes de médiation, et leur possible application dans le cadre du projet TIGA. Nous cherchons à concevoir, prototyper, et trasnférer des nouvelles modalités de médiation industrielle mobilisant les cultures numériques du territoire.
 
-Un premier livrable fourni en décembre 2020 cherchait à regrouper les outils de médiation inspirant pour l'objectif de concevoir, prototyper et transférer de nouvelles modalités de médiation industrielle. Cette vieille nous a permit de nous inspirer dans le développement de différents outils et ainsi mettre en pratique nos approches dans la reconnexion du citoyen et des industriels. Ce livrable a pour but de référencer tout le développement technique poduit depuis janvier 2021 ainsi que les différents cas d'utilisation de ces outils. 
+
+## Livrable 2020 : Médiations et jeux , vers une meilleure interaction usagers-territoire
+
+Un premier livrable fourni en décembre 2020 cherchait à regrouper les outils de médiation. Cette vieille nous a permit de nous inspirer dans le développement de différents outils et ainsi mettre en pratique nos approches dans la reconnexion du citoyen et des industriels. Ce livrable a pour but de référencer tout le développement technique poduit depuis janvier 2021 ainsi que les différents cas d'utilisation de ces outils. 
+
+- [Livrable 2020](./Livrables/Action14_UDL_LIRIS_2020.pdf) : "Médiations et jeux , vers une meilleure interaction usagers-territoire"
+  - [Veille](https://docs.google.com/spreadsheets/d/1WMBi1XcP12ggSY--qWQrSYCXhRfvsycCfQJ3W6OuaC4/edit?usp=sharing) : Veille sur les outils de médiations lié au thème de l'industrie.
+  - [Mind map](https://docs.google.com/spreadsheets/d/1WMBi1XcP12ggSY--qWQrSYCXhRfvsycCfQJ3W6OuaC4/edit?usp=sharing) : Carte mentale de la veille des outils de médiations lié à TIGA donnant une autre approche de visualisation de celle-ci afin de mieux les catégoriser.
+
+## Livrable 2022 : Développment technique pour des outils de médiation industrielle
+
+### Sommaire :
 
 - [Développement](#développement)
   -  [3D Tiles](#3d-tiles)
@@ -37,9 +48,9 @@ Un premier livrable fourni en décembre 2020 cherchait à regrouper les outils d
 - [ ] environ 2/3 pages pour ce livrable
 ---
 
-## Développement
+### Développement
 
-### 3D Tiles
+#### 3D Tiles
 
 [3D Tiles](https://github.com/CesiumGS/3d-tiles) est un community standard open source, décrit par Cesium et l'OGC. Il a été pensé pour aider à la visualisation massive de contenu géospatial 3D, tout en prenant en compte les aspects de streaming et rendu. Ce standard permet de décrire un _tileset_ : un arbre de tuiles 3D . Chaque tuile contient des modèles 3D auxquels sont associés des données sémantiques. Un tileset permet une organisation spatiale des tuiles, optimisée pour le rendering d'objets 3D urbains, notamment en supportant différentes méthodes de tuilage (K-d tree, octree, etc) mais aussi le concept de _Hierarchical Level Of Detail_. Les niveaux de détail permettent d'alterner entre des géométries plus ou moins détaillées en fonction des besoins, par exemple en affichant des modèles très simplifiés de loin et détaillés lorsqu'on est proche.
 
@@ -54,7 +65,7 @@ Dans les outils développés dans le cadre de TIGA, nous utilisons principalemen
 
 La méthode utilisée pour créer les 3D Tiles peut avoir un impact direct sur la visualisation des objets. Il est donc nécéssaire de disposer d'outils permettant de tester différentes méthodes de tuilage afin d'optimiser le rendu et la visualisation des modèles 3D depuis différentes sources. Il y a aussi le besoin d'offrir à l'utilisateur des outils lui permettant de créer des 3D Tiles depuis différentes données, en y ajoutant de la couleur, des textures et des niveaux de détail. C'est dans ces objectifs qu'on été développé [Py3DTiles](#py3dtiles) et [Py3DTilers](#py3dtilers).
 
-### Py3DTiles
+#### Py3DTiles
 
 [Py3DTiles](https://github.com/VCityTeam/py3dtiles/tree/Tiler) est une librairie Python permettant de manipuler les [3D Tiles](#3d-tiles). Originellement développé par [Oslandia](https://gitlab.com/Oslandia/py3dtiles), cette bibliothèque a été enrichie et robustifiée au cours du projet TIGA.
 
@@ -76,7 +87,7 @@ Modifications:
 - Faire en sorte que les 3D Tiles produits soient fidèles à la spécification.
 - Amélioration de la lecture/écriture des 3D Tiles au format B3DM.
 
-### Py3DTilers
+#### Py3DTilers
 
 [Py3DTilers](https://github.com/VCityTeam/py3dtilers) est un outil Python open source permettant de créer des [3D Tiles](https://github.com/CesiumGS/3d-tiles) depuis différents formats: [OBJ](https://en.wikipedia.org/wiki/Wavefront_.obj_file), [GeoJSON](https://en.wikipedia.org/wiki/GeoJSON), [IFC](https://en.wikipedia.org/wiki/Industry_Foundation_Classes) et [CityGML](https://en.wikipedia.org/wiki/CityGML) (via une base de donnée [3DCityDB](https://3dcitydb-docs.readthedocs.io/en/release-v4.2.3/).
 
@@ -101,7 +112,7 @@ Les Tilers partagent des [options communes](https://github.com/VCityTeam/py3dtil
 
 Toutes les options de Py3DTilers permettent d’obtenir un outil offrant une grande polyvalence. De plus, l'architure de code permet de rapidement ajouter des nouvelles fonctionnalités ou de personnaliser celles qui existent déjà. Py3DTilers permet à l’utilisateur un contrôle total du processus de création de 3D Tiles, que ce soit via les options ou via la modification du code. L'outil permet de personnaliser les tilesets produits, de tester de nouvelles modalités de répartition des tuiles ou de création de niveaux de détail. Py3DTilers se veut l’outil idéal pour innover ou expérimenter autour des 3D Tiles, et proposer des améliorations du standard.
 
-### Docker Py3DTilers
+#### Docker Py3DTilers
 
 Permet d'utiliser [Py3DTilers](#py3dtilers) via un [docker](https://github.com/VCityTeam/py3dtilers-docker).
 
@@ -109,13 +120,13 @@ Ce programme permet d'utiliser toutes les fonctionnalités de Py3DTilers sans ef
 
 Le docker contient aussi une documentation pour utiliser [3DCityDB avec docker](https://github.com/VCityTeam/py3dtilers-docker#1-start-a-3dcity-database).
 
-### UD-Viz
+#### UD-Viz
 
 [UD-Viz](https://github.com/VCityTeam/UD-Viz) est une librairie JavaScript basé sur [iTowns](https://github.com/itowns/itowns). UD-Viz permet de visualiser de la donnée urbaine et d'intéragir avec cette donnée. UD-Viz utilise iTowns pour pouvoir charger et afficher des [3D Tiles](#3d-tiles), des modèles 3D hiérarchisés spatialement.
 
 Dans le cadre du projet TIGA, UD-Viz a été enrichi afin de permettre de nouvelles intéractions avec la donnée urbaine et d'offrir de nouvelles possibilités à l'utilisateur. Ces ajouts concernent entre autre une meilleur gestion des couleurs et textures des modèles 3D.
 
-#### **Couleurs et textures**
+##### **Couleurs et textures**
 
 UD-Viz intègre une gestion des styles permettant d'appliquer des couleurs aux modèles des 3D Tiles. Ces styles peuvent être appliqués à un modèle unique ou à un ensemble de modèles. Un style arbitraire était appliqué par défaut à tous les 3D Tiles lors du chargement. Le problème avec ce style par défaut est qu'il détruit les matériaux déjà présents dans les modèles, pour en appliquer un avec le style arbitraire. En conséquence, il n'était pas possible de charger des 3D Tiles texturés ou avec des couleurs différentes.
 
@@ -130,11 +141,11 @@ En plus de ce travail sur le style par défaut des 3D Tiles, des modifications o
 
 ![texture_refine](https://user-images.githubusercontent.com/32875283/168042130-65e3b7a5-14d1-4783-a759-72606a9a1c33.gif)
 
-### Démos UD-Viz
+#### Démos UD-Viz
 
 [UD-Viz-Template](https://github.com/VCityTeam/UD-Viz-Template) est un template d'application permettant des créer rapidement des démonstrations basées sur la librairie [UD-Viz](#ud-viz). Ces démonstrations permettent d'illustrer des fonctionnalités et/ou des données particulières.
 
-#### **Démo Py3DTilers**
+##### **Démo Py3DTilers**
 
 - [Code](https://github.com/VCityTeam/UD-Demo-vcity-py3dtilers-lyon)
 - [Docker](https://github.com/VCityTeam/UD-Demo-vcity-py3dtilers-lyon-docker)
@@ -148,7 +159,7 @@ La démo introduit aussi de nouvelles modalités de visualisation des 3D Tiles. 
 
 ![mouse_refine](https://user-images.githubusercontent.com/32875283/168044116-a1af5952-2da6-4420-be6e-3b28909d9bd9.gif)
 
-#### **Démo UI-driven**
+##### **Démo UI-driven**
 
 - [Code](https://github.com/VCityTeam/UD-Demo-VCity-UI-driven-data-computation-Lyon)
 - [Docker](https://github.com/VCityTeam/UD-Demo-VCity-UI-driven-data-computation-Lyon-docker)
@@ -158,7 +169,7 @@ Cette démo permet de calculer la hauteur de routes en les plaçant sur le relie
 
 ![ezgif-5-42ca35522d](https://user-images.githubusercontent.com/32875283/165520908-eeda0798-4ca1-4e76-ad3c-6779d593cff3.gif)
 
-#### **Démo Vallée de la chimie**
+##### **Démo Vallée de la chimie**
 
 - [Code](https://github.com/VCityTeam/UD-Demo-TIGA-Webdoc-ChemistryValley)
 - [Démo en ligne](https://www.derrierelesfumees.com/_Contenusdlf/Carte/index.html)
@@ -170,39 +181,35 @@ La démo  [Vallée de la chimie](https://fr.wikipedia.org/wiki/Vall%C3%A9e_de_la
 
 ---
 
-## Documentations
-
-- [Livrable 2020](./Livrables/Action14_UDL_LIRIS_2020.pdf) : "Médiations et jeux , vers une meilleure interaction usagers-territoire"
-  - [Veille](https://docs.google.com/spreadsheets/d/1WMBi1XcP12ggSY--qWQrSYCXhRfvsycCfQJ3W6OuaC4/edit?usp=sharing) : Veille sur les outils de médiations lié au thème de l'industrie.
-  - [Mind map](https://docs.google.com/spreadsheets/d/1WMBi1XcP12ggSY--qWQrSYCXhRfvsycCfQJ3W6OuaC4/edit?usp=sharing) : Carte mentale de la veille des outils de médiations lié à TIGA donnant une autre approche de visualisation de celle-ci afin de mieux les catégoriser.
+### Documentations
 - [Article Py3DTilers](./Livrables/article_py3dtilers.pdf) : Article de recherche sur Py3DTilers et ses fonctionnalités
 - [Article intégration de multimedia dans une représentation 3D numérique](./Livrable/Integrating_multimedia_documents_for_augmented_models_to_a_better_understanding_of_its_territory.pdf) : Article de recherche sur l'intégration de multimédia dans une représentation 3D d'un territoire afin d'apporter plus d'information sur celui-ci et mieux le comprendre.
 
-### Documentation 3D Tiles
+#### Documentation 3D Tiles
 
 - [Visualisation des 3D Tiles](https://github.com/VCityTeam/UD-SV/blob/master/ImplementationKnowHow/Visualize3DTiles.md) : comment visualiser des 3D Tiles dans UD-Viz, iTowns et Cesium.
 - [Créer des 3D Tiles depuis de l'open data](https://github.com/VCityTeam/UD-Reproducibility/blob/master/Computations/3DTiles/Lyon_Relief_Roads_Buildings_Water/Compute_Lyon_3DTiles.md) : créer des 3D Tiles de bâtiments, relief, cours d'eau, routes et ponts depuis l'open data du Grand Lyon et de l'IGN.
 
-### Documentation PostGIS/3DCityDB
+#### Documentation PostGIS/3DCityDB
 
 - [Créer et remplir des bases 3DCityDB](https://github.com/VCityTeam/UD-SV/blob/master/ImplementationKnowHow/PostgreSQL_for_cityGML.md) : comment créer et remplir des bases de données 3DCityDB avec des fichiers CityGML.
 - [Exporter une base PostGIS](https://github.com/VCityTeam/UD-SV/blob/master/ImplementationKnowHow/Dump_psql_postgis_database.md) : comment exporter une base de données PostGIS en un fichier SQL.
 
-### Documentation calcul de données
+#### Documentation calcul de données
 
 - [Calcul d'altitude des routes](https://github.com/VCityTeam/UD-Reproducibility/blob/master/Computations/3DTiles/Lyon_Relief_Roads_Buildings_Water/Roads_from_relief.md) : Calculer les altitudes de routes (au format GeoJSON) à l'aide d'une [démo UD-Viz](#démo-ui-driven).
 
-### Documentation intégration de contenus multi-media
+#### Documentation intégration de contenus multi-media
 
 Méthode d'integration de multi-media tel que des fichiers texts, des images, des vidéos ou des vidéos 360. Cette méthode a pour but de contextualiser les modèles 3D de bâtiments dans la librairie [UD-viz](https://github.com/VCityTeam/UD-Viz).
 - [Configuration du fichier JSON]() : documentation sur la configuration du fichier JSON afin de lier contenus multi-medias et position géospatiale.
 - [Episode visualizer object](https://github.com/VCityTeam/UD-Demo-TIGA-Webdoc-ChemistryValley/blob/main/doc/PinsDoc.md) : Class d'intégration des multi-médias avec comme point d'entrée le fichier de configuration JSON.
 
-### Documentation couches de données WFS/WMS
+#### Documentation couches de données WFS/WMS
 
 Intégration de couches de données [WFS](https://www.geolittoral.developpement-durable.gouv.fr/IMG/pdf/note_explicative_wms_wfs_geolittoral.pdf) (Web Feature Service) et [WMS](https://www.geolittoral.developpement-durable.gouv.fr/IMG/pdf/note_explicative_wms_wfs_geolittoral.pdf) (Web Map service) dans la bibliothèque [UD-viz](https://github.com/VCityTeam/UD-Viz). Ces couches de données 2D permettent de contextualiser les modèles 3D des bâtiments d'un territoire. Un cas d'exemple de cette integration peut être retrouvé dans la [démo vallée de la chimie](#démo-vallée-de-la-chimie) avec un jeu de donnée 2D disponible sur le site [open data Grand Lyon](https://data.grandlyon.com/).
 
-## Données
+### Données
 
 - [Photos de la catastrophe Feyzin](<https://numelyo.bm-lyon.fr/BML:BML_01ICO001015c33b77d0036c?&collection_pid=BML:BML_01ICO00101&luckyStrike=1&query[]=isubjectgeographic:%22Feyzin%20(Rh%C3%B4ne)%22&hitPageSize=1&hitTotal=62&hitStart=24>)
 - [Modèle 3D de la métropole de Lyon](https://partage.liris.cnrs.fr/index.php/apps/files/?dir=/VCity/Data/Obj/Metropole%20de%20Lyon&fileid=251305282) : Données générées lors de projet étudiant de master en informatique.
