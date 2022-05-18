@@ -156,12 +156,12 @@ Afin d'améliorer la compréhension d'un territoire nous voulions contextualiser
 
 Cette approche a pu être utilisé dans le contexte du webdocumentaire du projet "Derrière les fumées". Des interviews d'acteurs de la vallée de la chimie ont été disposé dans la représentation numérique de cette zone afin d'avoir plus d'information sur l'activité de ce territoire.
 
-
 **Image intégration**
 
 ##### Integration de couches de données 2D
+Dans cette idée d'une meilleure compréhension du territoire, au dela d'une représentation 3D nous nous sommes intéressé à une visualisation 2D de celui-ci. En effet les données 2D urbaines apportent une nouvelle vision sur un territoire, et donne plus d'information sur celui-ci comme l'accessibilté de certains quartier grâce au réseau de transport en commun ou bien les zones végétalisées d'un arrondissement etc.
 
-Intégration de couches de données [WFS](https://www.geolittoral.developpement-durable.gouv.fr/IMG/pdf/note_explicative_wms_wfs_geolittoral.pdf) (Web Feature Service) et [WMS](https://www.geolittoral.developpement-durable.gouv.fr/IMG/pdf/note_explicative_wms_wfs_geolittoral.pdf) (Web Map service) dans la bibliothèque [UD-viz](https://github.com/VCityTeam/UD-Viz). Ces couches de données 2D permettent de contextualiser les modèles 3D des bâtiments d'un territoire. Un cas d'exemple de cette integration peut être retrouvé dans la [démo vallée de la chimie](#démo-vallée-de-la-chimie) avec un jeu de donnée 2D disponible sur le site [open data Grand Lyon](https://data.grandlyon.com/).
+L'intégration de couches de données se fait via des services [WFS](https://www.geolittoral.developpement-durable.gouv.fr/IMG/pdf/note_explicative_wms_wfs_geolittoral.pdf) (Web Feature Service) et [WMS](https://www.geolittoral.developpement-durable.gouv.fr/IMG/pdf/note_explicative_wms_wfs_geolittoral.pdf) (Web Map service) dans la bibliothèque [UD-viz](https://github.com/VCityTeam/UD-Viz). Un cas d'exemple de cette integration peut être retrouvé dans la [démo vallée de la chimie](#démo-vallée-de-la-chimie) avec un jeu de donnée 2D disponible sur le site [open data Grand Lyon](https://data.grandlyon.com/).
 
 **Image webdoc**
 
@@ -196,10 +196,11 @@ Cette démo permet de calculer la hauteur de routes en les plaçant sur le relie
 ##### **Démo Vallée de la chimie**
 
 - [Code](https://github.com/VCityTeam/UD-Demo-TIGA-Webdoc-ChemistryValley)
+- [Docker](https://github.com/VCityTeam/UD-Demo-TIGA-Webdoc-ChemistryValley-docker)
 - [Démo en ligne](https://www.derrierelesfumees.com/_Contenusdlf/Carte/index.html)
 
 
-La démo  [Vallée de la chimie](https://fr.wikipedia.org/wiki/Vall%C3%A9e_de_la_chimie) a été développer dans le cadre d'un web-documentaire en collaboration avec [Interfora](), un pôle de formation au métiers de la chimie. L'objectif de cette démo est de représenter le territoire de la [vallée de la chimie](https://fr.wikipedia.org/wiki/Vall%C3%A9e_de_la_chimie) et de le contextualiser à l'aide de document, d'interviews d'acteurs de ce territoire et données urbaines. Ces différents éléments sont disposés à des points d'intêret en lien avec le thème de l'industrie dans cette représentation numérique 3D.
+La démo  [Vallée de la chimie](https://fr.wikipedia.org/wiki/Vall%C3%A9e_de_la_chimie) a été développé dans le cadre d'un web-documentaire en collaboration avec [Interfora](https://www.interfora-ifaip.fr/), un pôle de formation au métiers de la chimie. L'objectif de cette démo est de représenter le territoire de la [vallée de la chimie](https://fr.wikipedia.org/wiki/Vall%C3%A9e_de_la_chimie) et de le contextualiser à l'aide de document, d'interviews d'acteurs de ce territoire et données urbaines. Ces différents éléments sont disposés à des points d'intêret en lien avec le thème de l'industrie dans cette représentation numérique 3D.
 
 ![chemistryvalley](https://user-images.githubusercontent.com/32339907/168281845-a47fbad9-f3cf-41db-8eb2-0b630ebea659.jpg)
 
