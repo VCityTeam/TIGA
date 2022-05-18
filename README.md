@@ -57,10 +57,10 @@ Dans ce contexte de reconnexion et grâce à la veille effectuée en amont, le L
 
 ### Développement
 
-#### 3D Tiles
+#### Modèles 3D
 *TO-Do : changer l'entrée, parler plus de model 3D de bâtiments et expliquer pourquoi on utilise le 3DTile*
 
-[3D Tiles](https://github.com/CesiumGS/3d-tiles) est un community standard open source, décrit par Cesium et l'OGC. Il a été pensé pour aider à la visualisation massive de contenu géospatial 3D, tout en prenant en compte les aspects de streaming et rendu. Ce standard permet de décrire un _tileset_ : un arbre de tuiles 3D . Chaque tuile contient des modèles 3D auxquels sont associés des données sémantiques. Un tileset permet une organisation spatiale des tuiles, optimisée pour le rendering d'objets 3D urbains, notamment en supportant différentes méthodes de tuilage (K-d tree, octree, etc) mais aussi le concept de _Hierarchical Level Of Detail_. Les niveaux de détail permettent d'alterner entre des géométries plus ou moins détaillées en fonction des besoins, par exemple en affichant des modèles très simplifiés de loin et détaillés lorsqu'on est proche.
+L'intéraction avec des données urbaines nécessite de résoudre un certain nombre de problématiques, telles que la visualisation massive d'objets 3D (bâtiments, ponts, végétation, etc) et la liaison des ces objets avec de la donnée sémantique. Pour répondre à ces problématiques, nous avons fait le choix d'utiliser le standard [3D Tiles](https://github.com/CesiumGS/3d-tiles), décrit par Cesium et l'OGC. 3D Tiles a été pensé pour aider à la visualisation massive de contenu géospatial 3D. Ce standard permet de décrire un _tileset_ : un arbre de tuiles 3D. Chaque tuile contient des modèles 3D auxquels sont associés des données sémantiques. Un tileset permet une organisation spatiale des tuiles, optimisée pour le rendu d'objets 3D urbains, notamment grâce à la hiérarchisation spatiale des objets, mais aussi grâce aux niveaux de détails. Les niveaux de détail permettent d'alterner entre des géométries plus ou moins détaillées en fonction des besoins, par exemple en affichant des modèles très simplifiés de loin et détaillés lorsqu'on est proche.
 
 Les tuiles peuvent avoir différents formats :
 
@@ -74,42 +74,17 @@ Dans les outils développés dans le cadre de TIGA, nous utilisons principalemen
 La méthode utilisée pour créer les 3D Tiles peut avoir un impact direct sur la visualisation des objets. Il est donc nécéssaire de disposer d'outils permettant de tester différentes méthodes de tuilage afin d'optimiser le rendu et la visualisation des modèles 3D depuis différentes sources. Il y a aussi le besoin d'offrir à l'utilisateur des outils lui permettant de créer des 3D Tiles depuis différentes données, en y ajoutant de la couleur, des textures et des niveaux de détail. C'est dans ces objectifs qu'on été développé [Py3DTiles](#py3dtiles) et [Py3DTilers](#py3dtilers).
 
 #### Py3DTiles
-*TO-Do : moins technique*
-[Py3DTiles](https://github.com/VCityTeam/py3dtiles/tree/Tiler) est une librairie Python permettant de manipuler les [3D Tiles](#3d-tiles). Originellement développé par [Oslandia](https://gitlab.com/Oslandia/py3dtiles), cette bibliothèque a été enrichie et robustifiée au cours du projet TIGA.
 
-L'objectif des modifications et ajouts est de permettre de produire des 3D Tiles de sorte à ce qu'ils puissent être facilement personnalisés selon les modalités de l'utilisateur puis facilement visualisés avec différents outils. Dans ce but, des développements ont notamment été effectués afin de s'assurer que les 3D Tiles produits soient fidèles à la spécification de l'OGC. Cela permet d'être sûr que les 3D Tiles créés avec Py3DIiles puissent être manipulés par tous les outils suivant la spécification. De plus, l'ajout de la possibilité de créer des extensions avec Py3DTiles permet d'enrichir les 3D Tiles selon les choix de l'utilisateur.
+[Py3DTiles](https://github.com/VCityTeam/py3dtiles/tree/Tiler) est une librairie libre permettant de produire les [3D Tiles](#3d-tiles). Elle offre des outils pour créer et personnaliser des 3D Tiles. Originellement développé par [Oslandia](https://gitlab.com/Oslandia/py3dtiles), cette bibliothèque a été enrichie et robustifiée au cours du projet TIGA.
 
-Ajouts:
-
-- Classes permettant de représenter les 3D Tiles en mémoire: Batch Table, Bounding Volume, Tile, Tileset.
-- Mécanisme pour ajouter des extensions, ainsi que 2 extensions:
-  - Batch Table Hierarchy: introduit la notion de hiérarchie et de typage dans la Batch Table.
-  - Extension Temporelle: permet d'ajouter la temporalité dans un tileset.
-- Validation de validation des 3D Tiles via schémas JSON.
-- Matériaux glTF: permet de créer des matériaux texturés ou colorés.
-
-Modifications:
-
-- Modification de la classe Feature Table pour qu'elle soit utilisable par les 3D Tiles au format B3DM.
-- Corrections de l'encodage/décodage des parties binaires des 3D Tiles au format B3DM.
-- Faire en sorte que les 3D Tiles produits soient fidèles à la spécification.
-- Amélioration de la lecture/écriture des 3D Tiles au format B3DM.
+Le premier objectif des modifications et ajouts apportés à Py3DTiles est de faciliter la production de modèles 3D Tiles et leur personnalisation. Pour cela, nous avons notamment ajouté le système de création d'extension : l'utilisateur peut étendre le standard afin d'y ajouter ses propres fonctionnalités. Nous avons aussi introduit dans la librairie la création de matériaux. Ces matériaux permettent de changer l'apparence des modèles 3D en y appliquant des couleurs et des textures.  
+Le second objectif du travail sur Py3DTiles est de s'assurer que les 3D Tiles produits avec cette librairie puissent être visualisés avec différents outils. Dans ce but, des développements ont été effectués afin de vérifier que les 3D Tiles soient fidèles au standard. Cela permet d'être sûr que les 3D Tiles créés avec Py3DIiles puissent être manipulés par tous les autres outils suivant aussi le standard.
 
 #### Py3DTilers
-*TO-Do : moins technique*
-[Py3DTilers](https://github.com/VCityTeam/py3dtilers) est un outil Python open source permettant de créer des [3D Tiles](https://github.com/CesiumGS/3d-tiles) depuis différents formats: [OBJ](https://en.wikipedia.org/wiki/Wavefront_.obj_file), [GeoJSON](https://en.wikipedia.org/wiki/GeoJSON), [IFC](https://en.wikipedia.org/wiki/Industry_Foundation_Classes) et [CityGML](https://en.wikipedia.org/wiki/CityGML) (via une base de donnée [3DCityDB](https://3dcitydb-docs.readthedocs.io/en/release-v4.2.3/).
 
-Py3DTilers utilise la librairie [Py3DTiles](#py3dtiles) pour sa représentation en mémoire des 3D Tiles.
+[Py3DTilers](https://github.com/VCityTeam/py3dtilers) est un outil libre développé dans le cadre du projet TIGA. Il permet de créer des [3D Tiles](https://github.com/CesiumGS/3d-tiles) depuis différents formats de données: [OBJ](https://en.wikipedia.org/wiki/Wavefront_.obj_file), [GeoJSON](https://en.wikipedia.org/wiki/GeoJSON), [IFC](https://en.wikipedia.org/wiki/Industry_Foundation_Classes) et [CityGML](https://en.wikipedia.org/wiki/CityGML). Ces formats de données sont utilisés pour représenter des données géographiques et urbaines, 2D ou 3D. Le support de ces différents formats permet de créer des 3D Tiles depuis un grand nombre de données, où chaque donnée peut être spécialisée pour représenter des objets de la ville en particulier. Par exemple, le format CityGML permet de représenter les géométries des bâtiments et du relief. Le format IFC décrit quant à lui plus en détail l'intérieur des bâtiments.
 
-Py3DTilers inclut des _Tilers_, permettant chacun de transformer un format précis de données en 3D Tiles. Ils sont au nombre de 5:
-
-- [ObjTiler](https://github.com/VCityTeam/py3dtilers/tree/master/py3dtilers/ObjTiler#readme): converti des fichiers OBJ en 3D Tiles
-- [GeojsonTiler](https://github.com/VCityTeam/py3dtilers/tree/master/py3dtilers/GeojsonTiler#readme): converti des fichiers GeoJSON en 3D Tiles
-- [IfcTiler](https://github.com/VCityTeam/py3dtilers/tree/master/py3dtilers/IfcTiler#readme): converti des fichiers IFC en 3D Tiles
-- [CityTiler](https://github.com/VCityTeam/py3dtilers/tree/master/py3dtilers/CityTiler#readme): converti des features CityGML (bâtiments, ponts, courts d'eau et relief) extraites d'un base 3DCityDB en 3D Tiles
-- [TilesetReader](https://github.com/VCityTeam/py3dtilers/tree/master/py3dtilers/TilesetReader#readme): lit, fusionne et transforme des tilesets 3D Tiles déjà existant
-
-Les Tilers partagent des [options communes](https://github.com/VCityTeam/py3dtilers/tree/master/py3dtilers/Common#common-tiler-features) pour personnaliser la création:
+Py3DTilers se base sur la librairie [Py3DTiles](#py3dtiles) décrite précédemment pour produire des 3D Tiles. Cet outil vient rajouter des _Tilers_, permettant chacun de transformer un format précis de données en 3D Tiles. Py3DTilers intègre également un grand nombre d'options et de fonctionnalités, dont les suivantes :
 
 - **La création de niveaux de détails**: permet d'ajouter un ou plusieurs niveaux de détails aux géométries. Cela permet de fluidifier le rendu en affichant des modèles 3D plus ou moins détaillés.
 - **La reprojection des données**: permet de modifier le système de projection utilisé pour les coordonnées. Cela permet par exemple de visualiser dans un même contexte des données ayant originellement des systèmes de projection différents. Cela permet aussi de s'adapter aux contraintes pouvant être imposées par les outils de visualisation de 3D Tiles.
