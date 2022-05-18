@@ -49,10 +49,6 @@ Dans ce contexte de reconnexion et grâce à la veille effectuée en amont, le L
    -  [Documentation couches de données WFS/WMS](#documentation-couches-de-données-WFS/WMS) -->
 -  [Données](#données) A compléter
 
-**TO-DO :**
-- [ ] être moins technique et mettre toute la partie technique dans d'autre page
-- [ ] Ajouter des légendes aux figures/images
-- [ ] environ 2/3 pages pour ce livrable
 ---
 
 ### Développement
@@ -205,7 +201,10 @@ La démo  [Vallée de la chimie](https://fr.wikipedia.org/wiki/Vall%C3%A9e_de_la
 *TO-DO : phrase d'intro + expliquer les différentes données blabla*
 
 *Mettre ce qu'on a utilisé et ce qu'on a fourni*
+
+
 - [Photos de la catastrophe Feyzin](<https://numelyo.bm-lyon.fr/BML:BML_01ICO001015c33b77d0036c?&collection_pid=BML:BML_01ICO00101&luckyStrike=1&query[]=isubjectgeographic:%22Feyzin%20(Rh%C3%B4ne)%22&hitPageSize=1&hitTotal=62&hitStart=24>)
 - [Tilesets 3D Tiles de Lyon](https://dataset-dl.liris.cnrs.fr/three-d-tiles-lyon-metropolis/Demo/UD-Demo-vcity-py3dtilers-lyon/) : 3D Tiles générés avec Py3DTilers (bâtiments, relief, routes, ponts, fleuves)
 - [Interviews vidéos d'acteurs](https://www.derrierelesfumees.com/_Contenusdlf/Carte/index.html) de la vallée de la chimie dans le contexte du projet ["Derrière les fumées"](https://www.derrierelesfumees.com/)
+ - Observatoire photographique de la Vallée de la chimie par Florent PERROUD
 
