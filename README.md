@@ -4,18 +4,22 @@
 
 **Fiche-action RECHERCHE du projet TIGA de la Métropole de Lyon Saint-Etienne**
 
+Les Métropoles de Lyon et Saint-Etienne en répondant conjointement, en 2018, à l’appel à projet de l’Etat dans le cadre du programme « Territoires d’Innovation » du Plan d’Investissement d’Avenir (PIA 3), ont affirmé leur volonté de mener ensemble des actions communes pour le développement économique de leur territoire. Cette candidature est l’illustration qu’une alliance territoriale impliquant citoyens, acteurs du privé, ensemble des acteurs publics et collectivités doit accompagner et faire émerger une transformation profonde de l’industrie. Ce vaste projet intitulé « L’industrie [re]connectée et intégrée à son territoire et à ses habitants » est construit autour de 18 actions pilotées par la Métropole de Lyon. Elles répondent à un triple objectif :
+- (1) Favoriser l’ancrage et la transformation de l’industrie en l’amenant vers le développement durable. 
+- (2) Créer un cadre de confiance aux échanges pour créer de la valeur.
+- (3) Faciliter l’accès et la création d’emploi grâce au développement d’une culture industrielle, à l’adaptation des compétences et à l’amélioration de la mobilité.
+
 Cette action a pour objectif de déceler, prototyper, expérimenter et valoriser sous un horizon de 3 ans des méthodes et des outils innovants pour la médiation industrielle. Elle vise à identifier des verrous scientifiques et proposer des solutions innovantes (supports matériels, numériques et méthodologiques) pour une interaction fluide et continue entre les acteurs du territoire.
 L'action 14 engage une dynamique qui vise à s'inscrire dans la pérennité, au-delà du projet TIGA Lyon Saint-Etienne, pour devenir un laboratoire permanant de cocréation, de recherche-action et d'interactions entre les acteurs du territoire.
 L'action 14 est un laboratoire de co-création et de recherche-action associant l'Université de Lyon, l'agence d'Urbanisme de Lyon, TUBA et la métropole de Lyon (ERASME, Direction de la Prospective et du Dialogue Public) qui s'enrichissent mutuellement et se combinent autour d'un processus commun de production.
 
-*TO-DO : Plus en détail ce qu'on fait*
-Dans ce contexte de reconnexion notre objectif est d'étudier les mécanismes de médiation, et leur possible application dans le cadre du projet TIGA. Nous cherchons à concevoir, prototyper, et transférer des nouvelles modalités de médiation industrielle mobilisant les cultures numériques du territoire. Ces modalités peuvent être sous différentes formes tel que des représentation 3D numérique d'un territoire, des outils de médiations ou bien des socles techniques pour aider à la construction d'outils de médiation. Ces socles techniques cherchent à être reproductibles et documentés afin qu'ils puissent être utilisable sous différentes thématiques, le tout dans un contexte open source.
+Dans le cadre du projet TIGA, le LIRIS (Laboratoire d'InfoRmatique en Image et Système d'information) a pour objectif d’étudier les mécanismes de médiation, et leur possible application. Il s’agit de détecter, étudier, puis proposer de nouvelles modalités de médiation sur le territoire qui permettent un rapprochement des acteurs qu’ils soient citoyens, issus de l’industrie, des collectivités, d’organismes de formation ou de recherche. Ce rapprochement peut se faire traditionnellement par la rencontre, l’objectif étant ici de voir comment favoriser celle-ci et de l’outiller afin de rendre le contexte plus favorable. Il s’agit aussi d’apporter des contenus qui devront pouvoir s’inscrire dans la durée et ainsi favoriser un échange à plus long terme permettant une méthodologie de suivi des acteurs, du territoire et de son évolution. Ce dernier point est important car il permettra la mise en place de modalités d’observation de ce qui est fait afin de pouvoir mesurer les éventuels impacts, apporter des améliorations, voire proposer un transfert pour dissémination (vers d’autres territoires ou d’autres cibles par exemple).
 
 Afin de mieux répondre à ce besoins de reconnexion il nous fallait effectuer une vieille de l'existant pour s'inspirer et être le plus efficace dans la conception d'outil de médiation.
 
 ## Livrable 2020 : Médiations et jeux , vers une meilleure interaction usagers-territoire
-*TO-DO : Plus de détails*
-Un premier livrable fourni en décembre 2020 cherchait à regrouper les outils de médiation. Cette vieille nous a permit de nous inspirer dans le développement de différents outils et ainsi mettre en pratique nos approches dans la reconnexion du citoyen et des industriels. Ce livrable a pour but de référencer tout le développement technique poduit depuis janvier 2021 ainsi que les différents cas d'utilisation de ces outils. 
+
+Un premier livrable fourni en décembre 2020 cherchait à regrouper les outils de médiation. Dans cette phase de veille, le premier axe d’”augmentation” choisi est l’utilisation de la ludification dans les processus d’interactions entre publics et d’acculturation. L’étude est basée sur une trentaine de jeux. Même si pour l’instant le filtre employé se veut assez large afin d’étudier les mécanismes et éventuellement les détourner pour une médiation plus orientée vers les objectifs de l’Action 14, un travail complémentaire est actuellement en cours avec une orientation plus forte vers la médiation industrielle.
 
 Lien en direction du [livrable 2020](./Livrables/Action14_UDL_LIRIS_2020.pdf) , Médiations et jeux , vers une meilleure interaction usagers-territoire.
 - [Veille](https://docs.google.com/spreadsheets/d/1WMBi1XcP12ggSY--qWQrSYCXhRfvsycCfQJ3W6OuaC4/edit?usp=sharing) : Veille sur les outils de médiations lié au thème de l'industrie.
@@ -23,6 +27,7 @@ Lien en direction du [livrable 2020](./Livrables/Action14_UDL_LIRIS_2020.pdf) , 
 
 ## Livrable 2022 : Développement technique pour des outils de médiation industrielle
 
+Dans ce contexte de reconnexion et grâce à la veille effectué en amont le LIRIS peut passer à la deuxième phase de son objectif qui est de concevoir, prototyper, et transférer des nouvelles modalités de médiation industrielle mobilisant les cultures numériques du territoire. Ces modalités peuvent être sous différentes formes tel que des représentation 3D numérique d'un territoire, des outils de médiations ou bien des socles techniques pour aider à la construction d'outils de médiation. Ces socles techniques cherchent à être reproductibles et documentés afin qu'ils puissent être utilisable sous différentes thématiques, le tout dans un contexte open source.
 ### Sommaire :
 *TO-DO: déplacer la documentation dans la partie développement*
 - [Développement](#développement)
@@ -54,6 +59,7 @@ Lien en direction du [livrable 2020](./Livrables/Action14_UDL_LIRIS_2020.pdf) , 
 
 #### 3D Tiles
 *TO-Do : changer l'entrée, parler plus de model 3D de bâtiments et expliquer pourquoi on utilise le 3DTile*
+
 [3D Tiles](https://github.com/CesiumGS/3d-tiles) est un community standard open source, décrit par Cesium et l'OGC. Il a été pensé pour aider à la visualisation massive de contenu géospatial 3D, tout en prenant en compte les aspects de streaming et rendu. Ce standard permet de décrire un _tileset_ : un arbre de tuiles 3D . Chaque tuile contient des modèles 3D auxquels sont associés des données sémantiques. Un tileset permet une organisation spatiale des tuiles, optimisée pour le rendering d'objets 3D urbains, notamment en supportant différentes méthodes de tuilage (K-d tree, octree, etc) mais aussi le concept de _Hierarchical Level Of Detail_. Les niveaux de détail permettent d'alterner entre des géométries plus ou moins détaillées en fonction des besoins, par exemple en affichant des modèles très simplifiés de loin et détaillés lorsqu'on est proche.
 
 Les tuiles peuvent avoir différents formats :
@@ -213,6 +219,7 @@ Intégration de couches de données [WFS](https://www.geolittoral.developpement-
 
 ### Données
 *TO-DO : phrase d'intro + expliquer les différentes données blabla*
+
 *Mettre ce qu'on a utilisé et ce qu'on a fourni*
 - [Photos de la catastrophe Feyzin](<https://numelyo.bm-lyon.fr/BML:BML_01ICO001015c33b77d0036c?&collection_pid=BML:BML_01ICO00101&luckyStrike=1&query[]=isubjectgeographic:%22Feyzin%20(Rh%C3%B4ne)%22&hitPageSize=1&hitTotal=62&hitStart=24>)
 - [Tilesets 3D Tiles de Lyon](https://dataset-dl.liris.cnrs.fr/three-d-tiles-lyon-metropolis/Demo/UD-Demo-vcity-py3dtilers-lyon/) : 3D Tiles générés avec Py3DTilers (bâtiments, relief, routes, ponts, fleuves)
