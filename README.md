@@ -41,12 +41,6 @@ Dans ce contexte de reconnexion et grâce à la veille effectuée en amont, le L
      -  [Démo Py3DTilers](#démo-py3dtilers)✔️
      -  [Démo UI-driven](#démo-ui-driven)✔️
      -  [Démo Vallée de la chimie](#démo-vallée-de-la-chimie)✔️
-<!-- -  [Documentations](#documentations) Mettre dans le developpement
-   -  [Documentation 3D Tiles](#documentation-3d-tiles)
-   -  [Documentation PostGIS/3DCityDB](#documentation-postgis/3dcitydb)
-   -  [Documentation calcul de données](#documentation-calcul-de-données)
-   -  [Documentation intégration de contenus multi-media](#documentation-intégration-de-contenus-multi-media)
-   -  [Documentation couches de données WFS/WMS](#documentation-couches-de-données-WFS/WMS) -->
 -  [Données](#données) A compléter
 
 **TO-DO :**
@@ -130,16 +124,18 @@ Afin d'améliorer la compréhension d'un territoire nous voulions contextualiser
 - [Configuration du fichier JSON]() : documentation sur la configuration du fichier JSON afin de lier contenus multi-medias et position géospatiale.
 - [Episode visualizer object](https://github.com/VCityTeam/UD-Demo-TIGA-Webdoc-ChemistryValley/blob/main/doc/PinsDoc.md) : programme d'intégration des multi-médias avec comme point d'entrée le fichier de configuration JSON.
 
-Cette approche a pu être utilisé dans le contexte du webdocumentaire du projet "Derrière les fumées". Des interviews d'acteurs de la vallée de la chimie ont été disposé dans la représentation numérique de cette zone afin d'avoir plus d'information sur l'activité de ce territoire.
+![contenue](https://user-images.githubusercontent.com/32339907/169073212-20ddc305-0926-4744-8424-6df0e0fe19e3.PNG)
 
-**Image intégration**
+
+Cette approche a pu être utilisé dans le contexte du webdocumentaire du projet "Derrière les fumées". Des interviews d'acteurs de la vallée de la chimie ont été disposé dans la représentation numérique de cette zone afin d'avoir plus d'information sur l'activité de ce territoire.
 
 ##### Integration de couches de données 2D
 Dans cette idée d'une meilleure compréhension du territoire, au dela d'une représentation 3D nous nous sommes intéressé à une visualisation 2D de celui-ci. En effet les données 2D urbaines apportent une nouvelle vision sur un territoire, et donne plus d'information sur celui-ci comme l'accessibilté de certains quartier grâce au réseau de transport en commun ou bien les zones végétalisées d'un arrondissement etc.
 
 L'intégration de couches de données se fait via des services [WFS](https://www.geolittoral.developpement-durable.gouv.fr/IMG/pdf/note_explicative_wms_wfs_geolittoral.pdf) (Web Feature Service) et [WMS](https://www.geolittoral.developpement-durable.gouv.fr/IMG/pdf/note_explicative_wms_wfs_geolittoral.pdf) (Web Map service) dans la bibliothèque [UD-viz](https://github.com/VCityTeam/UD-Viz). Un cas d'exemple de cette integration peut être retrouvé dans la [démo vallée de la chimie](#démo-vallée-de-la-chimie) avec un jeu de donnée 2D disponible sur le site [open data Grand Lyon](https://data.grandlyon.com/).
 
-**Image webdoc**
+![Capture](https://user-images.githubusercontent.com/32339907/169072790-425b4c26-053b-40fb-b5b3-771b9e34c315.PNG)
+
 
 #### Démos UD-Viz
 
