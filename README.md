@@ -27,7 +27,7 @@ Lien en direction du [livrable 2020](./Livrables/Action14_UDL_LIRIS_2020.pdf) , 
 
 ## Livrable 2022 : Développement technique pour des outils de médiation industrielle
 
-Dans ce contexte de reconnexion et grâce à la veille effectué en amont le LIRIS peut passer à la deuxième phase de son objectif qui est de concevoir, prototyper, et transférer des nouvelles modalités de médiation industrielle mobilisant les cultures numériques du territoire. Ces modalités peuvent être sous différentes formes tel que des représentation 3D numérique d'un territoire, des outils de médiations ou bien des socles techniques pour aider à la construction d'outils de médiation. Ces socles techniques cherchent à être reproductibles et documentés afin qu'ils puissent être utilisable sous différentes thématiques, le tout dans un contexte open source.
+Dans ce contexte de reconnexion et grâce à la veille effectuée en amont, le LIRIS peut passer à la deuxième phase de son objectif qui est de concevoir, prototyper, et transférer des nouvelles modalités de médiation industrielle mobilisant les cultures numériques du territoire. Ces modalités peuvent être sous différentes formes tel que des représentation 3D numérique d'un territoire, des outils de médiations ou bien des socles techniques pour aider à la construction d'outils de médiation. Ces socles techniques cherchent à être reproductibles et documentés afin qu'ils puissent être utilisable sous différentes thématiques, le tout dans un contexte open source.
 ### Sommaire :
 *TO-DO: déplacer la documentation dans la partie développement*
 - [Développement](#développement)
@@ -41,12 +41,12 @@ Dans ce contexte de reconnexion et grâce à la veille effectué en amont le LIR
      -  [Démo Py3DTilers](#démo-py3dtilers)✔️
      -  [Démo UI-driven](#démo-ui-driven)✔️
      -  [Démo Vallée de la chimie](#démo-vallée-de-la-chimie)✔️
--  [Documentations](#documentations) Mettre dans le developpement
+<!-- -  [Documentations](#documentations) Mettre dans le developpement
    -  [Documentation 3D Tiles](#documentation-3d-tiles)
    -  [Documentation PostGIS/3DCityDB](#documentation-postgis/3dcitydb)
    -  [Documentation calcul de données](#documentation-calcul-de-données)
    -  [Documentation intégration de contenus multi-media](#documentation-intégration-de-contenus-multi-media)
-   -  [Documentation couches de données WFS/WMS](#documentation-couches-de-données-WFS/WMS)
+   -  [Documentation couches de données WFS/WMS](#documentation-couches-de-données-WFS/WMS) -->
 -  [Données](#données) A compléter
 
 **TO-DO :**
@@ -149,6 +149,22 @@ En plus de ce travail sur le style par défaut des 3D Tiles, des modifications o
 
 ![texture_refine](https://user-images.githubusercontent.com/32875283/168042130-65e3b7a5-14d1-4783-a759-72606a9a1c33.gif)
 
+##### Integration de contenus multi-médias
+Afin d'améliorer la compréhension d'un territoire nous voulions contextualiser les modèles 3D de bâtiments avec des multi-médias. Ces multi-médias peuvent être des images d'archives, des vidéos d'acteurs du territoire ou des photos d'un observatoire photographique. Ce nouveau contenu apporte une autre dimension à la déambulation dans un environnement 3D et améliorer celui-ci avec plus d'informations sur celui-ci. Nous avons donc développé une méthode d'integration de multi-media qui se base sur la libraire [UD-viz](https://github.com/VCityTeam/UD-Viz) et est découpé en deux parties pour l'utiliser :
+- [Configuration du fichier JSON]() : documentation sur la configuration du fichier JSON afin de lier contenus multi-medias et position géospatiale.
+- [Episode visualizer object](https://github.com/VCityTeam/UD-Demo-TIGA-Webdoc-ChemistryValley/blob/main/doc/PinsDoc.md) : programme d'intégration des multi-médias avec comme point d'entrée le fichier de configuration JSON.
+
+Cette approche a pu être utilisé dans le contexte du webdocumentaire du projet "Derrière les fumées". Des interviews d'acteurs de la vallée de la chimie ont été disposé dans la représentation numérique de cette zone afin d'avoir plus d'information sur l'activité de ce territoire.
+
+
+**Image intégration**
+
+##### Integration de couches de données 2D
+
+Intégration de couches de données [WFS](https://www.geolittoral.developpement-durable.gouv.fr/IMG/pdf/note_explicative_wms_wfs_geolittoral.pdf) (Web Feature Service) et [WMS](https://www.geolittoral.developpement-durable.gouv.fr/IMG/pdf/note_explicative_wms_wfs_geolittoral.pdf) (Web Map service) dans la bibliothèque [UD-viz](https://github.com/VCityTeam/UD-Viz). Ces couches de données 2D permettent de contextualiser les modèles 3D des bâtiments d'un territoire. Un cas d'exemple de cette integration peut être retrouvé dans la [démo vallée de la chimie](#démo-vallée-de-la-chimie) avec un jeu de donnée 2D disponible sur le site [open data Grand Lyon](https://data.grandlyon.com/).
+
+**Image webdoc**
+
 #### Démos UD-Viz
 
 [UD-Viz-Template](https://github.com/VCityTeam/UD-Viz-Template) est un template d'application permettant des créer rapidement des démonstrations basées sur la librairie [UD-Viz](#ud-viz). Ces démonstrations permettent d'illustrer des fonctionnalités et/ou des données particulières.
@@ -207,15 +223,7 @@ La démo  [Vallée de la chimie](https://fr.wikipedia.org/wiki/Vall%C3%A9e_de_la
 
 - [Calcul d'altitude des routes](https://github.com/VCityTeam/UD-Reproducibility/blob/master/Computations/3DTiles/Lyon_Relief_Roads_Buildings_Water/Roads_from_relief.md) : Calculer les altitudes de routes (au format GeoJSON) à l'aide d'une [démo UD-Viz](#démo-ui-driven).
 
-#### Documentation intégration de contenus multi-media
 
-Méthode d'integration de multi-media tel que des fichiers texts, des images, des vidéos ou des vidéos 360. Cette méthode a pour but de contextualiser les modèles 3D de bâtiments dans la librairie [UD-viz](https://github.com/VCityTeam/UD-Viz).
-- [Configuration du fichier JSON]() : documentation sur la configuration du fichier JSON afin de lier contenus multi-medias et position géospatiale.
-- [Episode visualizer object](https://github.com/VCityTeam/UD-Demo-TIGA-Webdoc-ChemistryValley/blob/main/doc/PinsDoc.md) : Class d'intégration des multi-médias avec comme point d'entrée le fichier de configuration JSON.
-
-#### Documentation couches de données WFS/WMS
-
-Intégration de couches de données [WFS](https://www.geolittoral.developpement-durable.gouv.fr/IMG/pdf/note_explicative_wms_wfs_geolittoral.pdf) (Web Feature Service) et [WMS](https://www.geolittoral.developpement-durable.gouv.fr/IMG/pdf/note_explicative_wms_wfs_geolittoral.pdf) (Web Map service) dans la bibliothèque [UD-viz](https://github.com/VCityTeam/UD-Viz). Ces couches de données 2D permettent de contextualiser les modèles 3D des bâtiments d'un territoire. Un cas d'exemple de cette integration peut être retrouvé dans la [démo vallée de la chimie](#démo-vallée-de-la-chimie) avec un jeu de donnée 2D disponible sur le site [open data Grand Lyon](https://data.grandlyon.com/).
 
 ### Données
 *TO-DO : phrase d'intro + expliquer les différentes données blabla*
