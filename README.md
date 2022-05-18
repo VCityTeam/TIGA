@@ -8,12 +8,13 @@ Cette action a pour objectif de déceler, prototyper, expérimenter et valoriser
 L'action 14 engage une dynamique qui vise à s'inscrire dans la pérennité, au-delà du projet TIGA Lyon Saint-Etienne, pour devenir un laboratoire permanant de cocréation, de recherche-action et d'interactions entre les acteurs du territoire.
 L'action 14 est un laboratoire de co-création et de recherche-action associant l'Université de Lyon, l'agence d'Urbanisme de Lyon, TUBA et la métropole de Lyon (ERASME, Direction de la Prospective et du Dialogue Public) qui s'enrichissent mutuellement et se combinent autour d'un processus commun de production.
 
+*TO-DO : Plus en détail ce qu'on fait*
 Dans ce contexte de reconnexion notre objectif est d'étudier les mécanismes de médiation, et leur possible application dans le cadre du projet TIGA. Nous cherchons à concevoir, prototyper, et transférer des nouvelles modalités de médiation industrielle mobilisant les cultures numériques du territoire. Ces modalités peuvent être sous différentes formes tel que des représentation 3D numérique d'un territoire, des outils de médiations ou bien des socles techniques pour aider à la construction d'outils de médiation. Ces socles techniques cherchent à être reproductibles et documentés afin qu'ils puissent être utilisable sous différentes thématiques, le tout dans un contexte open source.
 
 Afin de mieux répondre à ce besoins de reconnexion il nous fallait effectuer une vieille de l'existant pour s'inspirer et être le plus efficace dans la conception d'outil de médiation.
 
 ## Livrable 2020 : Médiations et jeux , vers une meilleure interaction usagers-territoire
-
+*TO-DO : Plus de détails*
 Un premier livrable fourni en décembre 2020 cherchait à regrouper les outils de médiation. Cette vieille nous a permit de nous inspirer dans le développement de différents outils et ainsi mettre en pratique nos approches dans la reconnexion du citoyen et des industriels. Ce livrable a pour but de référencer tout le développement technique poduit depuis janvier 2021 ainsi que les différents cas d'utilisation de ces outils. 
 
 Lien en direction du [livrable 2020](./Livrables/Action14_UDL_LIRIS_2020.pdf) , Médiations et jeux , vers une meilleure interaction usagers-territoire.
@@ -23,25 +24,25 @@ Lien en direction du [livrable 2020](./Livrables/Action14_UDL_LIRIS_2020.pdf) , 
 ## Livrable 2022 : Développement technique pour des outils de médiation industrielle
 
 ### Sommaire :
-
+*TO-DO: déplacer la documentation dans la partie développement*
 - [Développement](#développement)
-  -  [3D Tiles](#3d-tiles)
-  -  [Py3DTiles](#py3dtiles)
-  -  [Py3DTilers](#py3dtilers)
-  -  [Docker Py3DTilers](#docker-py3dtilers)
-  -  [UD-Viz](#ud-viz)
-     -  [Couleurs et textures](#couleurs-et-textures)
-  -  [Démos UD-Viz](#démos-ud-viz)
-     -  [Démo Py3DTilers](#démo-py3dtilers)
-     -  [Démo UI-driven](#démo-ui-driven)
-     -  [Démo Vallée de la chimie](#démo-vallée-de-la-chimie)
--  [Documentations](#documentations)
+  -  [3D Tiles](#3d-tiles) A revoir
+  -  [Py3DTiles](#py3dtiles) A revoir
+  -  [Py3DTilers](#py3dtilers) A revoir
+  -  [Docker Py3DTilers](#docker-py3dtilers) A revoir
+  -  [UD-Viz](#ud-viz) ✔️
+     -  [Couleurs et textures](#couleurs-et-textures)✔️
+  -  [Démos UD-Viz](#démos-ud-viz)✔️
+     -  [Démo Py3DTilers](#démo-py3dtilers)✔️
+     -  [Démo UI-driven](#démo-ui-driven)✔️
+     -  [Démo Vallée de la chimie](#démo-vallée-de-la-chimie)✔️
+-  [Documentations](#documentations) Mettre dans le developpement
    -  [Documentation 3D Tiles](#documentation-3d-tiles)
    -  [Documentation PostGIS/3DCityDB](#documentation-postgis/3dcitydb)
    -  [Documentation calcul de données](#documentation-calcul-de-données)
    -  [Documentation intégration de contenus multi-media](#documentation-intégration-de-contenus-multi-media)
    -  [Documentation couches de données WFS/WMS](#documentation-couches-de-données-WFS/WMS)
--  [Données](#données)
+-  [Données](#données) A compléter
 
 **TO-DO :**
 - [ ] être moins technique et mettre toute la partie technique dans d'autre page
@@ -52,7 +53,7 @@ Lien en direction du [livrable 2020](./Livrables/Action14_UDL_LIRIS_2020.pdf) , 
 ### Développement
 
 #### 3D Tiles
-
+*TO-Do : changer l'entrée, parler plus de model 3D de bâtiments et expliquer pourquoi on utilise le 3DTile*
 [3D Tiles](https://github.com/CesiumGS/3d-tiles) est un community standard open source, décrit par Cesium et l'OGC. Il a été pensé pour aider à la visualisation massive de contenu géospatial 3D, tout en prenant en compte les aspects de streaming et rendu. Ce standard permet de décrire un _tileset_ : un arbre de tuiles 3D . Chaque tuile contient des modèles 3D auxquels sont associés des données sémantiques. Un tileset permet une organisation spatiale des tuiles, optimisée pour le rendering d'objets 3D urbains, notamment en supportant différentes méthodes de tuilage (K-d tree, octree, etc) mais aussi le concept de _Hierarchical Level Of Detail_. Les niveaux de détail permettent d'alterner entre des géométries plus ou moins détaillées en fonction des besoins, par exemple en affichant des modèles très simplifiés de loin et détaillés lorsqu'on est proche.
 
 Les tuiles peuvent avoir différents formats :
@@ -67,7 +68,7 @@ Dans les outils développés dans le cadre de TIGA, nous utilisons principalemen
 La méthode utilisée pour créer les 3D Tiles peut avoir un impact direct sur la visualisation des objets. Il est donc nécéssaire de disposer d'outils permettant de tester différentes méthodes de tuilage afin d'optimiser le rendu et la visualisation des modèles 3D depuis différentes sources. Il y a aussi le besoin d'offrir à l'utilisateur des outils lui permettant de créer des 3D Tiles depuis différentes données, en y ajoutant de la couleur, des textures et des niveaux de détail. C'est dans ces objectifs qu'on été développé [Py3DTiles](#py3dtiles) et [Py3DTilers](#py3dtilers).
 
 #### Py3DTiles
-
+*TO-Do : moins technique*
 [Py3DTiles](https://github.com/VCityTeam/py3dtiles/tree/Tiler) est une librairie Python permettant de manipuler les [3D Tiles](#3d-tiles). Originellement développé par [Oslandia](https://gitlab.com/Oslandia/py3dtiles), cette bibliothèque a été enrichie et robustifiée au cours du projet TIGA.
 
 L'objectif des modifications et ajouts est de permettre de produire des 3D Tiles de sorte à ce qu'ils puissent être facilement personnalisés selon les modalités de l'utilisateur puis facilement visualisés avec différents outils. Dans ce but, des développements ont notamment été effectués afin de s'assurer que les 3D Tiles produits soient fidèles à la spécification de l'OGC. Cela permet d'être sûr que les 3D Tiles créés avec Py3DIiles puissent être manipulés par tous les outils suivant la spécification. De plus, l'ajout de la possibilité de créer des extensions avec Py3DTiles permet d'enrichir les 3D Tiles selon les choix de l'utilisateur.
@@ -89,7 +90,7 @@ Modifications:
 - Amélioration de la lecture/écriture des 3D Tiles au format B3DM.
 
 #### Py3DTilers
-
+*TO-Do : moins technique*
 [Py3DTilers](https://github.com/VCityTeam/py3dtilers) est un outil Python open source permettant de créer des [3D Tiles](https://github.com/CesiumGS/3d-tiles) depuis différents formats: [OBJ](https://en.wikipedia.org/wiki/Wavefront_.obj_file), [GeoJSON](https://en.wikipedia.org/wiki/GeoJSON), [IFC](https://en.wikipedia.org/wiki/Industry_Foundation_Classes) et [CityGML](https://en.wikipedia.org/wiki/CityGML) (via une base de donnée [3DCityDB](https://3dcitydb-docs.readthedocs.io/en/release-v4.2.3/).
 
 Py3DTilers utilise la librairie [Py3DTiles](#py3dtiles) pour sa représentation en mémoire des 3D Tiles.
@@ -114,7 +115,7 @@ Les Tilers partagent des [options communes](https://github.com/VCityTeam/py3dtil
 Toutes les options de Py3DTilers permettent d’obtenir un outil offrant une grande polyvalence. De plus, l'architure de code permet de rapidement ajouter des nouvelles fonctionnalités ou de personnaliser celles qui existent déjà. Py3DTilers permet à l’utilisateur un contrôle total du processus de création de 3D Tiles, que ce soit via les options ou via la modification du code. L'outil permet de personnaliser les tilesets produits, de tester de nouvelles modalités de répartition des tuiles ou de création de niveaux de détail. Py3DTilers se veut l’outil idéal pour innover ou expérimenter autour des 3D Tiles, et proposer des améliorations du standard.
 
 #### Docker Py3DTilers
-
+*TO-DO : faire la liste des dockers + expliquer ce qu'est un docker et son utilité*
 Permet d'utiliser [Py3DTilers](#py3dtilers) via un [docker](https://github.com/VCityTeam/py3dtilers-docker).
 
 Ce programme permet d'utiliser toutes les fonctionnalités de Py3DTilers sans effectuer toutes les installations préalables.
@@ -211,9 +212,9 @@ Méthode d'integration de multi-media tel que des fichiers texts, des images, de
 Intégration de couches de données [WFS](https://www.geolittoral.developpement-durable.gouv.fr/IMG/pdf/note_explicative_wms_wfs_geolittoral.pdf) (Web Feature Service) et [WMS](https://www.geolittoral.developpement-durable.gouv.fr/IMG/pdf/note_explicative_wms_wfs_geolittoral.pdf) (Web Map service) dans la bibliothèque [UD-viz](https://github.com/VCityTeam/UD-Viz). Ces couches de données 2D permettent de contextualiser les modèles 3D des bâtiments d'un territoire. Un cas d'exemple de cette integration peut être retrouvé dans la [démo vallée de la chimie](#démo-vallée-de-la-chimie) avec un jeu de donnée 2D disponible sur le site [open data Grand Lyon](https://data.grandlyon.com/).
 
 ### Données
-
+*TO-DO : phrase d'intro + expliquer les différentes données blabla*
+*Mettre ce qu'on a utilisé et ce qu'on a fourni*
 - [Photos de la catastrophe Feyzin](<https://numelyo.bm-lyon.fr/BML:BML_01ICO001015c33b77d0036c?&collection_pid=BML:BML_01ICO00101&luckyStrike=1&query[]=isubjectgeographic:%22Feyzin%20(Rh%C3%B4ne)%22&hitPageSize=1&hitTotal=62&hitStart=24>)
-- [Modèle 3D de la métropole de Lyon](https://partage.liris.cnrs.fr/index.php/apps/files/?dir=/VCity/Data/Obj/Metropole%20de%20Lyon&fileid=251305282) : Données générées lors de projet étudiant de master en informatique.
 - [Tilesets 3D Tiles de Lyon](https://dataset-dl.liris.cnrs.fr/three-d-tiles-lyon-metropolis/Demo/UD-Demo-vcity-py3dtilers-lyon/) : 3D Tiles générés avec Py3DTilers (bâtiments, relief, routes, ponts, fleuves)
 - [Interviews vidéos d'acteurs](https://www.derrierelesfumees.com/_Contenusdlf/Carte/index.html) de la vallée de la chimie dans le contexte du projet ["Derrière les fumées"](https://www.derrierelesfumees.com/)
 
