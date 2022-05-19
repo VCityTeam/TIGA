@@ -43,7 +43,7 @@ Dans ce contexte de reconnexion et grâce à la veille effectuée en amont, le L
      -  [Démo UI-driven](#démo-ui-driven)✔️
      -  [Démo Vallée de la chimie](#démo-vallée-de-la-chimie)✔️
   -  [Docker](#docker) A revoir
--  [Données](#données) A compléter
+-  [Conclusion](#conclusion) A compléter
 
 ---
 
@@ -173,6 +173,9 @@ La démo  [Vallée de la chimie](https://fr.wikipedia.org/wiki/Vall%C3%A9e_de_la
 
 ![chemistryvalley](https://user-images.githubusercontent.com/32339907/168281845-a47fbad9-f3cf-41db-8eb2-0b630ebea659.jpg)
 
+Pour produire cette démonstration nous avons récupéré les données cityGML disponible sur l'open data grand lyon pour ensuite les traiter avec py3DTiles et générer les 3DTiles ([3D Tiles générés avec Py3DTilers](https://dataset-dl.liris.cnrs.fr/three-d-tiles-lyon-metropolis/Demo/UD-Demo-vcity-py3dtilers-lyon/) : bâtiments, relief, routes, ponts, fleuves ) de la vallée de la chimie. En complément de ces modèles 3D nous intégré les [photos de l'observatoire de la vallée de la chimie](https://umap.openstreetmap.fr/fr/map/vallee-de-la-chimie-observatoire-photographique_233823#18/45.68050/4.86110) produit par Florent PERROUD et les images d'archives de la catasptrophes de Feyzin en libre accès sur le site la bibliothèque municipale de Lyon ([lien des photos](https://numelyo.bm-lyon.fr/BML:BML_01ICO001015c33b77d0036c?&collection_pid=BML:BML_01ICO00101&luckyStrike=1&query[]=isubjectgeographic:%22Feyzin%20(Rh%C3%B4ne)%22&hitPageSize=1&hitTotal=62&hitStart=24)) 
+
+
 #### Docker
 
 Docker est un outil permettant de lancer des applications dans un contexte déterminé et isolé. Les applications ne sont ainsi pas exécutées directement sur la machine hôte, mais dans un contexte maitrisé. Une application contenue dans un Docker sera toujours exécutée de la même manière, les versions des différents composants sont figées. Cela permet de s'assurer que l'application pourra être utilisé sur n'importe quelle machine, sans soucis d'installation et sans erreurs de versions de logiciels.
@@ -194,16 +197,8 @@ Chaque docker listé est une application des différents outils développés dan
 - [Article Py3DTilers](./Livrables/article_py3dtilers.pdf) : Article de recherche sur Py3DTilers et ses fonctionnalités
 - [Article intégration de multimedia dans une représentation 3D numérique](./Livrable/Integrating_multimedia_documents_for_augmented_models_to_a_better_understanding_of_its_territory.pdf) : Article de recherche sur l'intégration de multimédia dans une représentation 3D d'un territoire afin d'apporter plus d'information sur celui-ci et mieux le comprendre.
 
-### Données
-*TO-DO : phrase d'intro + expliquer les différentes données blabla*
-
-*Mettre ce qu'on a utilisé et ce qu'on a fourni*
 
 
-- [Photos de la catastrophe Feyzin](<https://numelyo.bm-lyon.fr/BML:BML_01ICO001015c33b77d0036c?&collection_pid=BML:BML_01ICO00101&luckyStrike=1&query[]=isubjectgeographic:%22Feyzin%20(Rh%C3%B4ne)%22&hitPageSize=1&hitTotal=62&hitStart=24>)
-- [Tilesets 3D Tiles de Lyon](https://dataset-dl.liris.cnrs.fr/three-d-tiles-lyon-metropolis/Demo/UD-Demo-vcity-py3dtilers-lyon/) : 3D Tiles générés avec Py3DTilers (bâtiments, relief, routes, ponts, fleuves)
-- [Interviews vidéos d'acteurs](https://www.derrierelesfumees.com/_Contenusdlf/Carte/index.html) de la vallée de la chimie dans le contexte du projet ["Derrière les fumées"](https://www.derrierelesfumees.com/)
- - Observatoire photographique de la Vallée de la chimie par Florent PERROUD
 
 ## Conclusion
 
