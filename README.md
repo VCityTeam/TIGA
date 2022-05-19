@@ -25,7 +25,7 @@ Lien en direction du [livrable 2020](./Livrables/Action14_UDL_LIRIS_2020.pdf) , 
 - [Veille](https://docs.google.com/spreadsheets/d/1WMBi1XcP12ggSY--qWQrSYCXhRfvsycCfQJ3W6OuaC4/edit?usp=sharing) : Veille sur les outils de médiations lié au thème de l'industrie.
 - [Mind map](https://docs.google.com/spreadsheets/d/1WMBi1XcP12ggSY--qWQrSYCXhRfvsycCfQJ3W6OuaC4/edit?usp=sharing) : Carte mentale de la veille des outils de médiations lié à TIGA donnant une autre approche de visualisation de celle-ci afin de mieux les catégoriser.
 
-## Livrable 2022 : Développement technique pour des outils de médiation industrielle
+## Livrable 2022 : Développement technique pour des outils de médiations industrielles
 
 Dans ce contexte de reconnexion et grâce à la veille effectuée en amont, le LIRIS peut passer à la deuxième phase de son objectif qui est de concevoir, prototyper, et transférer des nouvelles modalités de médiation industrielle mobilisant les cultures numériques du territoire. Ces modalités peuvent être sous différentes formes, telles que des représentations 3D numériques d'un territoire, des outils de médiation ou bien des socles techniques pour aider à la construction d'outils de médiation. Ces socles techniques cherchent à être reproductibles et documentés afin qu'ils puissent être utilisables sous différentes thématiques, le tout dans un contexte open source.
 
@@ -35,14 +35,14 @@ Dans ce contexte de reconnexion et grâce à la veille effectuée en amont, le L
   -  [3D Tiles](#3d-tiles)
   -  [Py3DTiles](#py3dtiles)
   -  [Py3DTilers](#py3dtilers)
-  -  [UD-Viz](#ud-viz) ✔️
-     -  [Couleurs et textures](#couleurs-et-textures)✔️
+  -  [UD-Viz](#ud-viz) 
+     -  [Couleurs et textures](#couleurs-et-textures)
      -  [Integration de contenus multi-médias](#integration-de-contenus-multi-médias)
      -  [Integration de couches de données 2D](#integration-de-couches-de-données-2D)
-  -  [Démos UD-Viz](#démos-ud-viz)✔️
-     -  [Démo Py3DTilers](#démo-py3dtilers)✔️
-     -  [Démo UI-driven](#démo-ui-driven)✔️
-     -  [Démo Vallée de la chimie](#démo-vallée-de-la-chimie)✔️
+  -  [Démos UD-Viz](#démos-ud-viz)
+     -  [Démo Py3DTilers](#démo-py3dtilers)
+     -  [Démo UI-driven](#démo-ui-driven)
+     -  [Démo Vallée de la chimie](#démo-vallée-de-la-chimie)
   -  [Docker](#docker)
 -  [Conclusion](#conclusion) A compléter
 
@@ -198,4 +198,4 @@ Chaque docker listé est une application des différents outils développés dan
 
 ## Conclusion
 La veille nous a permis de nous orienter vers ces premiers outils de médiation dans le but de rapprocher les différentes acteurs du territoire de la métropole de Lyon. Ces différents outils ont permis la création de nouvelles représentations numériques 3D. Grâce aux améliorations apportées sur cette visualisation nous avons cherché à améliorer la compréhention du citoyen de son territoire. A l'aide de py3dtilers et de l'integration de document dans un visulisation 3D nous avons développé un web-documentaire pour aider à cette reconnexion habitant et industriel. Le tout dans une approche reproductible et open source afin que ces socles techniques puissent être réutilisable et sur différentes thématique. 
-Les prochaines étapes de ces outils de médiation sont d'être mis à l'épreuve face au citoyen et industriel à travers des ateliers de médiations. Afin d'avoir des retours sur l'efficacté de ceux-ci pour l'objectif du projet TIGA sur la reconnexion industrie, territoire et citoyen.
+Les prochaines étapes de ces outils de médiation sont d'être mis à l'épreuve face au citoyen et industriel à travers des ateliers de médiations. Une prochaine étape est d'améliorer la représentation numérique 3D en apportant une maquette tangible d'un quartier et d'y projeter de la donnée sur celle-ci. Nous pourrions animer des ateliers autour de cette maquette augmentée afin d'avoir des retours sur l'efficacité de ces outils de médiation pour répondre au mieux à l'objectif du projet TIGA sur la reconnexion industrie, territoire et citoyen. 
