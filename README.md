@@ -29,11 +29,11 @@ Lien en direction du [livrable 2020](./Livrables/Action14_UDL_LIRIS_2020.pdf) , 
 
 Dans ce contexte de reconnexion et grâce à la veille effectuée en amont, le LIRIS peut passer à la deuxième phase de son objectif qui est de concevoir, prototyper, et transférer des nouvelles modalités de médiation industrielle mobilisant les cultures numériques du territoire. Ces modalités peuvent être sous différentes formes tel que des représentation 3D numérique d'un territoire, des outils de médiations ou bien des socles techniques pour aider à la construction d'outils de médiation. Ces socles techniques cherchent à être reproductibles et documentés afin qu'ils puissent être utilisable sous différentes thématiques, le tout dans un contexte open source.
 ### Sommaire :
-*TO-DO: déplacer la documentation dans la partie développement*
+
 - [Développement](#développement)
-  -  [3D Tiles](#3d-tiles) A revoir
-  -  [Py3DTiles](#py3dtiles) A revoir
-  -  [Py3DTilers](#py3dtilers) A revoir
+  -  [3D Tiles](#3d-tiles)
+  -  [Py3DTiles](#py3dtiles)
+  -  [Py3DTilers](#py3dtilers)
   -  [UD-Viz](#ud-viz) ✔️
      -  [Couleurs et textures](#couleurs-et-textures)✔️
      -  [Integration de contenus multi-médias](#integration-de-contenus-multi-médias)
@@ -42,7 +42,7 @@ Dans ce contexte de reconnexion et grâce à la veille effectuée en amont, le L
      -  [Démo Py3DTilers](#démo-py3dtilers)✔️
      -  [Démo UI-driven](#démo-ui-driven)✔️
      -  [Démo Vallée de la chimie](#démo-vallée-de-la-chimie)✔️
-  -  [Docker](#docker) A revoir
+  -  [Docker](#docker)
 -  [Conclusion](#conclusion) A compléter
 
 ---
@@ -50,7 +50,6 @@ Dans ce contexte de reconnexion et grâce à la veille effectuée en amont, le L
 ### Développement
 
 #### Modèles 3D
-*TO-Do : changer l'entrée, parler plus de model 3D de bâtiments et expliquer pourquoi on utilise le 3DTile*
 
 L'intéraction avec des données urbaines nécessite de résoudre un certain nombre de problématiques, telles que la visualisation massive d'objets 3D (bâtiments, ponts, végétation, etc) et la liaison des ces objets avec de la donnée sémantique. Pour répondre à ces problématiques, nous avons fait le choix d'utiliser le standard [3D Tiles](https://github.com/CesiumGS/3d-tiles), décrit par Cesium et l'OGC. 3D Tiles a été pensé pour aider à la visualisation massive de contenu géospatial 3D. Ce standard permet de décrire un _tileset_ : un arbre de tuiles 3D. Chaque tuile contient des modèles 3D auxquels sont associés des données sémantiques. Un tileset permet une organisation spatiale des tuiles, optimisée pour le rendu d'objets 3D urbains, notamment grâce à la hiérarchisation spatiale des objets, mais aussi grâce aux niveaux de détails. Les niveaux de détail permettent d'alterner entre des géométries plus ou moins détaillées en fonction des besoins, par exemple en affichant des modèles très simplifiés de loin et détaillés lorsqu'on est proche.
 
@@ -112,7 +111,7 @@ En plus de ce travail sur le style par défaut des 3D Tiles, des modifications o
 
 ![texture_refine](https://user-images.githubusercontent.com/32875283/168042130-65e3b7a5-14d1-4783-a759-72606a9a1c33.gif)
 
-##### Integration de contenus multi-médias
+##### **Integration de contenus multi-médias**
 Afin d'améliorer la compréhension d'un territoire nous voulions contextualiser les modèles 3D de bâtiments avec des multi-médias. Ces multi-médias peuvent être des images d'archives, des vidéos d'acteurs du territoire ou des photos d'un observatoire photographique. Ce nouveau contenu apporte une autre dimension à la déambulation dans un environnement 3D et améliorer celui-ci avec plus d'informations sur celui-ci. Nous avons donc développé une méthode d'integration de multi-media qui se base sur la libraire [UD-viz](https://github.com/VCityTeam/UD-Viz) et est découpé en deux parties pour l'utiliser :
 - [Configuration du fichier JSON]() : documentation sur la configuration du fichier JSON afin de lier contenus multi-medias et position géospatiale.
 - [Episode visualizer object](https://github.com/VCityTeam/UD-Demo-TIGA-Webdoc-ChemistryValley/blob/main/doc/PinsDoc.md) : programme d'intégration des multi-médias avec comme point d'entrée le fichier de configuration JSON.
@@ -123,7 +122,7 @@ Afin d'améliorer la compréhension d'un territoire nous voulions contextualiser
 Cette approche a pu être utilisé dans le contexte du webdocumentaire du projet "Derrière les fumées". Des interviews d'acteurs de la vallée de la chimie ont été disposé dans la représentation numérique de cette zone afin d'avoir plus d'information sur l'activité de ce territoire.
 Ce socle technique est documenté dans la librairie UD-Viz mais a également un article scientifique sur  l'intégration de multimedia dans une représentation 3D numérique sousmis à la même conférence internationale que Py3dTilers,[Smart Data Smart Cities & 3D GeoInfo](https://conference.unsw.edu.au/en/sdsc-3dgeoinfo) ([Article intégration de multimedia dans une représentation 3D numérique](./Livrable/Integrating_multimedia_documents_for_augmented_models_to_a_better_understanding_of_its_territory.pdf)).
 
-##### Integration de couches de données 2D
+##### **Integration de couches de données 2D**
 Dans cette idée d'une meilleure compréhension du territoire, au dela d'une représentation 3D nous nous sommes intéressé à une visualisation 2D de celui-ci. En effet les données 2D urbaines apportent une nouvelle vision sur un territoire, et donne plus d'information sur celui-ci comme l'accessibilté de certains quartier grâce au réseau de transport en commun ou bien les zones végétalisées d'un arrondissement etc.
 
 L'intégration de couches de données se fait via des services [WFS](https://www.geolittoral.developpement-durable.gouv.fr/IMG/pdf/note_explicative_wms_wfs_geolittoral.pdf) (Web Feature Service) et [WMS](https://www.geolittoral.developpement-durable.gouv.fr/IMG/pdf/note_explicative_wms_wfs_geolittoral.pdf) (Web Map service) dans la bibliothèque [UD-viz](https://github.com/VCityTeam/UD-Viz).
