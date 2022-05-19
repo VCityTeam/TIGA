@@ -197,4 +197,5 @@ Chaque docker listé est une application des différents outils développés dan
 
 
 ## Conclusion
-
+La veille nous a permis de nous orienter vers ces premiers outils de médiation dans le but de rapprocher les différentes acteurs du territoire de la métropole de Lyon. Ces différents outils ont permis la création de nouvelles représentations numériques 3D. Grâce aux améliorations apportées sur cette visualisation nous avons cherché à améliorer la compréhention du citoyen de son territoire. A l'aide de py3dtilers et de l'integration de document dans un visulisation 3D nous avons développé un web-documentaire pour aider à cette reconnexion habitant et industriel. Le tout dans une approche reproductible et open source afin que ces socles techniques puissent être réutilisable et sur différentes thématique. 
+Les prochaines étapes de ces outils de médiation sont d'être mis à l'épreuve face au citoyen et industriel à travers des ateliers de médiations. Afin d'avoir des retours sur l'efficacté de ceux-ci pour l'objectif du projet TIGA sur la reconnexion industrie, territoire et citoyen.
