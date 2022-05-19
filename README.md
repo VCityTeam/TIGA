@@ -25,7 +25,7 @@ Lien en direction du [livrable 2020](./Livrables/Action14_UDL_LIRIS_2020.pdf) , 
 - [Veille](https://docs.google.com/spreadsheets/d/1WMBi1XcP12ggSY--qWQrSYCXhRfvsycCfQJ3W6OuaC4/edit?usp=sharing) : Veille sur les outils de médiations lié au thème de l'industrie.
 - [Mind map](https://docs.google.com/spreadsheets/d/1WMBi1XcP12ggSY--qWQrSYCXhRfvsycCfQJ3W6OuaC4/edit?usp=sharing) : Carte mentale de la veille des outils de médiations lié à TIGA donnant une autre approche de visualisation de celle-ci afin de mieux les catégoriser.
 
-## Livrable 2022 : Développement technique pour des outils de médiation industrielle
+## Livrable 2022 : Développement technique pour des outils de médiations industrielles
 
 Dans ce contexte de reconnexion et grâce à la veille effectuée en amont, le LIRIS peut passer à la deuxième phase de son objectif qui est de concevoir, prototyper, et transférer des nouvelles modalités de médiation industrielle mobilisant les cultures numériques du territoire. Ces modalités peuvent être sous différentes formes, telles que des représentations 3D numériques d'un territoire, des outils de médiation ou bien des socles techniques pour aider à la construction d'outils de médiation. Ces socles techniques cherchent à être reproductibles et documentés afin qu'ils puissent être utilisables sous différentes thématiques, le tout dans un contexte open source.
 
@@ -35,14 +35,14 @@ Dans ce contexte de reconnexion et grâce à la veille effectuée en amont, le L
   -  [3D Tiles](#3d-tiles)
   -  [Py3DTiles](#py3dtiles)
   -  [Py3DTilers](#py3dtilers)
-  -  [UD-Viz](#ud-viz) ✔️
-     -  [Couleurs et textures](#couleurs-et-textures)✔️
+  -  [UD-Viz](#ud-viz) 
+     -  [Couleurs et textures](#couleurs-et-textures)
      -  [Integration de contenus multi-médias](#integration-de-contenus-multi-médias)
      -  [Integration de couches de données 2D](#integration-de-couches-de-données-2D)
-  -  [Démos UD-Viz](#démos-ud-viz)✔️
-     -  [Démo Py3DTilers](#démo-py3dtilers)✔️
-     -  [Démo UI-driven](#démo-ui-driven)✔️
-     -  [Démo Vallée de la chimie](#démo-vallée-de-la-chimie)✔️
+  -  [Démos UD-Viz](#démos-ud-viz)
+     -  [Démo Py3DTilers](#démo-py3dtilers)
+     -  [Démo UI-driven](#démo-ui-driven)
+     -  [Démo Vallée de la chimie](#démo-vallée-de-la-chimie)
   -  [Docker](#docker)
 -  [Conclusion](#conclusion) A compléter
 
