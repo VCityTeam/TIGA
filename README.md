@@ -37,6 +37,8 @@ Dans ce contexte de reconnexion et grâce à la veille effectuée en amont, le L
   -  [Docker Py3DTilers](#docker-py3dtilers) A revoir
   -  [UD-Viz](#ud-viz) ✔️
      -  [Couleurs et textures](#couleurs-et-textures)✔️
+     -  [Integration de contenus multi-médias](#integration-de-contenus-multi-médias)
+     -  [Integration de couches de données 2D](#integration-de-couches-de-données-2D)
   -  [Démos UD-Viz](#démos-ud-viz)✔️
      -  [Démo Py3DTilers](#démo-py3dtilers)✔️
      -  [Démo UI-driven](#démo-ui-driven)✔️
@@ -133,19 +135,23 @@ Cette approche a pu être utilisé dans le contexte du webdocumentaire du projet
 ##### Integration de couches de données 2D
 Dans cette idée d'une meilleure compréhension du territoire, au dela d'une représentation 3D nous nous sommes intéressé à une visualisation 2D de celui-ci. En effet les données 2D urbaines apportent une nouvelle vision sur un territoire, et donne plus d'information sur celui-ci comme l'accessibilté de certains quartier grâce au réseau de transport en commun ou bien les zones végétalisées d'un arrondissement etc.
 
-L'intégration de couches de données se fait via des services [WFS](https://www.geolittoral.developpement-durable.gouv.fr/IMG/pdf/note_explicative_wms_wfs_geolittoral.pdf) (Web Feature Service) et [WMS](https://www.geolittoral.developpement-durable.gouv.fr/IMG/pdf/note_explicative_wms_wfs_geolittoral.pdf) (Web Map service) dans la bibliothèque [UD-viz](https://github.com/VCityTeam/UD-Viz). Un cas d'exemple de cette integration peut être retrouvé dans la [démo vallée de la chimie](#démo-vallée-de-la-chimie) avec un jeu de donnée 2D disponible sur le site [open data Grand Lyon](https://data.grandlyon.com/).
+L'intégration de couches de données se fait via des services [WFS](https://www.geolittoral.developpement-durable.gouv.fr/IMG/pdf/note_explicative_wms_wfs_geolittoral.pdf) (Web Feature Service) et [WMS](https://www.geolittoral.developpement-durable.gouv.fr/IMG/pdf/note_explicative_wms_wfs_geolittoral.pdf) (Web Map service) dans la bibliothèque [UD-viz](https://github.com/VCityTeam/UD-Viz).
+Ce type de donnée nous permet de représenter différentes géometries dans UD-Viz; cela peut être des polylignes, des polygones ou des images PNG/JPEG. Cet ajout de couche donnée apporte une nouvelle vision à la représentation numérique et permet de contextualiser les modèles 3D de bâtiments. 
+
 
 ![Capture](https://user-images.githubusercontent.com/32339907/169072790-425b4c26-053b-40fb-b5b3-771b9e34c315.PNG)
+
+Un cas d'exemple de cette integration peut être retrouvé dans la [démo vallée de la chimie](#démo-vallée-de-la-chimie) avec un jeu de donnée 2D disponible sur le site [open data Grand Lyon](https://data.grandlyon.com/). Nous avons intégrer le réseau de transport en commun pour montrer l'accessibilité à certain site indsutriel de la vallée de la chimie mais également les espaces naturels sensibles pour donner une autre vision de ce territoire.
 
 
 #### Démos UD-Viz
 
-[UD-Viz-Template](https://github.com/VCityTeam/UD-Viz-Template) est un template d'application permettant des créer rapidement des démonstrations basées sur la librairie [UD-Viz](#ud-viz). Ces démonstrations permettent d'illustrer des fonctionnalités et/ou des données particulières.
+[UD-Viz-Template](https://github.com/VCityTeam/UD-Viz-Template) est un template d'application permettant des créer rapidement des démonstrations basées sur la librairie [UD-Viz](#ud-viz). Ces démonstrations permettent d'illustrer des fonctionnalités et/ou des données particulières. Grâce à ce template différentes démonstrations ont pu être réalisé et alimenter le projet TIGA. Celles-ci 
 
 ##### **Démo Py3DTilers**
 
-- [Code](https://github.com/VCityTeam/UD-Demo-vcity-py3dtilers-lyon)
-- [Docker](https://github.com/VCityTeam/UD-Demo-vcity-py3dtilers-lyon-docker)
+- [Code](https://github.com/VCityTeam/UD-Demo-vcity-py3dtilers-lyon) source de la démonstration ainsi que sa documentation.
+- [Docker](https://github.com/VCityTeam/UD-Demo-vcity-py3dtilers-lyon-docker) pour reproduire l'application.
 - [Démo en ligne](https://py3dtilers-demo.vcityliris.data.alpha.grandlyon.com/)
 
 Cette démo propose un ensemble de tilesets 3D Tiles créés avec les outils de Py3DTilers. On y retrouve des 3D Tiles de bâtiments, ponts, relief et cours d'eau, certains texturés et d'autres colorés.
@@ -158,8 +164,8 @@ La démo introduit aussi de nouvelles modalités de visualisation des 3D Tiles. 
 
 ##### **Démo UI-driven**
 
-- [Code](https://github.com/VCityTeam/UD-Demo-VCity-UI-driven-data-computation-Lyon)
-- [Docker](https://github.com/VCityTeam/UD-Demo-VCity-UI-driven-data-computation-Lyon-docker)
+- [Code](https://github.com/VCityTeam/UD-Demo-VCity-UI-driven-data-computation-Lyon) source de la démonstration ainsi que sa documentation.
+- [Docker](https://github.com/VCityTeam/UD-Demo-VCity-UI-driven-data-computation-Lyon-docker) pour reproduire l'application.
 - [Démo en ligne](https://ui-driven-data-lyon.vcityliris.data.alpha.grandlyon.com/)
 
 Cette démo permet de calculer la hauteur de routes en les plaçant sur le relief. Pour cela, les routes doivent être contenues dans des fichiers GeoJSON. Ces fichiers peuvent ensuite être glissés/déposés. Les routes seront affichées au fur et à mesure du calcul. Une fois toutes les routes placées sur le relief, de nouveaux fichiers GeoJSON contenant les routes aux bonnes altitudes sont téléchargés.
@@ -168,8 +174,8 @@ Cette démo permet de calculer la hauteur de routes en les plaçant sur le relie
 
 ##### **Démo Vallée de la chimie**
 
-- [Code](https://github.com/VCityTeam/UD-Demo-TIGA-Webdoc-ChemistryValley)
-- [Docker](https://github.com/VCityTeam/UD-Demo-TIGA-Webdoc-ChemistryValley-docker)
+- [Code](https://github.com/VCityTeam/UD-Demo-TIGA-Webdoc-ChemistryValley ) source de la démonstration ainsi que sa documentation.
+- [Docker](https://github.com/VCityTeam/UD-Demo-TIGA-Webdoc-ChemistryValley-docker) pour reproduire l'application.
 - [Démo en ligne](https://www.derrierelesfumees.com/_Contenusdlf/Carte/index.html)
 
 
