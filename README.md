@@ -89,6 +89,8 @@ Toutes les options de Py3DTilers permettent d’obtenir un outil offrant une gra
 
 Les 3D Tiles générés avec l'outil Py3DTilers peuvent être [visualisés avec différents logiciels](https://github.com/VCityTeam/UD-SV/blob/master/ImplementationKnowHow/Visualize3DTiles.md). Néanmoins, nous utilisons dans la majorité des cas le visualisateur UD-Viz, un logiciel libre qui a été en partie développé au cours du projet TIGA.
 
+En complément de la documentation présente sur le dépôt github de Py3dtilers un article scientifique a été rédigé sur Py3dTilers et ses fonctionalités dans le cadre d'une conférence internationale ([Smart Data Smart Cities & 3D GeoInfo](https://conference.unsw.edu.au/en/sdsc-3dgeoinfo)) qui regroupe des experts de l'analyse des villes, des SIG, des jumeaux numériques, des villes intelligentes et de la science des données ([Article Py3DTilers](./Livrables/article_py3dtilers.pdf)).
+
 #### UD-Viz
 
 [UD-Viz](https://github.com/VCityTeam/UD-Viz) est une librairie JavaScript permettant de visualiser de la donnée urbaine et d'intéragir avec cette donnée via navigateur Web. UD-Viz se base sur [iTowns](https://github.com/itowns/itowns), développé par l'IGN, pour pouvoir charger et afficher des couches de données géographiques ainsi que des modèles [3D Tiles](#3d-tiles).
@@ -119,6 +121,7 @@ Afin d'améliorer la compréhension d'un territoire nous voulions contextualiser
 
 
 Cette approche a pu être utilisé dans le contexte du webdocumentaire du projet "Derrière les fumées". Des interviews d'acteurs de la vallée de la chimie ont été disposé dans la représentation numérique de cette zone afin d'avoir plus d'information sur l'activité de ce territoire.
+Ce socle technique est documenté dans la librairie UD-Viz mais a également un article scientifique sur  l'intégration de multimedia dans une représentation 3D numérique sousmis à la même conférence internationale que Py3dTilers,[Smart Data Smart Cities & 3D GeoInfo](https://conference.unsw.edu.au/en/sdsc-3dgeoinfo) ([Article intégration de multimedia dans une représentation 3D numérique](./Livrable/Integrating_multimedia_documents_for_augmented_models_to_a_better_understanding_of_its_territory.pdf)).
 
 ##### Integration de couches de données 2D
 Dans cette idée d'une meilleure compréhension du territoire, au dela d'une représentation 3D nous nous sommes intéressé à une visualisation 2D de celui-ci. En effet les données 2D urbaines apportent une nouvelle vision sur un territoire, et donne plus d'information sur celui-ci comme l'accessibilté de certains quartier grâce au réseau de transport en commun ou bien les zones végétalisées d'un arrondissement etc.
@@ -191,13 +194,6 @@ C'est pourquoi toutes les applications développées lors du projet possèdent d
 Chaque docker listé est une application des différents outils développés dans le cadre du projet TIGA.
 
 ---
-
-### Documentations
-
-- [Article Py3DTilers](./Livrables/article_py3dtilers.pdf) : Article de recherche sur Py3DTilers et ses fonctionnalités
-- [Article intégration de multimedia dans une représentation 3D numérique](./Livrable/Integrating_multimedia_documents_for_augmented_models_to_a_better_understanding_of_its_territory.pdf) : Article de recherche sur l'intégration de multimédia dans une représentation 3D d'un territoire afin d'apporter plus d'information sur celui-ci et mieux le comprendre.
-
-
 
 
 ## Conclusion
