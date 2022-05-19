@@ -41,12 +41,6 @@ Dans ce contexte de reconnexion et grâce à la veille effectuée en amont, le L
      -  [Démo Py3DTilers](#démo-py3dtilers)✔️
      -  [Démo UI-driven](#démo-ui-driven)✔️
      -  [Démo Vallée de la chimie](#démo-vallée-de-la-chimie)✔️
-<!-- -  [Documentations](#documentations) Mettre dans le developpement
-   -  [Documentation 3D Tiles](#documentation-3d-tiles)
-   -  [Documentation PostGIS/3DCityDB](#documentation-postgis/3dcitydb)
-   -  [Documentation calcul de données](#documentation-calcul-de-données)
-   -  [Documentation intégration de contenus multi-media](#documentation-intégration-de-contenus-multi-media)
-   -  [Documentation couches de données WFS/WMS](#documentation-couches-de-données-WFS/WMS) -->
 -  [Données](#données) A compléter
 
 ---
@@ -93,7 +87,12 @@ Toutes les options de Py3DTilers permettent d’obtenir un outil offrant une gra
 
 #### Docker
 
-*TO-DO : faire la liste des dockers + expliquer ce qu'est un docker et son utilité*
+Docker est un outil permettant de lancer des applications dans un contexte déterminé et isolé. Les applications ne sont ainsi pas exécutées directement sur la machine hôte, mais dans un contexte maitrisé. Une application contenue dans un Docker sera toujours exécutée de la même manière, les versions des différents composants sont figées. Cela permet de s'assurer que l'application pourra être utilisé sur n'importe quelle machine, sans soucis d'installation et sans erreurs de versions de logiciels.
+L'utilisation de Docker permet d'éviter qu'une application fonctionnelle ne devienne inutilisable après quelques temps à cause de mise à jours de la machine hôte ou de l'application elle-même.
+
+C'est pourquoi toutes les applications développées lors du projet possèdent des versions contenues dans des Dockers. Ainsi, on s'assure de la pérennité dans le temps des applications en plus d'être certains qu'elles pourront être lancées sur toutes les machines.
+
+*TO DO : liste des dockers*
 Permet d'utiliser [Py3DTilers](#py3dtilers) via un [docker](https://github.com/VCityTeam/py3dtilers-docker).
 
 Ce programme permet d'utiliser toutes les fonctionnalités de Py3DTilers sans effectuer toutes les installations préalables.
@@ -104,7 +103,7 @@ Le docker contient aussi une documentation pour utiliser [3DCityDB avec docker](
 
 [UD-Viz](https://github.com/VCityTeam/UD-Viz) est une librairie JavaScript permettant de visualiser de la donnée urbaine et d'intéragir avec cette donnée via navigateur Web. UD-Viz se base sur [iTowns](https://github.com/itowns/itowns), développé par l'IGN, pour pouvoir charger et afficher des couches de données géographiques ainsi que des modèles [3D Tiles](#3d-tiles).
 
-Dans le cadre du projet TIGA, UD-Viz a été enrichi afin d'offrir à l'utilisateur un meilleur contrôle sur l'apparence des modèles 3D. Le système de gestion du style des objets contenus dans les 3D Tiles a été revu afin de permettre une plus grande liberté sur l'affichage des couleurs et des textures des modèles 3D.
+Dans le cadre du projet TIGA, UD-Viz a été enrichi afin d'offrir à l'utilisateur un meilleur contrôle sur l'apparence des modèles 3D. Le système de gestion du style des objets contenus dans les 3D Tiles a été revu afin de permettre une plus grande liberté sur l'affichage des couleurs et des textures des modèles 3D. Cela permet par exemple d'afficher des bâtiments colorés en fonction d'un attribut (par exemple hauteur, polution, densité, etc) ou d'afficher alternativement des modèles colorés et des modèles texturés afin d'offrir plusieurs modalités de visualisation.
 
 ##### **Couleurs et textures**
 
@@ -126,16 +125,18 @@ Afin d'améliorer la compréhension d'un territoire nous voulions contextualiser
 - [Configuration du fichier JSON]() : documentation sur la configuration du fichier JSON afin de lier contenus multi-medias et position géospatiale.
 - [Episode visualizer object](https://github.com/VCityTeam/UD-Demo-TIGA-Webdoc-ChemistryValley/blob/main/doc/PinsDoc.md) : programme d'intégration des multi-médias avec comme point d'entrée le fichier de configuration JSON.
 
-Cette approche a pu être utilisé dans le contexte du webdocumentaire du projet "Derrière les fumées". Des interviews d'acteurs de la vallée de la chimie ont été disposé dans la représentation numérique de cette zone afin d'avoir plus d'information sur l'activité de ce territoire.
+![contenue](https://user-images.githubusercontent.com/32339907/169073212-20ddc305-0926-4744-8424-6df0e0fe19e3.PNG)
 
-**Image intégration**
+
+Cette approche a pu être utilisé dans le contexte du webdocumentaire du projet "Derrière les fumées". Des interviews d'acteurs de la vallée de la chimie ont été disposé dans la représentation numérique de cette zone afin d'avoir plus d'information sur l'activité de ce territoire.
 
 ##### Integration de couches de données 2D
 Dans cette idée d'une meilleure compréhension du territoire, au dela d'une représentation 3D nous nous sommes intéressé à une visualisation 2D de celui-ci. En effet les données 2D urbaines apportent une nouvelle vision sur un territoire, et donne plus d'information sur celui-ci comme l'accessibilté de certains quartier grâce au réseau de transport en commun ou bien les zones végétalisées d'un arrondissement etc.
 
 L'intégration de couches de données se fait via des services [WFS](https://www.geolittoral.developpement-durable.gouv.fr/IMG/pdf/note_explicative_wms_wfs_geolittoral.pdf) (Web Feature Service) et [WMS](https://www.geolittoral.developpement-durable.gouv.fr/IMG/pdf/note_explicative_wms_wfs_geolittoral.pdf) (Web Map service) dans la bibliothèque [UD-viz](https://github.com/VCityTeam/UD-Viz). Un cas d'exemple de cette integration peut être retrouvé dans la [démo vallée de la chimie](#démo-vallée-de-la-chimie) avec un jeu de donnée 2D disponible sur le site [open data Grand Lyon](https://data.grandlyon.com/).
 
-**Image webdoc**
+![Capture](https://user-images.githubusercontent.com/32339907/169072790-425b4c26-053b-40fb-b5b3-771b9e34c315.PNG)
+
 
 #### Démos UD-Viz
 
