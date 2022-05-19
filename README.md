@@ -34,7 +34,6 @@ Dans ce contexte de reconnexion et grâce à la veille effectuée en amont, le L
   -  [3D Tiles](#3d-tiles) A revoir
   -  [Py3DTiles](#py3dtiles) A revoir
   -  [Py3DTilers](#py3dtilers) A revoir
-  -  [Docker Py3DTilers](#docker-py3dtilers) A revoir
   -  [UD-Viz](#ud-viz) ✔️
      -  [Couleurs et textures](#couleurs-et-textures)✔️
      -  [Integration de contenus multi-médias](#integration-de-contenus-multi-médias)
@@ -43,6 +42,7 @@ Dans ce contexte de reconnexion et grâce à la veille effectuée en amont, le L
      -  [Démo Py3DTilers](#démo-py3dtilers)✔️
      -  [Démo UI-driven](#démo-ui-driven)✔️
      -  [Démo Vallée de la chimie](#démo-vallée-de-la-chimie)✔️
+  -  [Docker](#docker) A revoir
 -  [Données](#données) A compléter
 
 ---
@@ -87,19 +87,7 @@ Py3DTilers se base sur la librairie [Py3DTiles](#py3dtiles) décrite précédemm
 
 Toutes les options de Py3DTilers permettent d’obtenir un outil offrant une grande polyvalence. De plus, l'architure de code permet de rapidement ajouter des nouvelles fonctionnalités ou de personnaliser celles qui existent déjà. Py3DTilers permet à l’utilisateur un contrôle total du processus de création de 3D Tiles, que ce soit via les options ou via la modification du code. L'outil permet de personnaliser les tilesets produits, de tester de nouvelles modalités de répartition des tuiles ou de création de niveaux de détail. Py3DTilers se veut l’outil idéal pour innover ou expérimenter autour des 3D Tiles, et proposer des améliorations du standard.
 
-#### Docker
-
-Docker est un outil permettant de lancer des applications dans un contexte déterminé et isolé. Les applications ne sont ainsi pas exécutées directement sur la machine hôte, mais dans un contexte maitrisé. Une application contenue dans un Docker sera toujours exécutée de la même manière, les versions des différents composants sont figées. Cela permet de s'assurer que l'application pourra être utilisé sur n'importe quelle machine, sans soucis d'installation et sans erreurs de versions de logiciels.
-L'utilisation de Docker permet d'éviter qu'une application fonctionnelle ne devienne inutilisable après quelques temps à cause de mise à jours de la machine hôte ou de l'application elle-même.
-
-C'est pourquoi toutes les applications développées lors du projet possèdent des versions contenues dans des Dockers. Ainsi, on s'assure de la pérennité dans le temps des applications en plus d'être certains qu'elles pourront être lancées sur toutes les machines.
-
-- [UD-Viz-Docker](https://github.com/VCityTeam/UD-Viz-docker)
-- [UD-Demo-TIGA-Webdoc-ChemistryValley-Docker](https://github.com/VCityTeam/UD-Demo-TIGA-Webdoc-ChemistryValley-docker)
-- [UD-Demo-vcity-py3dtilers-lyon-Docker](https://github.com/VCityTeam/UD-Demo-vcity-py3dtilers-lyon-docker)
-- [UD-Demo-VCity-UI-driven-data-computation-Lyon-Docker](https://github.com/VCityTeam/UD-Demo-VCity-UI-driven-data-computation-Lyon-docker)
-
-Chaque docker listé est une application des différents outils développés dans le cadre du projet TIGA. 
+Les 3D Tiles générés avec l'outil Py3DTilers peuvent être [visualisés avec différents logiciels](https://github.com/VCityTeam/UD-SV/blob/master/ImplementationKnowHow/Visualize3DTiles.md). Néanmoins, nous utilisons dans la majorité des cas le visualisateur UD-Viz, un logiciel libre qui a été en partie développé au cours du projet TIGA.
 
 #### UD-Viz
 
@@ -158,6 +146,8 @@ Cette démo propose un ensemble de tilesets 3D Tiles créés avec les outils de 
 
 ![image](https://user-images.githubusercontent.com/32875283/168044197-59741221-5033-4829-b081-b6fcb36261f6.png)
 
+Les 3D Tiles ont été créés à partir de couches de données publiques issues du site du [Grand Lyon](https://data.grandlyon.com/) et de l'[IGN](https://geoservices.ign.fr/telechargement). Les modèles 3D des ponts et du relief sont créés à partir de la donnée CityGML du Grand Lyon, par l'intermédiaire d'une [base de données 3DCityDB](https://github.com/VCityTeam/UD-SV/blob/master/ImplementationKnowHow/PostgreSQL_for_cityGML.md). Les fleuves et les routes sont créés à partir des données GeoJSON de l'IGN. Les bâtiments sont être créés soit à partir des fichiers CityGML soit à partir de fichiers GeoJSON. Une [documentation](https://github.com/VCityTeam/UD-Reproducibility/blob/master/Computations/3DTiles/Lyon_Relief_Roads_Buildings_Water/Compute_Lyon_3DTiles.md) a été créée pour expliquer plus en détails le processus de création des 3D Tiles depuis de la donnée publique.
+
 La démo introduit aussi de nouvelles modalités de visualisation des 3D Tiles. Elle implémente notamment un nouvau fonctionnement des niveaux de détails des modèles 3D. Par défaut, le niveau de détails se raffine en fonction du zoom de la camera: plus la camera est proche d'un modèle, plus ce dernier est détaillé. Ici, on offre la possibilité d'utiliser la souri comme une "loupe": les modèles proches de la souri de l'utilisateur sont raffinés afin d'obtenir des modèles plus détaillés sans avoir besoin de bouger la caméra.
 
 ![mouse_refine](https://user-images.githubusercontent.com/32875283/168044116-a1af5952-2da6-4420-be6e-3b28909d9bd9.gif)
@@ -168,7 +158,7 @@ La démo introduit aussi de nouvelles modalités de visualisation des 3D Tiles. 
 - [Docker](https://github.com/VCityTeam/UD-Demo-VCity-UI-driven-data-computation-Lyon-docker) pour reproduire l'application.
 - [Démo en ligne](https://ui-driven-data-lyon.vcityliris.data.alpha.grandlyon.com/)
 
-Cette démo permet de calculer la hauteur de routes en les plaçant sur le relief. Pour cela, les routes doivent être contenues dans des fichiers GeoJSON. Ces fichiers peuvent ensuite être glissés/déposés. Les routes seront affichées au fur et à mesure du calcul. Une fois toutes les routes placées sur le relief, de nouveaux fichiers GeoJSON contenant les routes aux bonnes altitudes sont téléchargés.
+Cette démo permet de calculer la hauteur de routes en les plaçant sur le relief. Pour cela, les routes doivent être contenues dans des fichiers GeoJSON. Ces fichiers peuvent ensuite être glissés/déposés. Les routes seront affichées au fur et à mesure du calcul. Une fois toutes les routes placées sur le relief, de nouveaux fichiers GeoJSON contenant les routes aux bonnes altitudes sont téléchargés. Le processus pour créer des routes 3D depuis de la donnée de l'IGN est détaillé dans cette [documentation](https://github.com/VCityTeam/UD-Reproducibility/blob/master/Computations/3DTiles/Lyon_Relief_Roads_Buildings_Water/Roads_from_relief.md).
 
 ![ezgif-5-42ca35522d](https://user-images.githubusercontent.com/32875283/165520908-eeda0798-4ca1-4e76-ad3c-6779d593cff3.gif)
 
@@ -183,27 +173,26 @@ La démo  [Vallée de la chimie](https://fr.wikipedia.org/wiki/Vall%C3%A9e_de_la
 
 ![chemistryvalley](https://user-images.githubusercontent.com/32339907/168281845-a47fbad9-f3cf-41db-8eb2-0b630ebea659.jpg)
 
+#### Docker
+
+Docker est un outil permettant de lancer des applications dans un contexte déterminé et isolé. Les applications ne sont ainsi pas exécutées directement sur la machine hôte, mais dans un contexte maitrisé. Une application contenue dans un Docker sera toujours exécutée de la même manière, les versions des différents composants sont figées. Cela permet de s'assurer que l'application pourra être utilisé sur n'importe quelle machine, sans soucis d'installation et sans erreurs de versions de logiciels.
+L'utilisation de Docker permet d'éviter qu'une application fonctionnelle ne devienne inutilisable après quelques temps à cause de mise à jours de la machine hôte ou de l'application elle-même.
+
+C'est pourquoi toutes les applications développées lors du projet possèdent des versions contenues dans des Dockers. Ainsi, on s'assure de la pérennité dans le temps des applications en plus d'être certains qu'elles pourront être lancées sur toutes les machines.
+
+- [UD-Viz-Docker](https://github.com/VCityTeam/UD-Viz-docker)
+- [UD-Demo-TIGA-Webdoc-ChemistryValley-Docker](https://github.com/VCityTeam/UD-Demo-TIGA-Webdoc-ChemistryValley-docker)
+- [UD-Demo-vcity-py3dtilers-lyon-Docker](https://github.com/VCityTeam/UD-Demo-vcity-py3dtilers-lyon-docker)
+- [UD-Demo-VCity-UI-driven-data-computation-Lyon-Docker](https://github.com/VCityTeam/UD-Demo-VCity-UI-driven-data-computation-Lyon-docker)
+
+Chaque docker listé est une application des différents outils développés dans le cadre du projet TIGA.
+
 ---
 
 ### Documentations
+
 - [Article Py3DTilers](./Livrables/article_py3dtilers.pdf) : Article de recherche sur Py3DTilers et ses fonctionnalités
 - [Article intégration de multimedia dans une représentation 3D numérique](./Livrable/Integrating_multimedia_documents_for_augmented_models_to_a_better_understanding_of_its_territory.pdf) : Article de recherche sur l'intégration de multimédia dans une représentation 3D d'un territoire afin d'apporter plus d'information sur celui-ci et mieux le comprendre.
-
-<!-- #### Documentation 3D Tiles
-
-- [Visualisation des 3D Tiles](https://github.com/VCityTeam/UD-SV/blob/master/ImplementationKnowHow/Visualize3DTiles.md) : comment visualiser des 3D Tiles dans UD-Viz, iTowns et Cesium.
-- [Créer des 3D Tiles depuis de l'open data](https://github.com/VCityTeam/UD-Reproducibility/blob/master/Computations/3DTiles/Lyon_Relief_Roads_Buildings_Water/Compute_Lyon_3DTiles.md) : créer des 3D Tiles de bâtiments, relief, cours d'eau, routes et ponts depuis l'open data du Grand Lyon et de l'IGN.
-
-#### Documentation PostGIS/3DCityDB
-
-- [Créer et remplir des bases 3DCityDB](https://github.com/VCityTeam/UD-SV/blob/master/ImplementationKnowHow/PostgreSQL_for_cityGML.md) : comment créer et remplir des bases de données 3DCityDB avec des fichiers CityGML.
-- [Exporter une base PostGIS](https://github.com/VCityTeam/UD-SV/blob/master/ImplementationKnowHow/Dump_psql_postgis_database.md) : comment exporter une base de données PostGIS en un fichier SQL.
-
-#### Documentation calcul de données
-
-- [Calcul d'altitude des routes](https://github.com/VCityTeam/UD-Reproducibility/blob/master/Computations/3DTiles/Lyon_Relief_Roads_Buildings_Water/Roads_from_relief.md) : Calculer les altitudes de routes (au format GeoJSON) à l'aide d'une [démo UD-Viz](#démo-ui-driven). -->
-
-
 
 ### Données
 *TO-DO : phrase d'intro + expliquer les différentes données blabla*
