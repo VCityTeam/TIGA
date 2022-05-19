@@ -94,12 +94,12 @@ L'utilisation de Docker permet d'éviter qu'une application fonctionnelle ne dev
 
 C'est pourquoi toutes les applications développées lors du projet possèdent des versions contenues dans des Dockers. Ainsi, on s'assure de la pérennité dans le temps des applications en plus d'être certains qu'elles pourront être lancées sur toutes les machines.
 
-*TO DO : liste des dockers*
-Permet d'utiliser [Py3DTilers](#py3dtilers) via un [docker](https://github.com/VCityTeam/py3dtilers-docker).
+- [UD-Viz-Docker](https://github.com/VCityTeam/UD-Viz-docker)
+- [UD-Demo-TIGA-Webdoc-ChemistryValley-Docker](https://github.com/VCityTeam/UD-Demo-TIGA-Webdoc-ChemistryValley-docker)
+- [UD-Demo-vcity-py3dtilers-lyon-Docker](https://github.com/VCityTeam/UD-Demo-vcity-py3dtilers-lyon-docker)
+- [UD-Demo-VCity-UI-driven-data-computation-Lyon-Docker](https://github.com/VCityTeam/UD-Demo-VCity-UI-driven-data-computation-Lyon-docker)
 
-Ce programme permet d'utiliser toutes les fonctionnalités de Py3DTilers sans effectuer toutes les installations préalables.
-
-Le docker contient aussi une documentation pour utiliser [3DCityDB avec docker](https://github.com/VCityTeam/py3dtilers-docker#1-start-a-3dcity-database).
+Chaque docker listé est une application des différents outils développé dans le cadre du projet TIGA. 
 
 #### UD-Viz
 
@@ -179,7 +179,7 @@ Cette démo permet de calculer la hauteur de routes en les plaçant sur le relie
 - [Démo en ligne](https://www.derrierelesfumees.com/_Contenusdlf/Carte/index.html)
 
 
-La démo  [Vallée de la chimie](https://fr.wikipedia.org/wiki/Vall%C3%A9e_de_la_chimie) a été développé dans le cadre d'un web-documentaire en collaboration avec [Interfora](https://www.interfora-ifaip.fr/), un pôle de formation au métiers de la chimie. L'objectif de cette démo est de représenter le territoire de la [vallée de la chimie](https://fr.wikipedia.org/wiki/Vall%C3%A9e_de_la_chimie) et de le contextualiser à l'aide de document, d'interviews d'acteurs de ce territoire et données urbaines. Ces différents éléments sont disposés à des points d'intêret en lien avec le thème de l'industrie dans cette représentation numérique 3D.
+La démo  [Vallée de la chimie](https://fr.wikipedia.org/wiki/Vall%C3%A9e_de_la_chimie) a été développé dans le cadre d'un web-documentaire en collaboration avec [Interfora](https://www.interfora-ifaip.fr/), un pôle de formation au métiers de la chimie. Ce projet "Derrière les fumées" a pour but de déconstruire les idées préconcues que peuvent avoir les citoyens de la métropole de Lyon sur ce territoire. Pour cette problématique nous nous sommes orientées vers une représentation numérique de la vallée de la chimie pour mieux la comprendre et y disposer du contenus multi-médias pour apporter plus d'information. Grâce à l'outil d'integration de multi-média dans la bibliothèque UD-Viz nous avons pu disposer des d'interviews d'acteurs de ce territoire et des données urbaines dans la maquette numérique. Ces différents éléments sont disposés à des points d'intêret en lien avec le thème de l'industrie.
 
 ![chemistryvalley](https://user-images.githubusercontent.com/32339907/168281845-a47fbad9-f3cf-41db-8eb2-0b630ebea659.jpg)
 
