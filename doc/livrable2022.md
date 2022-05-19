@@ -1,11 +1,18 @@
 ## Livrable 2022 : Développement technique pour des outils de médiations industriels
 
-Dans ce contexte de reconnexion et grâce à la veille effectuée en amont, le LIRIS peut passer à la deuxième phase de son objectif qui est de concevoir, prototyper, et transférer des nouvelles modalités de médiation industrielle mobilisant les cultures numériques du territoire. Ces modalités peuvent être sous différentes formes, telles que des représentations 3D numériques d'un territoire, des outils de médiation ou bien des socles techniques pour aider à la construction d'outils de médiation. Ces socles techniques cherchent à être reproductibles et documentés afin qu'ils puissent être utilisables sous différentes thématiques, le tout dans un contexte open source.
+Grâce à la veille effectuée en amont qui regroupe les différents outils de médiation inpirant pour le projet TIGA. Le LIRIS (Laboratoire d'InfoRmatique en Image et Système d'information) peut passer à la deuxième phase de son objectif qui est de concevoir, prototyper, et transférer des nouvelles modalités de médiation industrielle mobilisant les cultures numériques du territoire.
+
+Pour répondre à ce besoin d'une meilleure compréhension du secteur industriel et du territoire par le citoyen, nous nous sommes orientés vers des représentations 3D numériques de ville. La visualisation 3D d'un environnement nous permet de mieux l'appréhender et ainsi mieux dicerner son organisation, ses activités etc. 
+Cette représentation 3D de la ville peut être améliorer et aller au dela de la géométrie des bâtiments, nous voulons apporter plus de couleur et de réalisme à celle-ci pour rendre l'utilisateur plus à l'aise dans sa déambulation. De plus, afin de contextualiser un quartier, un immeuble , nous cherchons à le lier à du contenus multimédias (photo, vidéo, text etc.) et apporter une nouvelle dimension à cet outil. 
+
+Pour ce faire nous avons développé différents outils pour la conception de plusieurs jumeaux numériques que nous allons vous présenter dans ce livrable.
+Ces outils ont été pensé de manière reproductible avec une documentation en continue afin que ceux-ci puisse être utilisable sous différentes thématiques mais également autonome.  
+
 
 ### Sommaire :
 
 - [Développement](#développement)
-  -  [3D Tiles](#3d-tiles)
+  -  [Modèles 3D](#modèles-3D)
   -  [Py3DTiles](#py3dtiles)
   -  [Py3DTilers](#py3dtilers)
   -  [UD-Viz](#ud-viz) 
