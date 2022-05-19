@@ -37,8 +37,8 @@ Dans ce contexte de reconnexion et grâce à la veille effectuée en amont, le L
   -  [Py3DTilers](#py3dtilers)
   -  [UD-Viz](#ud-viz) 
      -  [Couleurs et textures](#couleurs-et-textures)
-     -  [Integration de contenus multi-médias](#integration-de-contenus-multi-médias)
-     -  [Integration de couches de données 2D](#integration-de-couches-de-données-2D)
+     -  [intégration de contenus multi-médias](#intégration-de-contenus-multi-médias)
+     -  [intégration de couches de données 2D](#intégration-de-couches-de-données-2D)
   -  [Démos UD-Viz](#démos-ud-viz)
      -  [Démo Py3DTilers](#démo-py3dtilers)
      -  [Démo UI-driven](#démo-ui-driven)
@@ -112,9 +112,9 @@ En plus de ce travail sur le style par défaut des 3D Tiles, des modifications o
 
 ![texture_refine](https://user-images.githubusercontent.com/32875283/168042130-65e3b7a5-14d1-4783-a759-72606a9a1c33.gif)
 
-##### **Integration de contenus multi-médias**
+##### **intégration de contenus multi-médias**
 
-Afin d'améliorer la compréhension d'un territoire, nous voulions contextualiser les modèles 3D de bâtiments avec des multi-médias. Ces multi-médias peuvent être des images d'archives, des vidéos d'acteurs du territoire ou des photos d'un observatoire photographique. Ce nouveau contenu apporte une autre dimension à la déambulation dans un environnement 3D et l'améliore avec plus d'informations sur celui-ci. Nous avons donc développé une méthode d'integration de multi-medias qui se base sur la libraire [UD-viz](https://github.com/VCityTeam/UD-Viz). L'intégration est découpée en deux parties :
+Afin d'améliorer la compréhension d'un territoire, nous voulions contextualiser les modèles 3D de bâtiments avec des multi-médias. Ces multi-médias peuvent être des images d'archives, des vidéos d'acteurs du territoire ou des photos d'un observatoire photographique. Ce nouveau contenu apporte une autre dimension à la déambulation dans un environnement 3D et l'améliore avec plus d'informations sur celui-ci. Nous avons donc développé une méthode d'intégration de multi-medias qui se base sur la libraire [UD-viz](https://github.com/VCityTeam/UD-Viz). L'intégration est découpée en deux parties :
 
 - [Configuration du fichier JSON]() : documentation sur la configuration du fichier JSON afin de lier contenus multi-medias et positions géospatiales.
 - [Episode visualizer object](https://github.com/VCityTeam/UD-Demo-TIGA-Webdoc-ChemistryValley/blob/main/doc/PinsDoc.md) : programme d'intégration des multi-médias avec comme point d'entrée le fichier de configuration JSON.
@@ -124,20 +124,20 @@ Afin d'améliorer la compréhension d'un territoire, nous voulions contextualise
 Cette approche a pu être utilisée dans le contexte du webdocumentaire du projet "Derrière les fumées". Des interviews d'acteurs de la vallée de la chimie ont été disposées dans la représentation numérique de cette zone afin d'avoir plus d'informations sur l'activité de ce territoire.  
 Ce socle technique est documenté dans la librairie UD-Viz ainsi que dans un article scientifique sur l'intégration de multimedia dans une représentation 3D numérique sousmis à la même conférence internationale que Py3dTilers, [Smart Data Smart Cities & 3D GeoInfo](https://conference.unsw.edu.au/en/sdsc-3dgeoinfo) ([Article intégration de multimedia dans une représentation 3D numérique](./Livrable/Integrating_multimedia_documents_for_augmented_models_to_a_better_understanding_of_its_territory.pdf)).
 
-##### **Integration de couches de données 2D**
+##### **intégration de couches de données 2D**
 
-Dans cette idée d'une meilleure compréhension du territoire, au dela d'une représentation 3D nous nous sommes intéressé à une visualisation 2D de celui-ci. En effet les données 2D urbaines apportent une nouvelle vision sur un territoire, et donne plus d'information sur celui-ci comme l'accessibilté de certains quartier grâce au réseau de transport en commun ou bien les zones végétalisées d'un arrondissement etc.
+Dans cette idée d'une meilleure compréhension, au-delà d'une représentation 3D, nous nous sommes intéressés à une visualisation 2D du territoire. En effet, les données 2D urbaines apportent une nouvelle vision sur un territoire et donnent plus d'informations sur celui-ci, comme l'accessibilté de certains quartiers grâce au réseau de transport en commun ou bien les zones végétalisées d'un arrondissement.
 
 L'intégration de couches de données se fait via des services [WFS](https://www.geolittoral.developpement-durable.gouv.fr/IMG/pdf/note_explicative_wms_wfs_geolittoral.pdf) (Web Feature Service) et [WMS](https://www.geolittoral.developpement-durable.gouv.fr/IMG/pdf/note_explicative_wms_wfs_geolittoral.pdf) (Web Map service) dans la bibliothèque [UD-viz](https://github.com/VCityTeam/UD-Viz).
-Ce type de donnée nous permet de représenter différentes géometries dans UD-Viz; cela peut être des polylignes, des polygones ou des images PNG/JPEG. Cet ajout de couche donnée apporte une nouvelle vision à la représentation numérique et permet de contextualiser les modèles 3D de bâtiments.
+Ce type de données nous permet de représenter différentes géometries dans UD-Viz; cela peut être des polylignes, des polygones ou des images PNG/JPEG. Cet ajout de couches de données apporte une nouvelle vision à la représentation numérique et permet de contextualiser les modèles 3D de bâtiments.
 
 ![Capture](https://user-images.githubusercontent.com/32339907/169072790-425b4c26-053b-40fb-b5b3-771b9e34c315.PNG)
 
-Un cas d'exemple de cette integration peut être retrouvé dans la [démo vallée de la chimie](#démo-vallée-de-la-chimie) avec un jeu de donnée 2D disponible sur le site [open data Grand Lyon](https://data.grandlyon.com/). Nous avons intégrer le réseau de transport en commun pour montrer l'accessibilité à certain site indsutriel de la vallée de la chimie mais également les espaces naturels sensibles pour donner une autre vision de ce territoire.
+Un cas d'exemple de cette intégration peut être retrouvé dans la [démo vallée de la chimie](#démo-vallée-de-la-chimie) avec un jeu de données 2D disponible sur le site [open data Grand Lyon](https://data.grandlyon.com/). Nous avons intégré le réseau de transport en commun pour montrer l'accessibilité à certains sites industriels de la vallée de la chimie. Nous avons également intégré les espaces naturels sensibles pour donner une autre vision de ce territoire.
 
 #### Démos UD-Viz
 
-[UD-Viz-Template](https://github.com/VCityTeam/UD-Viz-Template) est un template d'application permettant des créer rapidement des démonstrations basées sur la librairie [UD-Viz](#ud-viz). Ces démonstrations permettent d'illustrer des fonctionnalités et/ou des données particulières. Grâce à ce template, différentes démonstrations ont pu être réalisé et alimenté le projet TIGA. En voici la liste présentée ci-dessous :
+[UD-Viz-Template](https://github.com/VCityTeam/UD-Viz-Template) est un template d'application permettant des créer rapidement des démonstrations basées sur la librairie [UD-Viz](#ud-viz). Ces démonstrations permettent d'illustrer des fonctionnalités et/ou des données particulières. Grâce à ce template, différentes démonstrations ont pu être réalisées afin d'alimenter le projet TIGA. En voici la liste présentée ci-dessous :
 
 ##### **Démo Py3DTilers**
 
@@ -145,13 +145,13 @@ Un cas d'exemple de cette integration peut être retrouvé dans la [démo vallé
 - [Docker](https://github.com/VCityTeam/UD-Demo-vcity-py3dtilers-lyon-docker) pour reproduire l'application.
 - [Démo en ligne](https://py3dtilers-demo.vcityliris.data.alpha.grandlyon.com/)
 
-Cette démo propose un ensemble de tilesets 3D Tiles créés avec les outils de Py3DTilers. On y retrouve des 3D Tiles de bâtiments, ponts, relief et cours d'eau, certains texturés et d'autres colorés.
+Cette démo propose un ensemble de 3D Tiles créés avec les outils de Py3DTilers. On y retrouve des 3D Tiles de bâtiments, ponts, relief et cours d'eau, certains texturés et d'autres colorés.
 
 ![image](https://user-images.githubusercontent.com/32875283/168044197-59741221-5033-4829-b081-b6fcb36261f6.png)
 
-Les 3D Tiles ont été créés à partir de couches de données publiques issues du site du [Grand Lyon](https://data.grandlyon.com/) et de l'[IGN](https://geoservices.ign.fr/telechargement). Les modèles 3D des ponts et du relief sont créés à partir de la donnée CityGML du Grand Lyon, par l'intermédiaire d'une [base de données 3DCityDB](https://github.com/VCityTeam/UD-SV/blob/master/ImplementationKnowHow/PostgreSQL_for_cityGML.md). Les fleuves et les routes sont créés à partir des données GeoJSON de l'IGN. Les bâtiments sont être créés soit à partir des fichiers CityGML soit à partir de fichiers GeoJSON. Une [documentation](https://github.com/VCityTeam/UD-Reproducibility/blob/master/Computations/3DTiles/Lyon_Relief_Roads_Buildings_Water/Compute_Lyon_3DTiles.md) a été créée pour expliquer plus en détails le processus de création des 3D Tiles depuis de la donnée publique.
+Les 3D Tiles ont été créés à partir de couches de données publiques issues du site du [Grand Lyon](https://data.grandlyon.com/) et de l'[IGN](https://geoservices.ign.fr/telechargement). Les modèles 3D des ponts et du relief sont créés à partir de la donnée CityGML du Grand Lyon, par l'intermédiaire d'une [base de données 3DCityDB](https://github.com/VCityTeam/UD-SV/blob/master/ImplementationKnowHow/PostgreSQL_for_cityGML.md). Les fleuves et les routes sont créés à partir des données GeoJSON de l'IGN. Les bâtiments sont quant à eux créés soit à partir des fichiers CityGML soit à partir de fichiers GeoJSON. Une [documentation](https://github.com/VCityTeam/UD-Reproducibility/blob/master/Computations/3DTiles/Lyon_Relief_Roads_Buildings_Water/Compute_Lyon_3DTiles.md) a été créée pour expliquer plus en détails le processus de création des 3D Tiles depuis de la donnée publique.
 
-La démo introduit aussi de nouvelles modalités de visualisation des 3D Tiles. Elle implémente notamment un nouvau fonctionnement des niveaux de détails des modèles 3D. Par défaut, le niveau de détails se raffine en fonction du zoom de la camera: plus la camera est proche d'un modèle, plus ce dernier est détaillé. Ici, on offre la possibilité d'utiliser la souri comme une "loupe": les modèles proches de la souri de l'utilisateur sont raffinés afin d'obtenir des modèles plus détaillés sans avoir besoin de bouger la caméra.
+La démo introduit aussi de nouvelles modalités de visualisation des 3D Tiles. Elle implémente notamment un nouvau fonctionnement des niveaux de détails des modèles 3D. Par défaut, le niveau de détails se raffine en fonction du zoom de la camera : plus la camera est proche d'un modèle, plus ce dernier est détaillé. Ici, on offre la possibilité d'utiliser la souri comme une "loupe": les modèles proches de la souri de l'utilisateur sont raffinés afin d'obtenir des modèles plus détaillés sans avoir besoin de bouger la caméra.
 
 ![mouse_refine](https://user-images.githubusercontent.com/32875283/168044116-a1af5952-2da6-4420-be6e-3b28909d9bd9.gif)
 
@@ -161,7 +161,7 @@ La démo introduit aussi de nouvelles modalités de visualisation des 3D Tiles. 
 - [Docker](https://github.com/VCityTeam/UD-Demo-VCity-UI-driven-data-computation-Lyon-docker) pour reproduire l'application.
 - [Démo en ligne](https://ui-driven-data-lyon.vcityliris.data.alpha.grandlyon.com/)
 
-Cette démo permet de calculer la hauteur de routes en les plaçant sur le relief. Pour cela, les routes doivent être contenues dans des fichiers GeoJSON. Ces fichiers peuvent ensuite être glissés/déposés. Les routes seront affichées au fur et à mesure du calcul. Une fois toutes les routes placées sur le relief, de nouveaux fichiers GeoJSON contenant les routes aux bonnes altitudes sont téléchargés. Le processus pour créer des routes 3D depuis de la donnée de l'IGN est détaillé dans cette [documentation](https://github.com/VCityTeam/UD-Reproducibility/blob/master/Computations/3DTiles/Lyon_Relief_Roads_Buildings_Water/Roads_from_relief.md).
+Cette démo permet de calculer la hauteur de routes en les plaçant sur le relief. Pour cela, les routes doivent être contenues dans des fichiers GeoJSON. Ces fichiers peuvent ensuite être glissés/déposés dans la démonstration. Les routes seront affichées au fur et à mesure du calcul. Une fois toutes les routes placées sur le relief, de nouveaux fichiers GeoJSON contenant les routes aux bonnes altitudes sont téléchargés. Le processus pour créer des routes 3D depuis de la donnée de l'IGN est détaillé dans cette [documentation](https://github.com/VCityTeam/UD-Reproducibility/blob/master/Computations/3DTiles/Lyon_Relief_Roads_Buildings_Water/Roads_from_relief.md).
 
 ![ezgif-5-42ca35522d](https://user-images.githubusercontent.com/32875283/165520908-eeda0798-4ca1-4e76-ad3c-6779d593cff3.gif)
 
@@ -171,17 +171,15 @@ Cette démo permet de calculer la hauteur de routes en les plaçant sur le relie
 - [Docker](https://github.com/VCityTeam/UD-Demo-TIGA-Webdoc-ChemistryValley-docker) pour reproduire l'application.
 - [Démo en ligne](https://www.derrierelesfumees.com/_Contenusdlf/Carte/index.html)
 
-
-La démo  [Vallée de la chimie](https://fr.wikipedia.org/wiki/Vall%C3%A9e_de_la_chimie) a été développé dans le cadre d'un web-documentaire en collaboration avec [Interfora](https://www.interfora-ifaip.fr/), un pôle de formation au métiers de la chimie. Ce projet "Derrière les fumées" a pour but de déconstruire les idées préconcues que peuvent avoir les citoyens de la métropole de Lyon sur ce territoire. Pour cette problématique nous nous sommes orientées vers une représentation numérique de la vallée de la chimie pour mieux la comprendre et y disposer du contenus multi-médias pour apporter plus d'information. Grâce à l'outil d'integration de multi-média dans la bibliothèque UD-Viz nous avons pu disposer des d'interviews d'acteurs de ce territoire et des données urbaines dans la maquette numérique. Ces différents éléments sont disposés à des points d'intêret en lien avec le thème de l'industrie.
+La démo  [Vallée de la chimie](https://fr.wikipedia.org/wiki/Vall%C3%A9e_de_la_chimie) a été développé dans le cadre d'un web-documentaire en collaboration avec [Interfora](https://www.interfora-ifaip.fr/), un pôle de formation au métiers de la chimie. Ce projet "Derrière les fumées" a pour but de déconstruire les idées préconcues que peuvent avoir les citoyens de la métropole de Lyon sur ce territoire. Dans cette problématique, nous nous sommes orientés vers une représentation numérique de la vallée de la chimie pour mieux la comprendre et y disposer du contenu multi-média afin d'apporter plus d'informations. Grâce à l'outil d'intégration de multi-média dans la bibliothèque UD-Viz, nous avons pu disposer des d'interviews d'acteurs de ce territoire et des données urbaines dans la maquette numérique. Ces différents éléments sont disposés à des points d'intêret en lien avec le thème de l'industrie.
 
 ![chemistryvalley](https://user-images.githubusercontent.com/32339907/168281845-a47fbad9-f3cf-41db-8eb2-0b630ebea659.jpg)
 
-Pour produire cette démonstration nous avons récupéré les données cityGML disponible sur l'open data grand lyon pour ensuite les traiter avec py3DTiles et générer les 3DTiles ([3D Tiles générés avec Py3DTilers](https://dataset-dl.liris.cnrs.fr/three-d-tiles-lyon-metropolis/Demo/UD-Demo-vcity-py3dtilers-lyon/) : bâtiments, relief, routes, ponts, fleuves ) de la vallée de la chimie. En complément de ces modèles 3D nous intégré les [photos de l'observatoire de la vallée de la chimie](https://umap.openstreetmap.fr/fr/map/vallee-de-la-chimie-observatoire-photographique_233823#18/45.68050/4.86110) produit par Florent PERROUD et les images d'archives de la catasptrophes de Feyzin en libre accès sur le site la bibliothèque municipale de Lyon ([lien des photos](https://numelyo.bm-lyon.fr/BML:BML_01ICO001015c33b77d0036c?&collection_pid=BML:BML_01ICO00101&luckyStrike=1&query[]=isubjectgeographic:%22Feyzin%20(Rh%C3%B4ne)%22&hitPageSize=1&hitTotal=62&hitStart=24)) 
-
+Pour produire cette démonstration nous avons récupéré les données CityGML disponibles sur l'open data Grand lyon pour ensuite les traiter avec Py3DTilers et générer les 3D Tiles ([3D Tiles générés avec Py3DTilers](https://dataset-dl.liris.cnrs.fr/three-d-tiles-lyon-metropolis/Demo/UD-Demo-vcity-py3dtilers-lyon/) : bâtiments, relief, routes, ponts, fleuves ) de la vallée de la chimie. En complément de ces modèles 3D, nous avons intégré les [photos de l'observatoire de la vallée de la chimie](https://umap.openstreetmap.fr/fr/map/vallee-de-la-chimie-observatoire-photographique_233823#18/45.68050/4.86110) produites par Florent PERROUD et les images d'archives de la catasptrophe de Feyzin en libre accès sur le site la bibliothèque municipale de Lyon ([lien des photos](https://numelyo.bm-lyon.fr/BML:BML_01ICO001015c33b77d0036c?&collection_pid=BML:BML_01ICO00101&luckyStrike=1&query[]=isubjectgeographic:%22Feyzin%20(Rh%C3%B4ne)%22&hitPageSize=1&hitTotal=62&hitStart=24)).
 
 #### Docker
 
-Docker est un outil permettant de lancer des applications dans un contexte déterminé et isolé. Les applications ne sont ainsi pas exécutées directement sur la machine hôte, mais dans un contexte maitrisé. Une application contenue dans un Docker sera toujours exécutée de la même manière, les versions des différents composants sont figées. Cela permet de s'assurer que l'application pourra être utilisé sur n'importe quelle machine, sans soucis d'installation et sans erreurs de versions de logiciels.
+Docker est un outil permettant de lancer des applications dans un contexte déterminé et isolé. Les applications ne sont ainsi pas exécutées directement sur la machine hôte, mais dans un contexte maitrisé. Une application contenue dans un Docker sera toujours exécutée de la même manière, les versions des différents composants sont figées. Cela permet de s'assurer que l'application pourra être utilisé sur n'importe quelle machine, sans soucis d'installation et sans erreur de version des logiciels.
 L'utilisation de Docker permet d'éviter qu'une application fonctionnelle ne devienne inutilisable après quelques temps à cause de mise à jours de la machine hôte ou de l'application elle-même.
 
 C'est pourquoi toutes les applications développées lors du projet possèdent des versions contenues dans des Dockers. Ainsi, on s'assure de la pérennité dans le temps des applications en plus d'être certains qu'elles pourront être lancées sur toutes les machines.
@@ -195,7 +193,7 @@ Chaque docker listé est une application des différents outils développés dan
 
 ---
 
-
 ## Conclusion
-La veille nous a permis de nous orienter vers ces premiers outils de médiation dans le but de rapprocher les différentes acteurs du territoire de la métropole de Lyon. Ces différents outils ont permis la création de nouvelles représentations numériques 3D. Grâce aux améliorations apportées sur cette visualisation nous avons cherché à améliorer la compréhention du citoyen de son territoire. A l'aide de py3dtilers et de l'integration de document dans un visulisation 3D nous avons développé un web-documentaire pour aider à cette reconnexion habitant et industriel. Le tout dans une approche reproductible et open source afin que ces socles techniques puissent être réutilisable et sur différentes thématique. 
+
+La veille nous a permis de nous orienter vers ces premiers outils de médiation dans le but de rapprocher les différentes acteurs du territoire de la métropole de Lyon. Ces différents outils ont permis la création de nouvelles représentations numériques 3D. Grâce aux améliorations apportées sur cette visualisation nous avons cherché à améliorer la compréhention du citoyen de son territoire. A l'aide de py3dtilers et de l'intégration de document dans un visulisation 3D nous avons développé un web-documentaire pour aider à cette reconnexion habitant et industriel. Le tout dans une approche reproductible et open source afin que ces socles techniques puissent être réutilisable et sur différentes thématique.  
 Les prochaines étapes de ces outils de médiation sont d'être mis à l'épreuve face au citoyen et industriel à travers des ateliers de médiations. Une prochaine étape est d'améliorer la représentation numérique 3D en apportant une maquette tangible d'un quartier et d'y projeter de la donnée sur celle-ci. Nous pourrions animer des ateliers autour de cette maquette augmentée afin d'avoir des retours sur l'efficacité de ces outils de médiation pour répondre au mieux à l'objectif du projet TIGA sur la reconnexion industrie, territoire et citoyen. 
