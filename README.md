@@ -99,7 +99,7 @@ C'est pourquoi toutes les applications développées lors du projet possèdent d
 - [UD-Demo-vcity-py3dtilers-lyon-Docker](https://github.com/VCityTeam/UD-Demo-vcity-py3dtilers-lyon-docker)
 - [UD-Demo-VCity-UI-driven-data-computation-Lyon-Docker](https://github.com/VCityTeam/UD-Demo-VCity-UI-driven-data-computation-Lyon-docker)
 
-Chaque docker listé est une application des différents outils développé dans le cadre du projet TIGA. 
+Chaque docker listé est une application des différents outils développés dans le cadre du projet TIGA. 
 
 #### UD-Viz
 
