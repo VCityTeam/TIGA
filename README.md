@@ -146,7 +146,7 @@ Un cas d'exemple de cette integration peut être retrouvé dans la [démo vallé
 
 #### Démos UD-Viz
 
-[UD-Viz-Template](https://github.com/VCityTeam/UD-Viz-Template) est un template d'application permettant des créer rapidement des démonstrations basées sur la librairie [UD-Viz](#ud-viz). Ces démonstrations permettent d'illustrer des fonctionnalités et/ou des données particulières. Grâce à ce template différentes démonstrations ont pu être réalisé et alimenter le projet TIGA. Celles-ci 
+[UD-Viz-Template](https://github.com/VCityTeam/UD-Viz-Template) est un template d'application permettant des créer rapidement des démonstrations basées sur la librairie [UD-Viz](#ud-viz). Ces démonstrations permettent d'illustrer des fonctionnalités et/ou des données particulières. Grâce à ce template, différentes démonstrations ont pu être réalisé et alimenté le projet TIGA. En voici la liste présentée ci-dessous :
 
 ##### **Démo Py3DTilers**
 
@@ -189,7 +189,7 @@ La démo  [Vallée de la chimie](https://fr.wikipedia.org/wiki/Vall%C3%A9e_de_la
 - [Article Py3DTilers](./Livrables/article_py3dtilers.pdf) : Article de recherche sur Py3DTilers et ses fonctionnalités
 - [Article intégration de multimedia dans une représentation 3D numérique](./Livrable/Integrating_multimedia_documents_for_augmented_models_to_a_better_understanding_of_its_territory.pdf) : Article de recherche sur l'intégration de multimédia dans une représentation 3D d'un territoire afin d'apporter plus d'information sur celui-ci et mieux le comprendre.
 
-#### Documentation 3D Tiles
+<!-- #### Documentation 3D Tiles
 
 - [Visualisation des 3D Tiles](https://github.com/VCityTeam/UD-SV/blob/master/ImplementationKnowHow/Visualize3DTiles.md) : comment visualiser des 3D Tiles dans UD-Viz, iTowns et Cesium.
 - [Créer des 3D Tiles depuis de l'open data](https://github.com/VCityTeam/UD-Reproducibility/blob/master/Computations/3DTiles/Lyon_Relief_Roads_Buildings_Water/Compute_Lyon_3DTiles.md) : créer des 3D Tiles de bâtiments, relief, cours d'eau, routes et ponts depuis l'open data du Grand Lyon et de l'IGN.
@@ -201,7 +201,7 @@ La démo  [Vallée de la chimie](https://fr.wikipedia.org/wiki/Vall%C3%A9e_de_la
 
 #### Documentation calcul de données
 
-- [Calcul d'altitude des routes](https://github.com/VCityTeam/UD-Reproducibility/blob/master/Computations/3DTiles/Lyon_Relief_Roads_Buildings_Water/Roads_from_relief.md) : Calculer les altitudes de routes (au format GeoJSON) à l'aide d'une [démo UD-Viz](#démo-ui-driven).
+- [Calcul d'altitude des routes](https://github.com/VCityTeam/UD-Reproducibility/blob/master/Computations/3DTiles/Lyon_Relief_Roads_Buildings_Water/Roads_from_relief.md) : Calculer les altitudes de routes (au format GeoJSON) à l'aide d'une [démo UD-Viz](#démo-ui-driven). -->
 
 
 
@@ -215,4 +215,6 @@ La démo  [Vallée de la chimie](https://fr.wikipedia.org/wiki/Vall%C3%A9e_de_la
 - [Tilesets 3D Tiles de Lyon](https://dataset-dl.liris.cnrs.fr/three-d-tiles-lyon-metropolis/Demo/UD-Demo-vcity-py3dtilers-lyon/) : 3D Tiles générés avec Py3DTilers (bâtiments, relief, routes, ponts, fleuves)
 - [Interviews vidéos d'acteurs](https://www.derrierelesfumees.com/_Contenusdlf/Carte/index.html) de la vallée de la chimie dans le contexte du projet ["Derrière les fumées"](https://www.derrierelesfumees.com/)
  - Observatoire photographique de la Vallée de la chimie par Florent PERROUD
+
+## Conclusion
 
