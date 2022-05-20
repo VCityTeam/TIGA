@@ -5,8 +5,8 @@ Grâce à la veille effectuée en amont qui regroupe les différents outils de m
 Pour répondre à ce besoin d'une meilleure compréhension du secteur industriel et du territoire par le citoyen, nous nous sommes orientés vers des représentations 3D numériques de la ville. La visualisation 3D d'un environnement nous permet de mieux l'appréhender et ainsi mieux discerner son organisation, ses activités, etc. 
 Cette représentation 3D de la ville peut être améliorée en allant au-delà de la géométrie des bâtiments. Nous voulons apporter plus de couleur et de réalisme à cette représentation pour rendre l'utilisateur plus à l'aise dans sa déambulation. De plus, afin de contextualiser un quartier, un immeuble, nous cherchons à le lier à du contenus multi-médias (photo, vidéo, texte, etc.) et apporter une nouvelle dimension à cet outil.
 
-Pour ce faire, nous avons développé différents outils pour la conception de jumeaux numériques avec comme point d'entrée des données urbaines open source. Dans un premier temps, nous développerons les socles techniques qui ont permis la construction de représentations 3D tel que la géométrie des bâtiments. Puis dans un second temps, nous détaillerons les démonstrations produites grâce aux outils développéset qui ont pu être mis en pratique.
-Ces outils ont été pensés de manière reproductible avec une documentation en continue afin que ceux-ci puisse être utilisable de manière autonome et également sous différentes thématiques.  
+Pour ce faire, nous avons développé différents outils pour la conception de jumeaux numériques avec comme point d'entrée des données urbaines open source. Dans un premier temps, nous développerons les socles techniques qui ont permis la construction de représentations 3D tel que la géométrie des bâtiments. Puis dans un second temps, nous détaillerons les démonstrations produites grâce aux outils développés et qui ont pu être mis en pratique.
+Ces outils ont été pensés de manière reproductible avec une documentation en continue afin que ceux-ci puissent être utilisables de manière autonome et également sous différentes thématiques.  
 
 
 ### Sommaire :
@@ -32,7 +32,7 @@ Ces outils ont été pensés de manière reproductible avec une documentation en
 
 #### **Modèles 3D**
 
-L'intéraction avec des données urbaines nécessite de résoudre un certain nombre de problématiques, telles que la visualisation massive d'objets 3D (bâtiments, ponts, végétation, etc) et la liaison des ces objets avec de la donnée sémantique. Pour répondre à ces problématiques, nous avons fait le choix d'utiliser le standard [3D Tiles](https://github.com/CesiumGS/3d-tiles), décrit par Cesium et l'OGC. 3D Tiles a été pensé pour aider à la visualisation massive de contenu géospatial 3D. Ce standard permet de décrire un _tileset_ : un arbre de tuiles 3D. Chaque tuile contient des modèles 3D auxquels sont associés des données sémantiques. Un tileset permet une organisation spatiale des tuiles, optimisée pour le rendu d'objets 3D urbains, notamment grâce à la hiérarchisation spatiale des objets, mais aussi grâce aux niveaux de détails. Les niveaux de détail permettent d'alterner entre des géométries plus ou moins détaillées en fonction des besoins, par exemple en affichant des modèles très simplifiés de loin et détaillés lorsqu'on est proche.
+L'intéraction avec des données urbaines nécessite de résoudre un certain nombre de problématiques, telles que la visualisation massive d'objets 3D (bâtiments, ponts, végétation, etc) et la liaison des ces objets avec de la donnée sémantique. Pour répondre à ces problématiques, nous avons fait le choix d'utiliser le standard [3D Tiles](https://github.com/CesiumGS/3d-tiles), décrit par Cesium et l'OGC. 3D Tiles a été pensé pour aider à la visualisation massive de contenu géospatial 3D. Ce standard permet de décrire un _tileset_ : un arbre de tuiles 3D. Chaque tuile contient des modèles 3D auxquels sont associées des données sémantiques. Un tileset permet une organisation spatiale des tuiles, optimisée pour le rendu d'objets 3D urbains, notamment grâce à la hiérarchisation spatiale des objets, mais aussi grâce aux niveaux de détails. Les niveaux de détail permettent d'alterner entre des géométries plus ou moins détaillées en fonction des besoins, par exemple en affichant des modèles très simplifiés de loin et détaillés lorsqu'on est proche.
 
 Les tuiles peuvent avoir différents formats :
 
@@ -60,7 +60,7 @@ Py3DTilers se base sur la librairie [Py3DTiles](#py3dtiles), décrite précédem
 
 - **La création de niveaux de détails**: permet d'ajouter un ou plusieurs niveaux de détail aux géométries. Cela permet de fluidifier le rendu en affichant des modèles 3D plus ou moins détaillés.
 - **La reprojection des données**: permet de modifier le système de projection utilisé pour les coordonnées. Cela permet par exemple de visualiser dans un même contexte des données ayant originellement des systèmes de projection différents. Cela permet aussi de s'adapter aux contraintes pouvant être imposées par les outils de visualisation de 3D Tiles.
-- **La translation et mise à l'échelle des modèles 3D**: permet de transformer la donnée en changeant l'échelle ou en déplaçant les géométries. Cela permet notamment de corriger les erreurs de placement ou de taille. Ces fonctionnalités permettent aussi de placer de la donnée non géo-référencée dans un contexte géospatiale, ou inversement de placer de la donnée géo-référencée à des coordonnées centrées autour de (0, 0, 0).
+- **La translation et mise à l'échelle des modèles 3D**: permet de transformer la donnée en changeant l'échelle ou en déplaçant les géométries. Cela permet notamment de corriger les erreurs de placement ou de taille. Ces fonctionnalités permettent aussi de placer de la donnée non géo-référencée dans un contexte géospatial, ou inversement de placer de la donnée géo-référencée à des coordonnées centrées autour de (0, 0, 0).
 - **L'export en modèle OBJ**: permet d'exporter les géométries au format OBJ. Ce format peut être visualisé dans la majorité des outils, ce qui permet de rapidement vérifier l'apparence des géométries.
 - **L'ajout de textures**: si la donnée d'entrée est texturée, l'utilisateur peut choisir de conserver ou non les textures. Lorsque les textures sont conservées, elles sont stockées dans des atlas de textures sous forme de fichiers JPEG.
 - **La création de 3D Tiles colorés**: permet d'ajouter des couleurs aux 3D Tiles. Les couleurs peuvent être choisies par l'utilisateur. Les couleurs peuvent être appliquées en fonction d'attributs des modèles (par exemple hauteur du bâtiment) ou en fonction du type des objets (toit, mur, sol, etc).
@@ -75,7 +75,7 @@ Les 3D Tiles générés avec l'outil Py3DTilers peuvent être [visualisés avec 
 
 [UD-Viz](https://github.com/VCityTeam/UD-Viz) est une librairie JavaScript permettant de visualiser de la donnée urbaine et d'intéragir avec cette donnée via navigateur Web. UD-Viz se base sur [iTowns](https://github.com/itowns/itowns), développé par l'IGN, pour pouvoir charger et afficher des couches de données géographiques ainsi que des modèles [3D Tiles](#3d-tiles).
 
-Dans le cadre du projet TIGA, UD-Viz a été enrichi afin d'offrir à l'utilisateur de nouvelles interactions avec la donnée ainsi qu'un meilleur contrôle sur l'apparence des modèles 3D. Pour cela, des développements ont été effectués afin de permettre l'intégration de contenus multi-médias et de couches de données 2D. Ces contenus permettent d'enrichir la visualisation et d'améliorer sa compréhension. De plus, le système de gestion du style des 3D Tiles a été revu afin de permettre une plus grande liberté sur l'affichage des couleurs et des textures des modèles 3D. Cela permet par exemple d'afficher des bâtiments colorés en fonction d'un attribut (hauteur, polution, densité, etc) ou d'afficher alternativement des modèles colorés et des modèles texturés afin d'offrir plusieurs modalités de visualisation.
+Dans le cadre du projet TIGA, UD-Viz a été enrichi afin d'offrir à l'utilisateur de nouvelles interactions avec la donnée ainsi qu'un meilleur contrôle sur l'apparence des modèles 3D. Pour cela, des développements ont été effectués afin de permettre l'intégration de contenus multi-médias et de couches de données 2D. Ces contenus permettent d'enrichir la visualisation et d'améliorer sa compréhension. De plus, le système de gestion du style des 3D Tiles a été revu afin de permettre une plus grande liberté sur l'affichage des couleurs et des textures des modèles 3D. Cela permet par exemple d'afficher des bâtiments colorés en fonction d'un attribut (hauteur, pollution, densité, etc) ou d'afficher alternativement des modèles colorés et des modèles texturés afin d'offrir plusieurs modalités de visualisation.
 
 ##### **Couleurs et textures**
 
@@ -86,7 +86,7 @@ Des modifications ont été apportées à cette gestion des styles afin de laiss
 - Appliquer un style par défaut aux 3D Tiles lors du chargement (comme auparavant).
 - Conserver le style déjà présent dans les 3D Tiles et ne pas appliquer de style par défaut.
 
-La deuxième option permet un plus grande diversité des styles, puisque ces derniers ne sont plus limités à une couleur unique. De plus, les différentes options de [Py3DTilers](#py3dtilers), l'outil permettant de créer les 3D Tiles, offre beaucoup d'options pour ajouter des couleurs et des textures aux 3D Tiles. Ces couleurs et textures peuvent maintenant être chargées dans UD-Viz.
+La deuxième option permet une plus grande diversité des styles, puisque ces derniers ne sont plus limités à une couleur unique. De plus, les différentes options de [Py3DTilers](#py3dtilers), l'outil permettant de créer les 3D Tiles, offre beaucoup d'options pour ajouter des couleurs et des textures aux 3D Tiles. Ces couleurs et textures peuvent maintenant être chargées dans UD-Viz.
 
 En plus de ce travail sur le style par défaut des 3D Tiles, des modifications ont été apportées à la gestion du style dans UD-Viz afin de corriger des erreurs et de robustifier le code.
 
@@ -113,7 +113,7 @@ Ce socle technique est documenté dans la librairie UD-Viz ainsi que dans un art
 
 ##### **Intégration de couches de données 2D**
 
-Dans cette idée d'une meilleure compréhension, au-delà d'une représentation 3D, nous nous sommes intéressés à une visualisation 2D du territoire. En effet, les données 2D urbaines apportent une nouvelle vision sur un territoire et donnent plus d'informations sur celui-ci, comme l'accessibilté de certains quartiers grâce au réseau de transport en commun ou bien les zones végétalisées d'un arrondissement.
+Dans cette idée d'une meilleure compréhension, au-delà d'une représentation 3D, nous nous sommes intéressés à une visualisation 2D du territoire. En effet, les données 2D urbaines apportent une nouvelle vision sur un territoire et donnent plus d'informations sur celui-ci, comme l'accessibilité de certains quartiers grâce au réseau de transport en commun ou bien les zones végétalisées d'un arrondissement.
 
 L'intégration de couches de données se fait via des services [WFS](https://www.geolittoral.developpement-durable.gouv.fr/IMG/pdf/note_explicative_wms_wfs_geolittoral.pdf) (Web Feature Service) et [WMS](https://www.geolittoral.developpement-durable.gouv.fr/IMG/pdf/note_explicative_wms_wfs_geolittoral.pdf) (Web Map service) dans la bibliothèque [UD-viz](https://github.com/VCityTeam/UD-Viz).
 Ce type de données nous permet de représenter différentes géométries dans UD-Viz; cela peut être des polylignes, des polygones ou des images PNG/JPEG. Cet ajout de couches de données apporte une nouvelle vision à la représentation numérique et permet de contextualiser les modèles 3D de bâtiments.
@@ -140,11 +140,11 @@ Cette démo propose un ensemble de 3D Tiles créés avec les outils de Py3DTiler
 
 | ![image](https://user-images.githubusercontent.com/32875283/168044197-59741221-5033-4829-b081-b6fcb36261f6.png) | 
 |:--:| 
-| *Figure 4 : Mosaïques des différentes démonstrations développées grâce à l'outil Py3tilers. Une démonstration de la ville texturée, une autre avec de la couleur, la ville avec différent niveau de détail..* |
+| *Figure 4 : Mosaïques des différentes démonstrations développées grâce à l'outil Py3tilers. Une démonstration de la ville texturée, une autre avec de la couleur, la ville avec différents niveaux de détail..* |
 
 Les 3D Tiles ont été créés à partir de couches de données publiques issues du site du [Grand Lyon](https://data.grandlyon.com/) et de l'[IGN](https://geoservices.ign.fr/telechargement). Les modèles 3D des ponts et du relief sont créés à partir de la donnée CityGML du Grand Lyon, par l'intermédiaire d'une [base de données 3DCityDB](https://github.com/VCityTeam/UD-SV/blob/master/ImplementationKnowHow/PostgreSQL_for_cityGML.md). Les fleuves et les routes sont créés à partir des données GeoJSON de l'IGN. Les bâtiments sont quant à eux créés soit à partir des fichiers CityGML soit à partir de fichiers GeoJSON. Une [documentation](https://github.com/VCityTeam/UD-Reproducibility/blob/master/Computations/3DTiles/Lyon_Relief_Roads_Buildings_Water/Compute_Lyon_3DTiles.md) a été créée pour expliquer plus en détails le processus de création des 3D Tiles depuis de la donnée publique.
 
-La démo introduit aussi de nouvelles modalités de visualisation des 3D Tiles. Elle implémente notamment un nouveau fonctionnement des niveaux de détails des modèles 3D. Par défaut, le niveau de détails se raffine en fonction du zoom de la camera : plus la camera est proche d'un modèle, plus ce dernier est détaillé. Ici, on offre la possibilité d'utiliser la souri comme une "loupe": les modèles proches de la souri de l'utilisateur sont raffinés afin d'obtenir des modèles plus détaillés sans avoir besoin de bouger la caméra.
+La démo introduit aussi de nouvelles modalités de visualisation des 3D Tiles. Elle implémente notamment un nouveau fonctionnement des niveaux de détails des modèles 3D. Par défaut, le niveau de détails se raffine en fonction du zoom de la caméra : plus la caméra est proche d'un modèle, plus ce dernier est détaillé. Ici, on offre la possibilité d'utiliser la souris comme une "loupe": les modèles proches de la souris de l'utilisateur sont raffinés afin d'obtenir des modèles plus détaillés sans avoir besoin de bouger la caméra.
 
 
 | ![mouse_refine](https://user-images.githubusercontent.com/32875283/168044116-a1af5952-2da6-4420-be6e-3b28909d9bd9.gif) | 
@@ -163,7 +163,7 @@ Cette démo permet de calculer la hauteur de routes en les plaçant sur le relie
 
 | ![ezgif-5-42ca35522d](https://user-images.githubusercontent.com/32875283/165520908-eeda0798-4ca1-4e76-ad3c-6779d593cff3.gif) | 
 |:--:| 
-| *Figure 6 : Démo UD-Viz sur le calcul des hauteurs de routes contenu dans un fichier GeoJSON à l'aide d'un glissé/déposé dans l'application web UD-Viz* |
+| *Figure 6 : Démo UD-Viz sur le calcul des hauteurs de routes contenu dans un fichier GeoJSON à l'aide d'un glisser/déposer dans l'application web UD-Viz* |
 
 ##### **Démo Vallée de la chimie**
 
@@ -177,14 +177,14 @@ La démo  [Vallée de la chimie](https://fr.wikipedia.org/wiki/Vall%C3%A9e_de_la
 
 | ![chemistryvalley](https://user-images.githubusercontent.com/32339907/168281845-a47fbad9-f3cf-41db-8eb2-0b630ebea659.jpg) | 
 |:--:| 
-| *Figure 7 : Capture du web-dcoumentaire "Derrière les fumées", avec les deux panneaux d'affichages, les différentes interviews d'acteurs de la vallée de la chimie et les données urbaines récupérées sur l'open data Gradn Lyon*|
+| *Figure 7 : Capture du web-documentaire "Derrière les fumées", avec les deux panneaux d'affichages, les différentes interviews d'acteurs de la vallée de la chimie et les données urbaines récupérées sur l'open data Grand Lyon*|
 
 Pour produire cette démonstration nous avons récupéré les données CityGML disponibles sur l'open data Grand Lyon pour ensuite les traiter avec Py3DTilers et générer les 3D Tiles ([3D Tiles générés avec Py3DTilers](https://dataset-dl.liris.cnrs.fr/three-d-tiles-lyon-metropolis/Demo/UD-Demo-vcity-py3dtilers-lyon/) : bâtiments, relief, routes, ponts, fleuves ) de la vallée de la chimie. En complément de ces modèles 3D, nous avons intégré les [photos de l'observatoire de la vallée de la chimie](https://umap.openstreetmap.fr/fr/map/vallee-de-la-chimie-observatoire-photographique_233823#18/45.68050/4.86110) produites par Florent PERROUD et les images d'archives de la catasptrophe de Feyzin en libre accès sur le site la bibliothèque municipale de Lyon ([lien des photos](https://numelyo.bm-lyon.fr/BML:BML_01ICO001015c33b77d0036c?&collection_pid=BML:BML_01ICO00101&luckyStrike=1&query[]=isubjectgeographic:%22Feyzin%20(Rh%C3%B4ne)%22&hitPageSize=1&hitTotal=62&hitStart=24)).
 
 #### **Docker**
 
-Docker est un outil permettant de lancer des applications dans un contexte déterminé et isolé. Les applications ne sont ainsi pas exécutées directement sur la machine hôte, mais dans un contexte maîtrisé. Une application contenue dans un Docker sera toujours exécutée de la même manière, les versions des différents composants sont figées. Cela permet de s'assurer que l'application pourra être utilisé sur n'importe quelle machine, sans soucis d'installation et sans erreur de version des logiciels.
-L'utilisation de Docker permet d'éviter qu'une application fonctionnelle ne devienne inutilisable après quelques temps à cause de mise à jours de la machine hôte ou de l'application elle-même.
+Docker est un outil permettant de lancer des applications dans un contexte déterminé et isolé. Les applications ne sont ainsi pas exécutées directement sur la machine hôte, mais dans un contexte maîtrisé. Une application contenue dans un Docker sera toujours exécutée de la même manière, les versions des différents composants sont figées. Cela permet de s'assurer que l'application pourra être utilisée sur n'importe quelle machine, sans souci d'installation et sans erreur de version des logiciels.
+L'utilisation de Docker permet d'éviter qu'une application fonctionnelle ne devienne inutilisable après quelque temps à cause de mise à jour de la machine hôte ou de l'application elle-même.
 
 C'est pourquoi toutes les applications développées lors du projet possèdent des versions contenues dans des Dockers. Ainsi, on s'assure de la pérennité dans le temps des applications en plus d'être certains qu'elles pourront être lancées sur toutes les machines.
 
@@ -200,5 +200,5 @@ Chaque docker listé est une application des différents outils développés dan
 ## Conclusion
 
 La veille nous a permis de nous orienter vers ces premiers outils de médiation dans le but de rapprocher les différents acteurs du territoire de la métropole de Lyon. Ces différents outils ont permis la création de nouvelles représentations numériques 3D en y apportant une nouvelle dimension grâce aux multi-médias et ainsi de les éprouver sur des problématiques en lien avec l'industrie. Chaque application est développée avec son docker afin que tout le monde puisse l'utiliser sur son environnement de travail et répondre au besoin de reproductibilité. 
-Grâce à l'intégration d'images d'archives dans un jumeau numérique de ville nous avons aborder l'évolution temporelle de la ville. Toutefois nous voulons aller plus loin et développer plus en profondeur ce côté évolutive pour mieux comprendre comment un territoire est devenu ce qu'il est actuellement. Ce projet Morphogenèse se veut focaliser sur l'évolution du travail de 1950 à aujourd'hui et est le prochain objectif du LIRIS dans le contexte du projet TIGA.
+Grâce à l'intégration d'images d'archives dans un jumeau numérique de ville nous avons abordé l'évolution temporelle de la ville. Toutefois nous voulons aller plus loin et développer plus en profondeur ce côté évolutif pour mieux comprendre comment un territoire est devenu ce qu'il est actuellement. Ce projet Morphogenèse se veut focalisé sur l'évolution du travail de 1950 à aujourd'hui et est le prochain objectif du LIRIS dans le contexte du projet TIGA.
 La prochaine étape est la morphogenèse, nous voulons apporter une dimension temporelle à ces outils afin d'observer l'évolution du territoire et comprendre comment celui-ci est devenu ce qu'il est actuellement. 
