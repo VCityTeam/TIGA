@@ -5,7 +5,7 @@ Grâce à la veille effectuée en amont qui regroupe les différents outils de m
 Pour répondre à ce besoin d'une meilleure compréhension du secteur industriel et du territoire par le citoyen, nous nous sommes orientés vers des représentations 3D numériques de ville. La visualisation 3D d'un environnement nous permet de mieux l'appréhender et ainsi mieux dicerner son organisation, ses activités etc. 
 Cette représentation 3D de la ville peut être améliorer et aller au dela de la géométrie des bâtiments, nous voulons apporter plus de couleur et de réalisme à celle-ci pour rendre l'utilisateur plus à l'aise dans sa déambulation. De plus, afin de contextualiser un quartier, un immeuble , nous cherchons à le lier à du contenus multimédias (photo, vidéo, text etc.) et apporter une nouvelle dimension à cet outil. 
 
-Pour ce faire nous avons développé différents outils pour la conception de plusieurs jumeaux numériques que nous allons vous présenter dans ce livrable.
+Pour ce faire nous avons développé différents outils pour la conception de plusieurs jumeaux numériques que nous allons vous présenter dans ce livrable. Dans un premier temps nous développerons les socles techniques qui ont permis la construction de représentation 3D. Puis dans un seconde nous détaillerons les démonstrations produites grâce aux outils développé.
 Ces outils ont été pensé de manière reproductible avec une documentation en continue afin que ceux-ci puisse être utilisable sous différentes thématiques mais également autonome.  
 
 
