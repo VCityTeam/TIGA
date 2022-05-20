@@ -6,7 +6,7 @@ Pour répondre à ce besoin d'une meilleure compréhension du secteur industriel
 Cette représentation 3D de la ville peut être améliorée en allant au-delà de la géométrie des bâtiments. Nous voulons apporter plus de couleur et de réalisme à cette représentation pour rendre l'utilisateur plus à l'aise dans sa déambulation. De plus, afin de contextualiser un quartier, un immeuble, nous cherchons à le lier à du contenus multi-médias (photo, vidéo, texte, etc.) et apporter une nouvelle dimension à cet outil.
 
 Pour ce faire, nous avons développé différents outils pour la conception de plusieurs jumeaux numériques que nous allons vous présenter dans ce livrable. Dans un premier temps, nous développerons les socles techniques qui ont permis la construction de représentations 3D. Puis dans un second temps, nous détaillerons les démonstrations produites grâce aux outils développés.
-Ces outils ont été pensés de manière reproductible avec une documentation en continue afin que ceux-ci puisse être utilisable sous différentes thématiques mais également autonomes.  
+Ces outils ont été pensés de manière reproductible avec une documentation en continue afin que ceux-ci puisse être utilisable de manière autonome et également sous différentes thématiques.  
 
 
 ### Sommaire :
