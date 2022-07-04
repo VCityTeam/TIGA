@@ -1,6 +1,6 @@
 # TIGA
 
-## THINK & DO TANK Sciences, Sociétés et Industrie
+## ACTION 14 : THINK & DO TANK Sciences, Sociétés et Industrie
 
 **Fiche-action RECHERCHE du projet TIGA de la Métropole de Lyon Saint-Etienne**
 
@@ -9,7 +9,7 @@ Les Métropoles de Lyon et Saint-Etienne, en répondant conjointement en 2018 à
 - (2) Créer un cadre de confiance aux échanges pour créer de la valeur.
 - (3) Faciliter l’accès et la création d’emploi grâce au développement d’une culture industrielle, à l’adaptation des compétences et à l’amélioration de la mobilité.
 
-Cette action a pour objectif de déceler, prototyper, expérimenter et valoriser sous un horizon de 3 ans des méthodes et des outils innovants pour la médiation industrielle. Elle vise à identifier des verrous scientifiques et proposer des solutions innovantes (supports matériels, numériques et méthodologiques) pour une intéraction fluide et continue entre les acteurs du territoire.
+L'action 14 : THINK & DO TANK Sciences, Sociétés et Industrie a pour objectif de déceler, prototyper, expérimenter et valoriser sous un horizon de 3 ans des méthodes et des outils innovants pour la médiation industrielle. L'action étant pilotée par l'[Université de Lyon](https://www.universite-lyon.fr/) et en particulier le LabEx IMU, elle vise à identifier des verrous scientifiques et proposer des solutions innovantes (supports matériels, numériques et méthodologiques) pour une intéraction fluide et continue entre les acteurs du territoire.
 L'action 14 engage une dynamique qui vise à s'inscrire dans la pérennité, au-delà du projet TIGA Lyon Saint-Etienne, pour devenir un laboratoire permanant de co-création, de recherche-action et d'intéractions entre les acteurs du territoire.
 L'action 14 est un laboratoire de co-création et de recherche-action associant l'Université de Lyon, l'agence d'Urbanisme de Lyon, TUBA et la métropole de Lyon (ERASME, Direction de la Prospective et du Dialogue Public) qui s'enrichissent mutuellement et se combinent autour d'un processus commun de production.
 
