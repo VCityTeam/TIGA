@@ -1,7 +1,7 @@
 ## Livrable 2022 : Développement des outils pour la médiation industrielle
 
-### sdfds
-Afin de faciliter la réutilisation de ce travail, tous les [composants et leur documentation](https://github.com/VCityTeam/TIGA/edit/master/doc/livrable2022.md) sont mis à disposition en libre accès. Le code est diffusé en Open Sources [LGPL](https://www.gnu.org/licenses/lgpl-3.0.fr.html) sur ces mêmes pages. Ce livrable est aussi livré dans une version pdf contenant l'ensemble des informations
+### Note aux lecteurs
+Afin de faciliter la réutilisation de ce travail, tous les [composants et leur documentation](https://github.com/VCityTeam/TIGA/edit/master/doc/livrable2022.md) sont mis à disposition en libre accès. Le code est diffusé en Open Sources [LGPL](https://www.gnu.org/licenses/lgpl-3.0.fr.html) sur ces mêmes pages. Ce livrable est aussi proposé dans une version pdf contenant l'ensemble des informations. La première partie du document contient cette page décrivant le livrable 2022. Les contenus décrivant les composants les plus pertinents sont proposés en annexe.
 
 
 ### Introduction
