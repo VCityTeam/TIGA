@@ -26,7 +26,7 @@ Ces outils ont été pensés de manière reproductible avec une documentation en
   -  [Démos UD-Viz](#démos-ud-viz)
      -  [Démo Py3DTilers](#démo-py3dtilers)
      -  [Démo UI-driven](#démo-ui-driven)
-     -  [Démo Vallée de la chimie](#démo-vallée-de-la-chimie)
+  -  [Démo Vallée de la chimie](#démo-vallée-de-la-chimie)
   -  [Docker](#docker)
 -  [Conclusion](#conclusion)
 
@@ -165,14 +165,13 @@ Cette démo permet de calculer la hauteur de routes en les plaçant sur le relie
 |:--:| 
 | *Figure 6 : Démo UD-Viz sur le calcul des hauteurs de routes contenu dans un fichier GeoJSON à l'aide d'un glisser/déposer dans l'application web UD-Viz* |
 
-##### **Démo Vallée de la chimie**
+#### **Démo Vallée de la chimie**
+
+Une expérimentation de ces outils aidant à la représentation numérique d'un territoire et la démo  [Vallée de la chimie](https://fr.wikipedia.org/wiki/Vall%C3%A9e_de_la_chimie) qui a été développé dans le cadre d'un web-documentaire en collaboration avec [la missions vallée de la chimie](https://lyonvalleedelachimie.fr/la-vallee/la-mission/), le centre de formation [Interfora AFAIP](https://www.interfora-ifaip.fr/) et [TUBA : Tube à expérimentation urbaine Lyon](https://www.tuba-lyon.com/). Ce projet "Derrière les fumées" a pour but de déconstruire les idées préconçues que peuvent avoir les citoyens de la métropole de Lyon sur ce territoire. Dans cette problématique, nous nous sommes orientés vers une représentation numérique de la vallée de la chimie pour mieux la comprendre et y disposer du contenu multi-média afin d'apporter plus d'informations. Grâce à l'outil d'intégration de multi-média dans la bibliothèque UD-Viz, nous avons pu disposer des d'interviews d'acteurs de ce territoire et des données urbaines dans la maquette numérique. Ces différents éléments sont disposés à des points d’intérêt en lien avec le thème de l'industrie.
 
 - [Code](https://github.com/VCityTeam/UD-Demo-TIGA-Webdoc-ChemistryValley ) source de la démonstration ainsi que sa documentation.
 - [Docker](https://github.com/VCityTeam/UD-Demo-TIGA-Webdoc-ChemistryValley-docker) pour reproduire l'application.
 - [Démo en ligne](https://www.derrierelesfumees.com/_Contenusdlf/Carte/index.html)
-
-La démo  [Vallée de la chimie](https://fr.wikipedia.org/wiki/Vall%C3%A9e_de_la_chimie) a été développé dans le cadre d'un web-documentaire en collaboration avec [la missions vallée de la chimie](https://lyonvalleedelachimie.fr/la-vallee/la-mission/), le centre de formation [Interfora AFAIP](https://www.interfora-ifaip.fr/) et [TUBA : Tube à expérimentation urbaine Lyon](https://www.tuba-lyon.com/). Ce projet "Derrière les fumées" a pour but de déconstruire les idées préconçues que peuvent avoir les citoyens de la métropole de Lyon sur ce territoire. Dans cette problématique, nous nous sommes orientés vers une représentation numérique de la vallée de la chimie pour mieux la comprendre et y disposer du contenu multi-média afin d'apporter plus d'informations. Grâce à l'outil d'intégration de multi-média dans la bibliothèque UD-Viz, nous avons pu disposer des d'interviews d'acteurs de ce territoire et des données urbaines dans la maquette numérique. Ces différents éléments sont disposés à des points d’intérêt en lien avec le thème de l'industrie.
-
 
 
 | ![chemistryvalley](https://user-images.githubusercontent.com/32339907/168281845-a47fbad9-f3cf-41db-8eb2-0b630ebea659.jpg) | 
