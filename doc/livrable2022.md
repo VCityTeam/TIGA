@@ -1,6 +1,8 @@
 ## Livrable 2022 : Développement des outils pour la médiation industrielle
 
-Grâce à la veille effectuée en amont qui regroupe les différents outils de médiation inspirant pour le projet TIGA, le LIRIS (Laboratoire d'InfoRmatique en Image et Système d'information) peut passer à la deuxième phase de son objectif qui est de concevoir, prototyper, et transférer des nouvelles modalités de médiation industrielle mobilisant les cultures numériques du territoire.
+La première étape de ce travail a consisté à proposer une veille des outils de médiation. Dans le [premier livrable](https://github.com/VCityTeam/TIGA/blob/master/doc/livrable2020.md) des expérimentations inspirantes pour le projet TIGA ont été listées et analysées
+
+, le LIRIS (Laboratoire d'InfoRmatique en Image et Système d'information) peut passer à la deuxième phase de son objectif qui est de concevoir, prototyper, et transférer des nouvelles modalités de médiation industrielle mobilisant les cultures numériques du territoire.
 
 Pour répondre à ce besoin d'une meilleure compréhension du secteur industriel et du territoire par le citoyen, nous nous sommes orientés vers des représentations 3D numériques de la ville. La visualisation 3D d'un environnement nous permet de mieux l'appréhender et ainsi mieux discerner son organisation, ses activités, etc. 
 Cette représentation 3D de la ville peut être améliorée en allant au-delà de la géométrie des bâtiments. Nous voulons apporter plus de couleur et de réalisme à cette représentation pour rendre l'utilisateur plus à l'aise dans sa déambulation. De plus, afin de contextualiser un quartier, un immeuble, nous cherchons à le lier à du contenus multi-médias (photo, vidéo, texte, etc.) et apporter une nouvelle dimension à cet outil.
