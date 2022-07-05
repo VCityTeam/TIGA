@@ -1,5 +1,9 @@
 ## Livrable 2022 : Développement des outils pour la médiation industrielle
 
+### sdfds
+Afin de faciliter la réutilisation de ce travail, tous les [composants et leur documentation](https://github.com/VCityTeam/TIGA/edit/master/doc/livrable2022.md) sont mis à disposition en libre accès. Le code est diffusé en Open Sources [LGPL](https://www.gnu.org/licenses/lgpl-3.0.fr.html) sur ces mêmes pages. Ce livrable est aussi livré dans une version pdf contenant l'ensemble des informations
+
+
 ### Introduction
 La première étape de ce travail a consisté à proposer une veille des outils de médiation. Dans le [premier livrable](https://github.com/VCityTeam/TIGA/blob/master/doc/livrable2020.md), des expérimentations inspirantes pour le projet TIGA ont été listées et analysées. Ce deuxième livrable est dédié à des propositions d'éléments de médiations liant numérique, territoire et jeu. Ces dispositifs sont pensés afin de favoriser l'intéraction entre acteurs. Ils sont aussi conçus comme un ensemble de briques composables et réutilisables pour d'autres cas d'utilisations ou territoires. 
 
