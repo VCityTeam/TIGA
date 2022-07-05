@@ -94,8 +94,7 @@ La deuxième option permet une plus grande diversité des styles, puisque ces de
 
 En plus de ce travail sur le style par défaut des 3D Tiles, des modifications ont été apportées à la gestion du style dans UD-Viz afin de corriger des erreurs et de robustifier le code.
 
-
-| ![texture_refine](https://user-images.githubusercontent.com/32875283/168042130-65e3b7a5-14d1-4783-a759-72606a9a1c33.gif) | 
+| ![texture_refine](https://user-images.githubusercontent.com/32875283/177316246-aeb947a0-2520-4ed1-ad0b-6b87c4b7d945.png) | 
 |:--:| 
 | *Figure 1 : UD-viz démonstration, application des textures sur 1er arrondissement de Lyon* |
 
@@ -149,8 +148,7 @@ Les 3D Tiles ont été créés à partir de couches de données publiques issues
 
 La démo introduit aussi de nouvelles modalités de visualisation des 3D Tiles. Elle implémente notamment un nouveau fonctionnement des niveaux de détails des modèles 3D. Par défaut, le niveau de détails se raffine en fonction du zoom (position par rapport à la caméra) : plus la caméra est proche d'un modèle, plus ce dernier est détaillé. Ici, on offre la possibilité d'utiliser la souris comme une "loupe": les modèles proches de la souris de l'utilisateur sont raffinés afin d'obtenir des modèles plus détaillés sans avoir besoin de bouger la caméra.
 
-
-| ![mouse_refine](https://user-images.githubusercontent.com/32875283/168044116-a1af5952-2da6-4420-be6e-3b28909d9bd9.gif) | 
+| ![mouse_refine](https://user-images.githubusercontent.com/32875283/177316648-ed013d7b-d5ce-418d-8eee-6a7a252560ee.png) | 
 |:--:| 
 | *Figure 5 : Démonstration montrant le raffinement du niveau de détail des bâtiments de Lyon en fonction de la position de la souris* |
 
@@ -163,8 +161,7 @@ La démo introduit aussi de nouvelles modalités de visualisation des 3D Tiles. 
 
 Cette démo permet de calculer la hauteur de routes en les plaçant sur le relief. Pour cela, les routes doivent être contenues dans des fichiers GeoJSON. Ces fichiers peuvent ensuite être glissés/déposés dans la démonstration. Les routes seront affichées au fur et à mesure du calcul. Une fois toutes les routes placées sur le relief, de nouveaux fichiers GeoJSON contenant les routes aux bonnes altitudes sont téléchargés. Le processus pour créer des routes 3D à partir de donnée de l'IGN est détaillé dans cette [documentation](https://github.com/VCityTeam/UD-Reproducibility/blob/master/Computations/3DTiles/Lyon_Relief_Roads_Buildings_Water/Roads_from_relief.md).
 
-
-| ![ezgif-5-42ca35522d](https://user-images.githubusercontent.com/32875283/165520908-eeda0798-4ca1-4e76-ad3c-6779d593cff3.gif) | 
+| ![roads_drag_and_drop](https://user-images.githubusercontent.com/32875283/177317237-923c1319-f41e-40e8-b4ac-d9c148d6a364.png) | 
 |:--:| 
 | *Figure 6 : Démo UD-Viz sur le calcul des hauteurs de routes contenu dans un fichier GeoJSON à l'aide d'un glisser/déposer dans l'application web UD-Viz* |
 
