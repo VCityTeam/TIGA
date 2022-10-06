@@ -51,4 +51,10 @@ A l'aide de ces socels techniques nous avons intégré le réseau de transport e
 
 ### Partenaires
 
+<p align="center">
+  <img src="documents/pictures/interfora.png" alt="Home" height="90"/>
+  <img src="documents/pictures/liris.png" alt="Home" height="90"/>
+  <img src="documents/pictures/udl.png" alt="Home" height="90"/>
+</p>
+
 ### Références
