@@ -57,3 +57,8 @@ A l'aide de ces socels techniques nous avons intégré le réseau de transport e
 </p>
 
 ### Références
+- Lien vers le site en ligne du projet : https://www.derrierelesfumees.com/_Contenusdlf/Carte/index.html
+- Veille des outils innovants : [lien](https://docs.google.com/spreadsheets/d/1WMBi1XcP12ggSY--qWQrSYCXhRfvsycCfQJ3W6OuaC4/edit#gid=0)
+- Dépôts github open source:
+  - [UD-Demo-TIGA-Webdoc-ChemistryValley](https://github.com/VCityTeam/UD-Demo-TIGA-Webdoc-ChemistryValley)
+  - [UD-Demo-TIGA-Webdoc-ChemistryValley-Docker](https://github.com/VCityTeam/UD-Demo-TIGA-Webdoc-ChemistryValley-docker)
