@@ -50,11 +50,10 @@ Ce type de données nous permet de représenter différentes géométries dans U
 A l'aide de ces socels techniques nous avons intégré le réseau de transport en commun pour montrer l'accessibilité à certains sites industriels de la vallée de la chimie. Nous avons également intégré les espaces naturels sensibles pour donner une autre vision de ce territoire.
 
 ### Partenaires
-
 <p align="center">
-  <img src="documents/pictures/interfora.png" alt="Home" height="90"/>
-  <img src="documents/pictures/liris.png" alt="Home" height="90"/>
-  <img src="documents/pictures/udl.png" alt="Home" height="90"/>
+  <img src="https://user-images.githubusercontent.com/32339907/194319619-48e4107b-be25-42b1-9850-f105db18ed87.png" alt="Home" height="100"/>
+  <img src="https://user-images.githubusercontent.com/32339907/194319029-8604dea1-f00c-4880-9f83-50c9ed498e1d.png" alt="Home" height="90"/>
+  <img src="https://user-images.githubusercontent.com/32339907/194319165-69368c5c-ac99-40b5-8089-5fac53a9e673.png" alt="Home" height="90"/>
 </p>
 
 ### Références
