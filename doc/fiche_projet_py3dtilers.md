@@ -14,21 +14,33 @@ Py3DTilers offre un grand nombre d'options permettant d'adapter les 3D Tiles pro
 
 - **La création de niveaux de détails**: permet d'ajouter un ou plusieurs [niveaux de détail](https://fr.wikipedia.org/wiki/Level_of_detail) aux géométries. Cela permet de fluidifier la visualisation en affichant des modèles 3D plus ou moins détaillés.
 
+<img width="400" alt="lod2" src="https://user-images.githubusercontent.com/32875283/194566234-2f73884e-c496-45d8-b5e1-1b3f82414ee3.png"><img width="400" alt="lod1" src="https://user-images.githubusercontent.com/32875283/194566265-4cc473c4-6e69-4239-98d0-9997f8d71f55.png">
+
 - **La transformation des données 3D**: permet de modifier la donnée en la reprojetant ou en changeant l'échelle et la position des géométries. Cela permet de placer les données dans le contexte 3D voulu ou encore de corriger les erreurs de placement et de taille des objets dans la scène. Ces fonctionnalités permettent aussi de placer de la donnée non géo-référencée dans un contexte géospatial, ou inversement de placer de la donnée géo-référencée à des coordonnées centrées autour de (0, 0, 0).
+
+<img width="400" alt="offset_1" src="https://user-images.githubusercontent.com/32875283/194566134-33f70dd4-e23c-4651-b40c-53621b22302d.png"><img width="400" alt="offset_2" src="https://user-images.githubusercontent.com/32875283/194566168-abeff148-e861-44d7-8032-1ee735657cff.png">
 
 - **L'ajout de textures**: si la donnée d'entrée est texturée, l'utilisateur peut choisir de conserver ou non les textures. Lorsque les textures sont conservées, elles sont stockées dans des atlas de textures sous forme de fichiers JPEG.
 
+<img width="800" alt="city_tiler_texture" src="https://user-images.githubusercontent.com/32875283/194566052-4c8893ce-5ae3-4efc-8381-f900e685be88.png">
+
 - **La création de 3D Tiles colorés**: permet d'ajouter des couleurs aux 3D Tiles. Les couleurs peuvent être choisies par l'utilisateur. Les couleurs peuvent être appliquées en fonction d'attributs des modèles (par exemple hauteur du bâtiment) ou en fonction du type des objets (toit, mur, sol, etc).
+
+<img width="800" alt="city_tiler_colors" src="https://user-images.githubusercontent.com/32875283/194565899-e071979d-a0b6-4098-8b13-27efecde3d57.png">
 
 ### Démonstration des fonctionnalités
 
 Une démonstration est [disponible en ligne](https://py3dtilers-demo.vcityliris.data.alpha.grandlyon.com/) afin d'illustrer plusieurs jeux de données 3D Tiles produits avec Py3DTilers.
+
+<img width="800" alt="demo_py3dtilers" src="https://user-images.githubusercontent.com/32875283/194566826-76b5b631-ff05-46d4-8b33-cb2f69040a63.png">
 
 Py3DTilers est également utilisé dans d'autres projets pour la production de modèles 3D, par exemple dans le web documentaire ["_Derrière les fumées_"](https://github.com/VCityTeam/TIGA/blob/master/doc/fiche_projet_Derriere_les_fumees.md) ou le campus virtuel ["_IMUV - Flying Campus_"](https://www.imuvirtuel.fr/).
 
 ## Partenaires
 
 Le projet Py3DTilers a été effectué au sein du projet TIGA, financé par La Banque des Territoires, avec la collaboration du LabEx IMU, du laboratoire de recherche Liris et de l'entreprise Berger-Levrault.
+
+<img width="300" src="https://user-images.githubusercontent.com/32875283/194567103-809c7e2d-b06c-4737-a9dd-daf31dad6876.png"><img width="300" src="https://user-images.githubusercontent.com/32875283/194567231-3550f0db-b7e4-4d54-b94c-3c50ef57bddf.png">    <img width="300" src="https://user-images.githubusercontent.com/32875283/194568572-182fd908-43e9-476d-893c-e449dd74214a.png">
 
 ## Références
 
