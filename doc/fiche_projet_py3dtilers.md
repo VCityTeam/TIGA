@@ -1,4 +1,4 @@
-# Py3DTilers : un outil pour manipuler et transformer de la donnée geospatiale
+# Py3DTilers : un outil pour manipuler et transformer de la donnée géospatiale
 
 Les données urbaines et géospatiales sont de plus en plus utilisées dans la création de doubles numériques de la ville. L'utilisation de ces doubles numériques pose un problème majeur: la très grande quantité d'informations (milliers de bâtiments, relief complexe, etc) rend difficile de manipuler et visualiser ces données en temps réel. Le format [3D Tiles](https://www.ogc.org/standards/3DTiles) a été créé en 2015 dans le but de résoudre ce problème. Les 3D Tiles sont découpés spatialement en **tuiles**, c'est-à-dire que les données sont réparties dans des sous-ensembles en fonction de leur position dans l'espace. Cette répartition permet de ne charger que certaines parties des données, celles dans le champs de vision de l'utilisateur, lors de la déambulation dans la maquette numérique.
 
@@ -40,7 +40,7 @@ Py3DTilers est également utilisé dans d'autres projets pour la production de m
 
 Le projet Py3DTilers a été effectué au sein du projet TIGA, financé par La Banque des Territoires, avec la collaboration du LabEx IMU, du laboratoire de recherche Liris et de l'entreprise Berger-Levrault.
 
-<img width="300" src="https://user-images.githubusercontent.com/32875283/194567103-809c7e2d-b06c-4737-a9dd-daf31dad6876.png"><img width="300" src="https://user-images.githubusercontent.com/32875283/194567231-3550f0db-b7e4-4d54-b94c-3c50ef57bddf.png">    <img width="300" src="https://user-images.githubusercontent.com/32875283/194568572-182fd908-43e9-476d-893c-e449dd74214a.png">
+<img width="300" src="https://user-images.githubusercontent.com/32875283/194567103-809c7e2d-b06c-4737-a9dd-daf31dad6876.png"><img width="300" src="https://user-images.githubusercontent.com/32875283/194567231-3550f0db-b7e4-4d54-b94c-3c50ef57bddf.png"> <img width="300" src="https://user-images.githubusercontent.com/32875283/194568572-182fd908-43e9-476d-893c-e449dd74214a.png">
 
 ## Références
 
