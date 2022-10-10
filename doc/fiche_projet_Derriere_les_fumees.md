@@ -19,10 +19,7 @@ Pour entrer en « mode action », les spectateurs sont invités à voter, à
 soumettre aux votes et aux avis des autres joueurs des actions concrètes pour faire évoluer les pratiques, pour mieux connaître le territoire, pour mieux se comprendre et ainsi devenir acteurs du territoire.
 
 ### Outils 
-
-
 #### **Intégration de contenus multi-médias**
-
 Afin d'améliorer la compréhension d'un territoire, nous voulions contextualiser les modèles 3D de bâtiments avec des données multi-médias additionnelles. Ces multi-médias peuvent être des images d'archives, des vidéos d'acteurs du territoire ou des photos d'un observatoire photographique(voir par exemple le travail sur l'[Observatoire photographique des paysages de la Vallée de la chimie](https://www.caue69.fr/1/page/10622/Observatoire_photographique_du_paysage_sur_le_territoire_de_la_Vallee_de_la_Chimie) mené par la mission vallée de la chimie. Ce nouveau contenu apporte une autre dimension à la déambulation dans un environnement 3D et l'améliore avec plus d'informations sur celui-ci. Nous avons donc développé une méthode d'intégration de multi-medias qui se base sur la libraire [UD-viz](https://github.com/VCityTeam/UD-Viz). L'intégration est découpée en deux parties :
 
 - [Configuration du fichier JSON](https://github.com/VCityTeam/UD-Demo-TIGA-Webdoc-ChemistryValley/blob/main/doc/PinsDoc.md#configepisodesjson-) : documentation sur la configuration du fichier JSON afin de lier contenus multi-medias et positions géospatiales.
