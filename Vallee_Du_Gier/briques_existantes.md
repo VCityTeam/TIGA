@@ -144,6 +144,8 @@ Pour les B3DM, il est possible de choisir une couleur qui sera appliqué à l'en
 
 ### Chargement de couches GeoJSON
 
+![image](https://user-images.githubusercontent.com/32875283/195587286-183b0583-0765-4d27-bb74-fc8fe5ab781a.png)
+
 ### Widget CityObject
 
 Le widget CityObject intègre plusieurs fonctionnalités:
