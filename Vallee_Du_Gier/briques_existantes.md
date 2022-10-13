@@ -110,11 +110,13 @@ Pour une élévation, il est possible de choisir à quelles hauteurs corresponde
   }
 ```
 
+![image](https://user-images.githubusercontent.com/32875283/195590932-d31bb845-0c29-4d47-90b8-8ae5805b74f3.png)
+
 ### Chargement de couches 3D Tiles
 
 Des objets 3D urbains peuvent être chargés dans UD-Viz sous forme de couches 3D Tiles. Ces 3D Tiles peuvent être des nuages de points (Point Clouds) ou des modèles 3D maillés au format B3DM (Batched 3D Models).
 
-Pour les Point Clouds, il est possible de choisir la taille des points. Exemple:
+Pour les Point Clouds, il est possible de choisir la taille des points:
 
 ```json
   "3DTilesLayers": [
@@ -125,6 +127,9 @@ Pour les Point Clouds, il est possible de choisir la taille des points. Exemple:
     }
   ]
 ```
+Voir [exemple](https://point-cloud.vcityliris.data.alpha.grandlyon.com/).
+
+![image](https://user-images.githubusercontent.com/32875283/195590171-3430461b-85bb-4474-b2aa-a1fc4b855729.png)
 
 Pour les B3DM, il est possible de choisir une couleur qui sera appliqué à l'ensemble des modèles 3D de la couche. Si aucune couleur n'est indiqué, les couleurs utilisées sont celles déjà présentes dans les modèles 3D. Exemple:
 
@@ -142,9 +147,17 @@ Pour les B3DM, il est possible de choisir une couleur qui sera appliqué à l'en
   ]
 ```
 
+Voir [exemple](https://py3dtilers-demo.vcityliris.data.alpha.grandlyon.com/html/all_lyon.html).
+
+![image](https://user-images.githubusercontent.com/32875283/195590419-eb933ee5-a8f8-47d9-bb4c-9811c36bcc84.png)
+
 ### Chargement de couches GeoJSON
 
+Il est possible de charger des couches GeoJSON dans la visualisation.
+
 ![image](https://user-images.githubusercontent.com/32875283/195587286-183b0583-0765-4d27-bb74-fc8fe5ab781a.png)
+
+Dans l'exemple ci-dessous, il y a 3 couches GeoJSON: lignes de bus, positions des velov et zones humides.
 
 ### Widget CityObject
 
@@ -167,11 +180,17 @@ Le widget Document permet de visualiser des documents placés à des positions g
 
 ### Widget Slideshow
 
+Le widget Slideshow permet de visualiser des images et des vidéos en mode "slides" dans un contexte 3D. Il est possible de choisir le placement du support (position et rotation) et de changer sa taille.
+
+Voir [exemple](https://ud-viz.vcityliris.data.alpha.grandlyon.com/examples/SlideShow/slideShow.html).
+
 ![image](https://user-images.githubusercontent.com/32875283/195586732-43771017-e83b-4482-a387-12492d780300.png)
 
 ### Widget LayerChoice
 
-Le widget LayerCHoice permet de cacher/afficher les couches de données (géométriques ou fonds de carte). Il est également possible de focus la caméra sur une couche 3D.
+Le widget LayerCHoice permet de cacher/afficher les couches de données (géométries, élévations ou fonds de carte). Il est également possible de focus la caméra sur une couche 3D.
+
+Voir [exemple](https://ud-viz.vcityliris.data.alpha.grandlyon.com/examples/LayerChoiceWidget/example.html).
 
 ![image](https://user-images.githubusercontent.com/32875283/195586360-5598fd98-ea88-4335-84be-47ee98ed886d.png)
 
