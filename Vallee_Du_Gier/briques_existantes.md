@@ -161,8 +161,16 @@ Voir [exemple](https://ud-viz.vcityliris.data.alpha.grandlyon.com/examples/CityO
 
 Le widget Document permet de visualiser des documents placés à des positions géographiques.
 
+![image](https://user-images.githubusercontent.com/32875283/195586644-19173c1a-253f-449e-b42a-e301c2ace025.png)
+
 ### Widget Slideshow
 
+![image](https://user-images.githubusercontent.com/32875283/195586732-43771017-e83b-4482-a387-12492d780300.png)
+
 ### Widget LayerChoice
+
+Le widget LayerCHoice permet de cacher/afficher les couches de données (géométriques ou fonds de carte). Il est également possible de focus la caméra sur une couche 3D.
+
+![image](https://user-images.githubusercontent.com/32875283/195586360-5598fd98-ea88-4335-84be-47ee98ed886d.png)
 
 ### Billboard
