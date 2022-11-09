@@ -5,7 +5,7 @@ Projet de médiation autour de la Vallée du Gier
 ## Références
 
 - [Briques existantes](./briques_existantes.md) : briques techniques déjà développées
-- [Données exploitables](./) : liste de données pouvant être exploitées dans le projet
+- [Données exploitables](./donnees_exploitables.md) : liste de données pouvant être exploitées dans le projet
 
 ## Autres liens
 
