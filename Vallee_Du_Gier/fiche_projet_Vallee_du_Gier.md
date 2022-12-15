@@ -2,8 +2,8 @@
 
 ## Objectif
 
-L'objectif du projet Vallée du Gier est de proposer un outil de médiation innovant afin de faire découvrir ce territoire industriel au citoyen grâce à une maquette numérique interactive. Le développement d’une telle interface doit permettre de faciliter les interactions entre le grand public et des représentations géographiques lui permettant ainsi de mieux comprendre son territoire et d’en visualiser ses potentialités économiques et industrielles.
-L’intérêt d’un tel objet est de proposer au public un outil dynamique et ludique. C’est une approche tournée vers l’utilisateur final lui offrant la possibilité de déambuler au travers d’une maquette numérique au gré des données et des thématiques sélectionnées.
+L'objectif du projet Vallée du Gier est de proposer un outil de médiation innovant afin de faire découvrir ce territoire industriel au citoyen grâce à une maquette numérique intéractive. Le développement d’une telle interface doit permettre de faciliter les intéractions entre le grand public et des représentations géographiques, lui permettant ainsi de mieux comprendre son territoire et d’en visualiser ses potentialités économiques et industrielles.
+L’intérêt d’un tel objet est de proposer au public un outil dynamique et ludique. C’est une approche tournée vers l’utilisateur final, lui offrant la possibilité de déambuler au travers d’une maquette numérique au gré des données et des thématiques sélectionnées.
 
 ## Rôles / missions / partenaires
 
