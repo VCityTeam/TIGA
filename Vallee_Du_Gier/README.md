@@ -2,6 +2,10 @@
 
 Projet de médiation autour de la Vallée du Gier
 
+- Repo GitHub : [UD-Demo-TIGA-Vallee-Du-Gier](https://github.com/VCityTeam/UD-Demo-TIGA-Vallee-Du-Gier)
+- Docker : [UD-Demo-TIGA-Vallee-Du-Gier-docker](https://github.com/VCityTeam/UD-Demo-TIGA-Vallee-Du-Gier-docker)
+- Démo en ligne : [Vallée du Gier](https://demo.liris.cnrs.fr/vcity/valleedugier/)
+
 ## Références
 
 - [Briques existantes](./briques_existantes.md) : briques techniques déjà développées
